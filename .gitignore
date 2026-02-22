@@ -8,3 +8,4 @@ logs/*
 /overlays/*original
 !overlays/.gitkeep
 .cache
+.swp
