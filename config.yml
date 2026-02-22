@@ -4,7 +4,7 @@
 ########################################################################
 libraries:
   Movies:
-    report_path: config/reports/movies.yml
+    report_path: reports/movies.yml
     remove_overlays: <<REMOVEOVERLAYSMOVIES>>
     reapply_overlays: <<REAPPLYOVERLAYSMOVIES>>
     # reset_overlays: tmdb
@@ -12,7 +12,7 @@ libraries:
       save_report: true
       minimum_items: 2
       asset_directory:
-        - config/assets/movies
+        - assets/movies
       prioritize_assets: true
     collection_files:
       - default: seasonal
@@ -149,7 +149,7 @@ libraries:
           rating3_image: tmdb
           rating3_font_size: 70
           horizontal_position: right
-      - folder: config/metadata/overlays
+      - folder: metadata/overlays
     operations:
       split_duplicates: false
       assets_for_all: true
@@ -177,7 +177,7 @@ libraries:
       # mass_poster_update: tmdb
 
   TV Shows:
-    report_path: config/reports/shows.yml
+    report_path: reports/shows.yml
     remove_overlays: <<REMOVEOVERLAYSSHOWS>>
     reapply_overlays: <<REAPPLYOVERLAYSSHOWS>>
     # reset_overlays: tmdb
@@ -185,7 +185,7 @@ libraries:
       save_report: true
       minimum_items: 1
       asset_directory:
-        - config/assets/shows
+        - assets/shows
       prioritize_assets: true
     collection_files:
       - default: imdb
@@ -247,7 +247,7 @@ libraries:
           rating3_image: tmdb
           rating3_font_size: 70
           horizontal_position: right
-      - folder: config/metadata/overlays
+      - folder: metadata/overlays
     operations:
       split_duplicates: false
       assets_for_all: true
