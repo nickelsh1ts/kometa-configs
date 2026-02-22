@@ -4,7 +4,7 @@
 ########################################################################
 libraries:
   Movies:
-    report_path: /config/reports/movies.yml
+    report_path: config/reports/movies.yml
     remove_overlays: <<REMOVEOVERLAYSMOVIES>>
     reapply_overlays: <<REAPPLYOVERLAYSMOVIES>>
     # reset_overlays: tmdb
@@ -39,6 +39,7 @@ libraries:
         emoji_easter: 🐣
         schedule_easter: range(03/22-04/25)
         url_poster_easter: https://theposterdb.com/api/assets/60970
+        emoji_black_history: 🖤
         url_poster_black_history: https://theposterdb.com/api/assets/686790
         name_black_history: Black History Month
         collection_section: '03'
@@ -185,7 +186,7 @@ libraries:
       # mass_poster_update: tmdb
 
   TV Shows:
-    report_path: /config/reports/shows.yml
+    report_path: config/reports/shows.yml
     remove_overlays: <<REMOVEOVERLAYSSHOWS>>
     reapply_overlays: <<REAPPLYOVERLAYSSHOWS>>
     # reset_overlays: tmdb
