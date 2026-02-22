@@ -62,7 +62,7 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-      file: metadata/overlays/media/networks/<<overlay_name>>-<<style>>.png
+      file: overlays/networks/<<overlay_name>>-<<style>>.png
 
 overlays:
   STREAMBLANK:
@@ -72,7 +72,7 @@ overlays:
       horizontal_align: left
       vertical_offset: 0
       vertical_align: bottom
-      file: metadata/overlays/media/networks/STREAMBLANK.png
+      file: overlays/networks/STREAMBLANK.png
   Netflix:
     template: { name: Streaming, weight: 900, slug: netflix, type: netflix }
   Prime:

@@ -4,7 +4,7 @@
 ########################################################################
 libraries:
   Movies:
-    report_path: reports/movies.yml
+    report_path: /config/reports/movies.yml
     remove_overlays: <<REMOVEOVERLAYSMOVIES>>
     reapply_overlays: <<REAPPLYOVERLAYSMOVIES>>
     # reset_overlays: tmdb
@@ -100,16 +100,18 @@ libraries:
       template_variables:
         url_poster_watched: https://theposterdb.com/api/assets/345270
         name_watched: "Trending on NickflixTV"
+        summary_watched: "Collection of Movies trending on NickflixTV in the last 30 days"
         list_days: 30
         list_size: 10
+        list_minimum: 1
         use_popular: false
         collection_section: "01"
         sync_mode_watched: sync
-    - file: /config/metadata/movies.yml
-    - file: /config/metadata/genres.yml
-    - file: /config/metadata/studios.yml
-    - file: /config/metadata/suggestions.yml
-    - file: /config/metadata/refresh.yml
+    - file: config/metadata/movies.yml
+    - file: config/metadata/genres.yml
+    - file: config/metadata/studios.yml
+    - file: config/metadata/suggestions.yml
+    - file: config/metadata/refresh.yml
       template_variables:
         library_type: movie
         search_field: release
@@ -165,6 +167,7 @@ libraries:
         configured: false
         managed: true
         less: 1
+        ignore_empty_smart_collections: true
       mass_genre_update:
       - tmdb
       - imdb
@@ -182,7 +185,7 @@ libraries:
       # mass_poster_update: tmdb
 
   TV Shows:
-    report_path: reports/shows.yml
+    report_path: /config/reports/shows.yml
     remove_overlays: <<REMOVEOVERLAYSSHOWS>>
     reapply_overlays: <<REAPPLYOVERLAYSSHOWS>>
     # reset_overlays: tmdb
@@ -218,14 +221,19 @@ libraries:
     - default: tautulli
       template_variables:
         url_poster_watched: https://theposterdb.com/api/assets/345270
+        name_watched: "Trending on NickflixTV"
+        summary_watched: "Collection of TV Shows trending on NickflixTV in the last 30 days"
         list_days: 30
         list_size: 10
+        list_minimum: 1
         use_popular: false
         collection_section: "01"
         sync_mode_watched: sync
     - default: trakt
       template_variables:
         url_poster_trending: https://theposterdb.com/api/assets/396719
+        name_trending: "Trending on Trakt"
+        summary_trending: "Collection of TV Shows trending on Trakt in the last 30 days"
         limit: 50
         sync_mode: sync
         use_collected: false
@@ -233,9 +241,9 @@ libraries:
         use_recommended: false
         use_watched: false
         collection_section: "02"
-    - file: /config/metadata/networks.yml
-    - file: /config/metadata/suggestions_shows.yml
-    - file: /config/metadata/refresh.yml
+    - file: config/metadata/networks.yml
+    - file: config/metadata/suggestions_shows.yml
+    - file: config/metadata/refresh.yml
       template_variables:
         library_type: show
         search_field: episode_air_date
@@ -290,6 +298,7 @@ libraries:
         configured: false
         managed: true
         less: 1
+        ignore_empty_smart_collections: true
       mass_user_rating_update: tmdb
       mass_critic_rating_update: imdb
       mass_audience_rating_update: mdb_tomatoesaudience
@@ -325,6 +334,9 @@ settings:
   cache_expiration: 60
   asset_folders: true
   asset_depth: 1
+  asset_directory:
+  - assets/movies
+  - assets/shows
   create_asset_folders: true
   prioritize_assets: true
   dimensional_asset_rename: false
@@ -359,7 +371,6 @@ settings:
   custom_repo:
   overlay_artwork_filetype: webp_lossy
   overlay_artwork_quality: 90
-  asset_directory:
 webhooks:
   error: gotify
   version: gotify
