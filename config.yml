@@ -39,7 +39,7 @@ libraries:
         emoji_easter: 🐣
         schedule_easter: range(03/22-04/25)
         url_poster_easter: https://theposterdb.com/api/assets/60970
-        emoji_black_history: ✊🏿
+        emoji_black_history: '✊🏿 '
         url_poster_black_history: https://theposterdb.com/api/assets/686790
         name_black_history: Black History Month
         collection_section: '03_00'
