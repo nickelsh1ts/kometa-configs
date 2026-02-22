@@ -1,3 +1,7 @@
 .env
 logs/*
 !logs/.gitkeep
+/assets/*
+!assets/.gitkeep
+/reports/*
+!reports/.gitkeep
