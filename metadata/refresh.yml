@@ -1,7 +1,7 @@
 collections:
   Refresh Metadata:
     plex_search:
-      <<library_type>>:
+      <<condition>>:
         <<search_field>>: <<days_number|7>>
     item_refresh: true
     build_collection: false

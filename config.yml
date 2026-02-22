@@ -97,6 +97,7 @@ libraries:
         url_poster_rocky: https://theposterdb.com/api/assets/5907
         url_poster_xmen: https://theposterdb.com/api/assets/32304
         collection_section: '06'
+        minimum_items: 1
     - default: tautulli
       template_variables:
         url_poster_watched: https://theposterdb.com/api/assets/345270
@@ -114,7 +115,7 @@ libraries:
     - file: config/metadata/suggestions.yml
     - file: config/metadata/refresh.yml
       template_variables:
-        library_type: movie
+        condition: all
         search_field: release
         days_number: 7
     overlay_files:
@@ -157,7 +158,7 @@ libraries:
         rating3_image: tmdb
         rating3_font_size: 70
         horizontal_position: right
-    - folder: metadata/overlays
+    - folder: config/metadata/overlays
     operations:
       split_duplicates: false
       assets_for_all: true
@@ -246,7 +247,7 @@ libraries:
     - file: config/metadata/suggestions_shows.yml
     - file: config/metadata/refresh.yml
       template_variables:
-        library_type: show
+        condition: all
         search_field: episode_air_date
         days_number: 7
     overlay_files:
@@ -291,7 +292,7 @@ libraries:
         rating3_image: tmdb
         rating3_font_size: 70
         horizontal_position: right
-    - folder: metadata/overlays
+    - folder: config/metadata/overlays
     operations:
       split_duplicates: false
       assets_for_all: true

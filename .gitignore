@@ -6,7 +6,8 @@ logs/*
 /reports/*
 !reports/.gitkeep
 overlays/*
-!overlays/networks/*
+!overlays/networks/
+!overlays/status/
 !overlays/.gitkeep
 *.cache*
 *.swp
