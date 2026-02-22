@@ -1,0 +1,406 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/kometa-team/kometa/nightly/json-schema/config-schema.json
+########################################################################
+##                              Kometa                                ##
+########################################################################
+libraries:
+  Movies:
+    report_path: config/reports/movies.yml
+    remove_overlays: ${REMOVE_OVERLAYS_MOVIES || false}
+    reapply_overlays: ${REAPPLY_OVERLAYS_MOVIES || false}
+    # reset_overlays: tmdb
+    settings:
+      save_report: true
+      minimum_items: 2
+      asset_directory:
+        - config/assets/movies
+      prioritize_assets: true
+    collection_files:
+      - default: seasonal
+        template_variables:
+          emoji_christmas: "🎄"
+          schedule_christmas: range(11/01-12/31)
+          url_poster_christmas: https://theposterdb.com/api/assets/69443
+          trakt_list_christmas:
+            - https://trakt.tv/users/nickelshits/lists/christmas-favourites?sort=released,asc
+          emoji_halloween: "🎃"
+          schedule_halloween: range(09/01-10/31)
+          url_poster_halloween: https://theposterdb.com/api/assets/111218
+          emoji_years: "🎆"
+          schedule_years: range(12/26-01/05)
+          emoji_valentine: "💘"
+          schedule_valentine: range(02/01-02/14)
+          emoji_patrick: "🍀"
+          schedule_patrick: range(03/01-03/17)
+          emoji_thanksgiving: "🦃"
+          schedule_thanksgiving: range(10/01-10/15)
+          url_poster_thanksgiving: https://theposterdb.com/api/assets/112251
+          emoji_easter: "🐣"
+          schedule_easter: range(03/22-04/25)
+          url_poster_easter: https://theposterdb.com/api/assets/60970
+          collection_section: "03"
+          visible_shared: true
+          visible_home: true
+          visible_library: true
+          sync_mode: sync
+          run_again: true
+          delete_not_scheduled: true
+          exclude:
+            - separator
+            - aapi
+            - disabilities
+            - independence
+            - memorial
+            - veteran
+      - default: imdb
+        template_variables:
+          url_poster_top: https://theposterdb.com/api/assets/294454
+          summary_top: "Collection of Top 250 Movies which are currently available on NickflixTV"
+          collection_section: "01"
+          sync_mode_top: sync
+          use_lowest: false
+          use_popular: false
+      - default: oscars
+        template_variables:
+          url_poster_best_picture: https://theposterdb.com/api/assets/10047
+          sync_mode_oscars: sync
+          collection_section: "02"
+          use_best_director: false
+          use_year_collections: false
+      - default: streaming
+        template_variables:
+          collection_section: "04"
+          originals_only: true
+          region: ca
+          exclude:
+            - separator
+            - now
+            - movistar
+            - itvx
+            - filmin
+            - atresplayer
+      - default: universe
+        template_variables:
+          url_poster_marvel: https://theposterdb.com/api/assets/18648
+          url_poster_dcu: https://theposterdb.com/api/assets/171350
+          url_poster_wizard: https://theposterdb.com/api/assets/166278
+          url_poster_conjuring: https://theposterdb.com/api/assets/5437
+          url_poster_star: https://theposterdb.com/api/assets/70805
+          url_poster_trek: https://theposterdb.com/api/assets/48818
+          url_poster_fast: https://theposterdb.com/api/assets/10036
+          url_poster_middle: https://theposterdb.com/api/assets/1716
+          collection_section: "06"
+          exclude:
+            - separator
+      - default: tautulli
+        template_variables:
+          url_poster_watched: https://theposterdb.com/api/assets/345270
+          list_days: 30
+          list_size: 10
+          use_popular: false
+          collection_section: "01"
+          sync_mode_watched: sync
+      - file: config/metadata/movies.yml
+      - file: config/metadata/genres.yml
+      - file: config/metadata/studios.yml
+      - file: config/metadata/suggestions.yml
+      - file: config/metadata/refresh.yml
+        template_variables:
+          library_type: movie
+          search_field: release
+          days_number: 7
+    overlay_files:
+      - default: studio
+        template_variables:
+          horizontal_align: center
+          vertical_align: top
+      - default: video_format
+        template_variables:
+          vertical_offset: 10%
+          vertical_align: bottom
+      - default: resolution
+        template_variables:
+          use_edition: false
+      - default: ribbon
+        template_variables:
+          style: yellow
+          use_all: false
+          use_oscars_director: false
+          use_golden_director: false
+          use_cannes: false
+          use_venice: false
+          use_berlinale: false
+          use_sundance: false
+          use_spirit: false
+          use_cesar: false
+          use_letterboxd: false
+          use_rottenverified: false
+          use_metacritic: false
+          use_common: false
+          use_razzie: false
+      - default: ratings
+        template_variables:
+          rating1: critic
+          rating1_image: imdb
+          rating1_font_size: 63
+          rating2: audience
+          rating2_image: rt_popcorn
+          rating2_font_size: 70
+          rating3: user
+          rating3_image: tmdb
+          rating3_font_size: 70
+          horizontal_position: right
+      - folder: config/metadata/overlays
+    operations:
+      split_duplicates: false
+      assets_for_all: true
+      mass_user_rating_update: tmdb
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: mdb_tomatoesaudience
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+      mass_genre_update:
+        - tmdb
+        - imdb
+        - tvdb
+      mass_content_rating_update:
+        - mdb_commonsense
+        - omdb
+      mass_studio_update:
+        - tmdb
+      mass_originally_available_update:
+        - tmdb
+        - tvdb
+        - omdb
+      mass_imdb_parental_labels: none
+      # mass_poster_update: tmdb
+
+  TV Shows:
+    report_path: config/reports/shows.yml
+    remove_overlays: ${REMOVE_OVERLAYS_SHOWS || false}
+    reapply_overlays: ${REAPPLY_OVERLAYS_SHOWS || false}
+    # reset_overlays: tmdb
+    settings:
+      save_report: true
+      minimum_items: 1
+      asset_directory:
+        - config/assets/shows
+      prioritize_assets: true
+    collection_files:
+      - default: imdb
+        template_variables:
+          url_poster_top: https://theposterdb.com/api/assets/294454
+          summary_top: "Collection of Top 250 Movies which are currently available on NickflixTV"
+          collection_section: "01"
+          sync_mode_top: sync
+          use_lowest: false
+          use_popular: false
+      - default: streaming
+        template_variables:
+          collection_section: "04"
+          originals_only: true
+          region: ca
+          exclude:
+            - separator
+            - now
+            - movistar
+            - itvx
+            - filmin
+            - atresplayer
+      - default: tautulli
+        template_variables:
+          url_poster_watched: https://theposterdb.com/api/assets/345270
+          list_days: 30
+          list_size: 10
+          use_popular: false
+          collection_section: "01"
+          sync_mode_watched: sync
+      - default: trakt
+        template_variables:
+          url_poster_trending: https://theposterdb.com/api/assets/396719
+          limit: 50
+          sync_mode: sync
+          use_collected: false
+          use_popular: false
+          use_recommended: false
+          use_watched: false
+          collection_section: "02"
+      - file: config/metadata/networks.yml
+      - file: config/metadata/suggestions_shows.yml
+      - file: config/metadata/refresh.yml
+        template_variables:
+          library_type: show
+          search_field: episode_air_date
+          days_number: 7
+    overlay_files:
+      - default: resolution
+      - default: ratings
+        template_variables:
+          rating1: critic
+          rating1_image: imdb
+          rating1_font_size: 63
+          rating2: audience
+          rating2_image: rt_popcorn
+          rating2_font_size: 70
+          rating3: user
+          rating3_image: tmdb
+          rating3_font_size: 70
+          horizontal_position: right
+      - folder: config/metadata/overlays
+    operations:
+      split_duplicates: false
+      assets_for_all: true
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+      mass_user_rating_update: tmdb
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: mdb_tomatoesaudience
+      mass_genre_update:
+        - tmdb
+        - imdb
+        - tvdb
+      mass_content_rating_update:
+        - mdb_commonsense
+        - omdb
+      mass_studio_update:
+        - tmdb
+      mass_originally_available_update:
+        - tmdb
+        - tvdb
+        - omdb
+      mass_episode_critic_rating_update: imdb
+      mass_episode_audience_rating_update: tmdb
+      mass_imdb_parental_labels: none
+      # mass_poster_update: tmdb
+playlist_files:
+  - default: playlist
+    template_variables:
+      libraries: Movies, TV Shows
+
+settings:
+  run_order:
+    - operations
+    - metadata
+    - collections
+    - overlays
+  cache: true
+  cache_expiration: 60
+  asset_directory:
+    - config/assets
+  asset_folders: true
+  asset_depth: 1
+  create_asset_folders: true
+  prioritize_assets: true
+  dimensional_asset_rename: false
+  download_url_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: false
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order: release
+  delete_below_minimum: true
+  delete_not_scheduled: true
+  run_again_delay: 15
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_unfiltered: false
+  show_options: false
+  show_missing: false
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users: all
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  overlay_artwork_filetype: webp_lossy
+  overlay_artwork_quality: 90
+webhooks:
+  error: gotify
+  version: gotify
+  run_start: gotify
+  run_end: gotify
+  changes: gotify
+gotify:
+  url: ${GOTIFY_URL}
+  token: ${GOTIFY_TOKEN}
+plex:
+  url: ${PLEX_URL}
+  token: ${PLEX_TOKEN}
+  timeout: 60
+  db_cache: 2048
+  clean_bundles: true
+  empty_trash: true
+  optimize: true
+  verify_ssl: true
+tmdb:
+  apikey: ${TMDB_APIKEY}
+  language: en
+  cache_expiration: 60
+  region: ca
+omdb:
+  apikey: ${OMDB_APIKEY}
+  cache_expiration: 60
+mdblist:
+  apikey: ${MDBLIST_APIKEY}
+  cache_expiration: 60
+tautulli:
+  url: ${TAUTULLI_URL}
+  apikey: ${TAUTULLI_APIKEY}
+radarr:
+  url: ${RADARR_URL}
+  token: ${RADARR_TOKEN}
+  add_missing: false
+  add_existing: false
+  upgrade_existing: false
+  monitor_existing: false
+  root_folder_path:
+  monitor: true
+  availability: announced
+  quality_profile:
+  tag: kometa
+  search: false
+  radarr_path:
+  plex_path:
+  ignore_cache: false
+sonarr:
+  url: ${SONARR_URL}
+  token: ${SONARR_TOKEN}
+  add_missing: false
+  add_existing: false
+  upgrade_existing: false
+  monitor_existing: false
+  root_folder_path:
+  monitor: all
+  quality_profile:
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag: kometa
+  search: false
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+  ignore_cache: false
+trakt:
+  client_id: ${TRAKT_CLIENT_ID}
+  client_secret: ${TRAKT_CLIENT_SECRET}
+  pin: ${TRAKT_PIN}
+  authorization:
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:
+    scope: public
+    created_at:

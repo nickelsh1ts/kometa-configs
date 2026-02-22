@@ -1,0 +1,365 @@
+templates:
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    url_poster: <<poster>>
+    sort_title: +2_<<collection_name>>
+    sync_mode: sync
+    run_again: false
+  programming:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: +1_<<collection_name>>
+    collection_mode: show_items
+    sync_mode: sync
+    run_again: false
+
+collections:
+  A&E:
+    template:
+      {
+        name: network,
+        network: "129, 2639, 3688",
+        poster: https://theposterdb.com/api/assets/160188,
+      }
+  ABC:
+    template:
+      {
+        name: network,
+        network: "2, 75, 2791",
+        poster: https://theposterdb.com/api/assets/206662,
+      }
+  Adult Swim:
+    template:
+      {
+        name: network,
+        network: 80,
+        poster: https://theposterdb.com/api/assets/98825,
+      }
+  Apple TV+:
+    template:
+      {
+        name: network,
+        network: 2552,
+        poster: https://theposterdb.com/api/assets/168823,
+      }
+  AMC:
+    template:
+      {
+        name: network,
+        network: "174, 4661",
+        poster: https://theposterdb.com/api/assets/104445,
+      }
+  Cartoon Network:
+    template:
+      {
+        name: network,
+        network: "56, 217, 1232, 1483, 2193, 3917, 4771",
+        poster: https://theposterdb.com/api/assets/172187,
+      }
+  CBS:
+    template:
+      {
+        name: network,
+        network: "16, 2528",
+        "1709",
+        "2621",
+        poster: https://theposterdb.com/api/assets/220360,
+      }
+  Cinemax:
+    template:
+      {
+        name: network,
+        network: 359,
+        poster: https://theposterdb.com/api/assets/193488,
+      }
+  Discovery:
+    template:
+      {
+        name: network,
+        network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741",
+        poster: https://theposterdb.com/api/assets/137385,
+      }
+  Disney+:
+    template:
+      {
+        name: network,
+        network: "2739, 2919",
+        poster: https://theposterdb.com/api/assets/120939,
+      }
+  Fox:
+    template:
+      {
+        name: network,
+        network: 19,
+        poster: https://theposterdb.com/api/assets/48747,
+      }
+  Freeform:
+    template:
+      {
+        name: network,
+        network: 1267,
+        poster: https://theposterdb.com/api/assets/224779,
+      }
+  FX:
+    template:
+      {
+        name: network,
+        network: 88,
+        poster: https://theposterdb.com/api/assets/193493,
+      }
+  FXX:
+    template:
+      {
+        name: network,
+        network: 1035,
+        poster: https://theposterdb.com/api/assets/220368,
+      }
+  Max:
+    template:
+      {
+        name: network,
+        network: "49, 2593, 3186, 3308, 6783",
+        poster: https://theposterdb.com/api/assets/406470,
+      }
+  HGTV:
+    template:
+      {
+        name: network,
+        network: 210,
+        poster: https://theposterdb.com/api/assets/98967,
+      }
+  Hulu:
+    template:
+      {
+        name: network,
+        network: 453,
+        poster: https://theposterdb.com/api/assets/168826,
+      }
+  National Geographic:
+    template:
+      {
+        name: network,
+        network: "43, 799, 1756, 1825, 3355, 4293, 4476",
+        poster: https://theposterdb.com/api/assets/121026,
+      }
+  Netflix:
+    template:
+      {
+        name: network,
+        network: 213,
+        poster: https://theposterdb.com/api/assets/168827,
+      }
+  Prime Video:
+    template:
+      {
+        name: network,
+        network: 1024,
+        poster: https://theposterdb.com/api/assets/168830,
+      }
+  Showtime:
+    template:
+      {
+        name: network,
+        network: 67,
+        poster: https://theposterdb.com/api/assets/138092,
+      }
+  Starz:
+    template:
+      {
+        name: network,
+        network: "318, 758, 4906",
+        poster: https://theposterdb.com/api/assets/81775,
+      }
+  Syfy:
+    template:
+      {
+        name: network,
+        network: "77, 3701",
+        poster: https://theposterdb.com/api/assets/193549,
+      }
+  TBS:
+    template:
+      {
+        name: network,
+        network: "68, 160, 4888",
+        poster: https://theposterdb.com/api/assets/193552,
+      }
+  YouTube:
+    template:
+      {
+        name: network,
+        network: "247, 1436, 4869",
+        poster: https://theposterdb.com/api/assets/193485,
+      }
+  BBC:
+    template:
+      {
+        name: network,
+        network: "100, 1155, 375, 493, 3546, 4, 332, 3, 126, 317",
+        poster: https://theposterdb.com/api/assets/104446,
+      }
+  Bravo:
+    template:
+      {
+        name: network,
+        network: 74,
+        poster: https://theposterdb.com/api/assets/222684,
+      }
+  Comedy Central:
+    template:
+      {
+        name: network,
+        network: 47,
+        poster: https://theposterdb.com/api/assets/220372,
+      }
+  Disney Channel:
+    template:
+      {
+        name: network,
+        network: 142,
+        poster: https://theposterdb.com/api/assets/207422,
+      }
+  Disney XD:
+    template:
+      {
+        name: network,
+        network: 44,
+        poster: https://theposterdb.com/api/assets/258328,
+      }
+  Disney Junior:
+    template:
+      {
+        name: network,
+        network: 2991,
+        poster: https://theposterdb.com/api/assets/392569,
+      }
+  Hallmark:
+    template:
+      {
+        name: network,
+        network: 384,
+        poster: https://theposterdb.com/api/assets/222685,
+      }
+  Lifetime:
+    template:
+      {
+        name: network,
+        network: "34, 1072",
+        poster: https://theposterdb.com/api/assets/204452,
+      }
+  MTV:
+    template:
+      {
+        name: network,
+        network: 33,
+        poster: https://theposterdb.com/api/assets/193496,
+      }
+  NBC:
+    template:
+      {
+        name: network,
+        network: "6, 413",
+        poster: https://theposterdb.com/api/assets/220364,
+      }
+  Nickelodeon:
+    template:
+      {
+        name: network,
+        network: 13,
+        poster: https://theposterdb.com/api/assets/224781,
+      }
+  Paramount+:
+    template:
+      {
+        name: network,
+        network: "4330, 2076",
+        poster: https://theposterdb.com/api/assets/206169,
+      }
+  PBS:
+    template:
+      {
+        name: network,
+        network: "14, 122, 2354",
+        poster: https://theposterdb.com/api/assets/205858,
+      }
+  Peacock:
+    template:
+      {
+        name: network,
+        network: 3353,
+        poster: https://theposterdb.com/api/assets/168829,
+      }
+  Shudder:
+    template:
+      {
+        name: network,
+        network: 2949,
+        poster: https://theposterdb.com/api/assets/220373,
+      }
+  The CW:
+    template:
+      {
+        name: network,
+        network: 71,
+        poster: https://theposterdb.com/api/assets/224783,
+      }
+  Warner Bros.:
+    template:
+      {
+        name: network,
+        network: 21,
+        poster: https://theposterdb.com/api/assets/47604,
+      }
+  TLC:
+    template:
+      {
+        name: network,
+        network: 84,
+        poster: https://theposterdb.com/api/assets/224782,
+      }
+  ABC Kids:
+    template: { name: programming, poster: 215339 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/abc-kids
+    summary: "ABC Kids (originally titled Disney's One Saturday Morning until 2002) was a Saturday morning children's programming block that aired on ABC from September 13, 1997 to August 27, 2011. It featured a mixture of animated and live-action series from Walt Disney Television Animation and Disney Channel, aimed at children between the ages of 6 and 12. This was the only time Disney Channel content aired on over-the-air TV."
+  Cartoon Cartoons:
+    template: { name: programming, poster: 215330 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/cartoon-cartoons
+    summary: "Cartoon Cartoons is a collective name used by Cartoon Network for their original animated television series originally aired between 1995 and 2003 and produced in majority by Hanna-Barbera and/or Cartoon Network Studios. Beginning with its inception into cable broadcasting on October 1, 1992, Cartoon Network had focused its programming on reruns of older animated series which it had acquired through its parent company's film library."
+  Disney Afternoon:
+    template: { name: programming, poster: 215332 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/disney-afternoon
+    summary: "The Disney Afternoon's block had four half-hour segments, each of which contained an animated series. As each season ended, the lineup would shift - the remaining three would move up a time slot and a new show would be added to the end. The Disney Afternoon itself featured unique animated segments consisting of its opening and wrappers around the cartoon shows."
+  Disney's One Saturday Morning:
+    template: { name: programming, poster: 215334 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/disney-s-one-saturday-morning
+    summary: "Commercial Free Weekend Mornings (formerly called Toonin' Saturdays from 2011 to 2012, Disney Channel Saturday Mornings from 2012 to 2014, Get Animated from 2017 to 2018, and Animation Cram Session from 2018 to 2019) is a weekend program block on the Disney Channel in the United States, consisting of Saturday morning cartoons."
+  Disney's One Too:
+    template: { name: programming, poster: 215337 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/disney-s-one-too
+    summary: "Disney's One Too (later known as Disney's Animation Weekdays) was a two-hour Sunday-to-Friday children's programming block that aired on UPN from September 6, 1999 to August 31, 2003. A spin-off of the Disney's One Saturday Morning block on ABC (which is owned by The Walt Disney Company), it featured animated series from Disney Television Animation aimed at children between the ages of 6 and 11."
+  Fox Kids:
+    template: { name: programming, poster: 215340 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/fox-kids
+    summary:
+  SNICK:
+    template: { name: programming, poster: 215347 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/snick
+    summary: "SNICK (short for Saturday Night Nickelodeon) was a two-hour programming block on the American cable television network Nickelodeon, geared toward older (preteen to teen) audiences, that ran from August 15, 1992 until January 29, 2005. It was aired on Saturdays starting at 8 p.m and ending at 10 p.m. ET. In 2005, SNICK was revamped as the Saturday night edition of TEENick. Nickelodeon continues to run a Saturday night programming block today, though since the TEENick name was removed from the lineup in February 2009, the block no longer goes by any name."
+  UPN Kids:
+    template: { name: programming, poster: 215344 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/upn-kids
+    summary: "UPN Kids launched on September 10, 1995 with a one-hour block of cartoons consisting of Space Strikers and Teknoman. It was a joint partnership between UPN and Saban Entertainment.[1] Unlike NBC, ABC, CBS, Fox and The WB (the latter of which debuted its own children's program block, Kids' WB, the day before UPN Kids made its debut), UPN ran its weekend morning children's programs on Sundays instead of Saturdays."
+  Kids' WB:
+    template: { name: programming, poster: 139968 }
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/kids-wb
+    summary:

@@ -1,0 +1,217 @@
+templates:
+  Studio:
+    plex_search:
+      studio: <<studio>>
+    url_poster: <<poster>>
+    sort_title: +04_10_<<collection_name>>
+    collection_order: alpha
+    run_again: false
+  MarvelCU:
+    sort_title: +05_01_<<collection_name>>
+    sync_mode: sync
+    collection_mode: hide
+    run_again: false
+  tmdb:
+    optional:
+      - collections
+      - lists
+      - movies
+      - tmdb_summary
+      - summary
+    tmdb_collection: <<collections>>
+    tmdb_list: <<lists>>
+    tmdb_movie: <<movies>>
+    tmdb_summary: <<tmdb_summary>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    sort_title: +05_05_<<collection_name>>
+    collection_order: release
+    collection_mode: show_items
+    run_again: false
+
+collections:
+  #####################################
+  #         Disney Collections        #
+  #####################################
+  Walt Disney Animation:
+    template:
+      {
+        name: tmdb,
+        lists: "7103808, 7103807",
+        summary: "A collection of Disney Animation movies.",
+        poster: https://theposterdb.com/api/assets/57891,
+      }
+    summary: Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is one of the oldest-running animation studios in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California.
+  Walt Disney Pictures:
+    template:
+      {
+        name: Studio,
+        studio: "Walt Disney Pictures",
+        poster: https://theposterdb.com/api/assets/48748,
+      }
+    summary: Walt Disney Pictures is an American film production studio of The Walt Disney Studios, which is owned by The Walt Disney Company. The studio is the flagship producer of live-action feature films within the Walt Disney Studios unit, and is based at the Walt Disney Studios in Burbank, California. Animated films produced by Walt Disney Animation Studios and Pixar Animation Studios are also released under this brand. Walt Disney Studios Motion Pictures distributes and markets the films produced by Walt Disney Pictures.
+  Pixar:
+    template:
+      {
+        name: Studio,
+        studio: Pixar,
+        poster: https://theposterdb.com/api/assets/2190,
+      }
+    summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
+
+  #####################################
+  #        Studio Collections         #
+  #####################################
+  Happy Madison Productions:
+    template:
+      {
+        name: StudioMD,
+        company: 878,
+        poster: https://theposterdb.com/api/assets/102233,
+      }
+  Sony Pictures Animation:
+    template:
+      {
+        name: Studio,
+        studio: "Sony Pictures, Sony Pictures Television",
+        poster: https://theposterdb.com/api/assets/227014,
+      }
+    summary: Sony Pictures Animation Inc. is an American animation studio owned by Sony Entertainment's Sony Pictures Entertainment through their Motion Picture Group division and founded on May 9, 2002. The studio's films are distributed worldwide by Sony Pictures Releasing under their Columbia Pictures label, while all direct-to-video releases are released by Sony Pictures Home Entertainment.
+  DreamWorks:
+    template:
+      {
+        name: Studio,
+        studio: "DreamWorks Animation, DreamWorks Pictures",
+        poster: https://theposterdb.com/api/assets/164292,
+      }
+    summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
+  Illumination:
+    template:
+      {
+        name: Studio,
+        studio: "Illumination",
+        poster: https://theposterdb.com/api/assets/202678,
+      }
+    summary: Illumination is an American film and animation studio founded by Chris Meledandri in 2007 and owned by Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. Meledandri produces the films, while Universal finances and distributes all the films. The studio is responsible for the Despicable Me and The Secret Life of Pets franchises and the film adaptations of Dr. Seuss’ books The Lorax and How the Grinch Stole Christmas. The Minions, characters from the Despicable Me series, are the studio's mascots.
+  New Line Cinema:
+    template:
+      {
+        name: StudioMD,
+        company: 12,
+        poster: https://theposterdb.com/api/assets/197099,
+      }
+    summary: New Line Cinema is an American film production studio and label of the Warner Bros. Pictures Group, the film division of Warner Bros.. It was founded in 1967 by Robert Shaye as an independent film distribution company; later becoming a film studio. It was acquired by Turner Broadcasting System in 1994; Turner later merged with Time Warner (WarnerMedia from 2018 to 2022, and Warner Bros. Discovery since 2022) in 1996, and New Line was merged with Warner Bros. Pictures in 2008.
+  Paramount:
+    template:
+      {
+        name: StudioMD,
+        company: "4, 9223, 24955, 6548",
+        poster: https://theposterdb.com/api/assets/197109,
+      }
+    summary: Paramount Pictures Corporation is an American film and television production and distribution company and the main namesake subsidiary of Paramount Global (formerly ViacomCBS). It is the fifth oldest film studio in the world, the second oldest film studio in the United States (behind Universal Pictures), and the sole member of the "Big Five" film studios still located in the city limits of Los Angeles. In 1916, film producer Adolph Zukor put 24 actors and actresses under contract and honored each with a star on the logo. In 1967, the number of stars was reduced to 22 and their hidden meaning was dropped. In 2014, Paramount Pictures became the first major Hollywood studio to distribute all of its films in digital form only. The company's headquarters and studios are located at 5555 Melrose Avenue, Hollywood, California.
+  Sony Pictures:
+    template:
+      {
+        name: StudioMD,
+        company: "34, 3045, 11073, 5388",
+        poster: https://theposterdb.com/api/assets/49078,
+      }
+    summary: Sony Pictures Entertainment Inc. (commonly known as Sony Pictures or SPE, and formerly known as Columbia Pictures Entertainment, Inc.) is an American diversified multinational mass media and entertainment studio conglomerate that produces, acquires, and distributes filmed entertainment (theatrical motion pictures, television programs, and recorded videos) through multiple platforms.
+  Touchstone Pictures:
+    template:
+      {
+        name: StudioMD,
+        company: 9195,
+        poster: https://theposterdb.com/api/assets/197598,
+      }
+    summary: Touchstone Pictures was an American film distribution label of Walt Disney Studios Motion Pictures, created and owned by The Walt Disney Company. Feature films released under the Touchstone label were produced and financed by The Walt Disney Studios, and featured more mature themes targeted towards adult audiences than typical Disney releases. As such, Touchstone was merely a brand of the studio and did not exist as a distinct business operation.
+  Universal Pictures:
+    template:
+      {
+        name: StudioMD,
+        company: 33,
+        poster: https://theposterdb.com/api/assets/48743,
+      }
+    summary: Founded in 1912 by Carl Laemmle, Mark Dintenfass, Charles O. Baumann, Adam Kessel, Pat Powers, William Swanson, David Horsley, Robert H. Cochrane, and Jules Brulatour, Universal is the oldest surviving film studio in the United States; the world's fifth oldest after Gaumont, Pathé, Titanus, and Nordisk Film; and the oldest member of Hollywood's "Big Five" studios in terms of the overall film market. Its studios are located in Universal City, California, and its corporate offices are located in New York City. In 1962, the studio was acquired by MCA, which was re-launched as NBCUniversal in 2004
+  Warner Bros. Pictures:
+    template:
+      {
+        name: StudioMD,
+        company: 174,
+        poster: https://theposterdb.com/api/assets/285479,
+      }
+    summary: Warner Bros. Pictures is an American film production company of the Warner Bros. Pictures Group division of Warner Bros. (both ultimately owned by Warner Bros. Discovery). The studio is the flagship producer of live-action feature films within the Warner Bros. Pictures Group unit, and is based at the Warner Bros. Studios complex in Burbank, California. Animated films produced the Warner Animation Group are also released under the studio banner.
+  A24:
+    trakt_list: https://trakt.tv/users/fidel-cb/lists/a24-movies-and-tv-shows?sort=released,asc
+    summary: Movies produced by A24. Usually indicative of quality content.
+    sort_title: "+04_10_A24"
+    url_poster: https://theposterdb.com/api/assets/234004
+    collection_order: release
+    collection_mode: default
+  Studio Ghibli:
+    trakt_list: https://trakt.tv/users/asterlea/lists/studio-ghibli?sort=released,asc
+    summary: Studio Ghibli, Inc. is a Japanese animation studio based in Koganei, Tokyo. It has a strong presence in the animation industry and has expanded its portfolio to include various media formats, such as short subjects, television commercials, and two television films.
+    sort_title: "+04_10_Studio Ghibli"
+    url_poster: https://theposterdb.com/api/assets/234005
+    collection_order: release
+    collection_mode: default
+
+  #####################################
+  #         Marvel Collections        #
+  #####################################
+  Marvel Cinematic Universe Phase 1:
+    template: { name: MarvelCU }
+    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-1/
+    url_poster: https://theposterdb.com/api/assets/324669
+    collection_order: release
+    sync_mode: sync
+    collection_mode: show_items
+    summary: All movies from the Marvel Cinematic Universe Phase 1.
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
+  Marvel Cinematic Universe Phase 2:
+    template: { name: MarvelCU }
+    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-2/
+    url_poster: https://theposterdb.com/api/assets/324670
+    collection_order: release
+    sync_mode: sync
+    collection_mode: show_items
+    summary: All movies from the Marvel Cinematic Universe Phase 2.
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
+  Marvel Cinematic Universe Phase 3:
+    template: { name: MarvelCU }
+    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-3/
+    url_poster: https://theposterdb.com/api/assets/324673
+    collection_order: release
+    sync_mode: sync
+    collection_mode: show_items
+    summary: All movies from the Marvel Cinematic Universe Phase 3.
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
+  Marvel Cinematic Universe Phase 4:
+    template: { name: MarvelCU }
+    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-4/
+    url_poster: https://theposterdb.com/api/assets/324674
+    collection_order: release
+    sync_mode: sync
+    collection_mode: show_items
+    summary: All movies from the Marvel Cinematic Universe Phase 4.
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
+  Marvel Cinematic Universe Phase 5:
+    template: { name: MarvelCU }
+    letterboxd_list: https://letterboxd.com/catherine_gal/list/marvel-cinematic-universe-phase-5/
+    url_poster: https://theposterdb.com/api/assets/324675
+    collection_order: release
+    sync_mode: sync
+    collection_mode: show_items
+    summary: All movies from the Marvel Cinematic Universe Phase 5.
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true

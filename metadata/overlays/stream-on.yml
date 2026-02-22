@@ -1,0 +1,93 @@
+queues:
+  queues:
+    stream:
+      - horizontal_offset: 15
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+      - horizontal_offset: 130
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+      - horizontal_offset: 245
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+      - horizontal_offset: 360
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+      - horizontal_offset: 475
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+      - horizontal_offset: 590
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+      - horizontal_offset: 705
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+      - horizontal_offset: 820
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+      - horizontal_offset: 935
+        horizontal_align: center
+        vertical_offset: 10
+        vertical_align: bottom
+templates:
+  Streaming:
+    optional:
+      - use_<<slug>>
+    default:
+      queue: stream
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+      weight_<<key>>: <<weight>>
+      style: Round
+    ignore_blank_results: true
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/<<type>>-<<library_type>>s/
+    overlay:
+      name: <<overlay_name>>
+      queue: stream
+      style: <<style>>
+      weight: <<weight_<<key>>>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      file: metadata/overlays/media/networks/<<overlay_name>>-<<style>>.png
+
+overlays:
+  STREAMBLANK:
+    overlay:
+      name: STREAMBLANK
+      horizontal_offset: 0
+      horizontal_align: left
+      vertical_offset: 0
+      vertical_align: bottom
+      file: metadata/overlays/media/networks/STREAMBLANK.png
+  Netflix:
+    template: { name: Streaming, weight: 900, slug: netflix, type: netflix }
+  Prime:
+    template: { name: Streaming, weight: 800, slug: prime, type: amazon }
+  Hulu:
+    template: { name: Streaming, weight: 700, slug: hulu, type: hulu }
+  Paramount:
+    template: { name: Streaming, weight: 600, slug: paramount, type: paramount }
+  Peacock:
+    template: { name: Streaming, weight: 500, slug: peacock, type: peacock }
+  DiscoveryPlus:
+    template: { name: Streaming, weight: 400, slug: discovery, type: discovery }
+  Disney:
+    template: { name: Streaming, weight: 300, slug: disney, type: disney }
+  Max:
+    template: { name: Streaming, weight: 200, slug: max, type: max }
+  AppleTVPlus:
+    template: { name: Streaming, weight: 100, slug: apple, type: appletv }
