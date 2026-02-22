@@ -8,7 +8,7 @@ logs/*
 overlays/*
 !overlays/networks/*
 !overlays/.gitkeep
-*.cache
+*.cache*
 *.swp
 *temp*
 *.tmp
