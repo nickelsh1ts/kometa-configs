@@ -5,8 +5,8 @@
 libraries:
   Movies:
     report_path: config/reports/movies.yml
-    remove_overlays: ${REMOVE_OVERLAYS_MOVIES || false}
-    reapply_overlays: ${REAPPLY_OVERLAYS_MOVIES || false}
+    remove_overlays: <<KOMETA_REMOVE_OVERLAYS_MOVIES>>
+    reapply_overlays: <<KOMETA_REAPPLY_OVERLAYS_MOVIES>>
     # reset_overlays: tmdb
     settings:
       save_report: true
@@ -178,8 +178,8 @@ libraries:
 
   TV Shows:
     report_path: config/reports/shows.yml
-    remove_overlays: ${REMOVE_OVERLAYS_SHOWS || false}
-    reapply_overlays: ${REAPPLY_OVERLAYS_SHOWS || false}
+    remove_overlays: <<KOMETA_REMOVE_OVERLAYS_SHOWS>>
+    reapply_overlays: <<KOMETA_REAPPLY_OVERLAYS_SHOWS>>
     # reset_overlays: tmdb
     settings:
       save_report: true
@@ -288,8 +288,6 @@ settings:
     - overlays
   cache: true
   cache_expiration: 60
-  asset_directory:
-    - config/assets
   asset_folders: true
   asset_depth: 1
   create_asset_folders: true
@@ -333,11 +331,11 @@ webhooks:
   run_end: gotify
   changes: gotify
 gotify:
-  url: ${GOTIFY_URL}
-  token: ${GOTIFY_TOKEN}
+  url: <<KOMETA_GOTIFY_URL>>
+  token: <<KOMETA_GOTIFY_TOKEN>>
 plex:
-  url: ${PLEX_URL}
-  token: ${PLEX_TOKEN}
+  url: <<KOMETA_PLEX_URL>>
+  token: <<KOMETA_PLEX_TOKEN>>
   timeout: 60
   db_cache: 2048
   clean_bundles: true
@@ -345,22 +343,22 @@ plex:
   optimize: true
   verify_ssl: true
 tmdb:
-  apikey: ${TMDB_APIKEY}
+  apikey: <<KOMETA_TMDB_APIKEY>>
   language: en
   cache_expiration: 60
-  region: ca
+  region: CA
 omdb:
-  apikey: ${OMDB_APIKEY}
+  apikey: <<KOMETA_OMDB_APIKEY>>
   cache_expiration: 60
 mdblist:
-  apikey: ${MDBLIST_APIKEY}
+  apikey: <<KOMETA_MDBLIST_APIKEY>>
   cache_expiration: 60
 tautulli:
-  url: ${TAUTULLI_URL}
-  apikey: ${TAUTULLI_APIKEY}
+  url: <<KOMETA_TAUTULLI_URL>>
+  apikey: <<KOMETA_TAUTULLI_APIKEY>>
 radarr:
-  url: ${RADARR_URL}
-  token: ${RADARR_TOKEN}
+  url: <<KOMETA_RADARR_URL>>
+  token: <<KOMETA_RADARR_TOKEN>>
   add_missing: false
   add_existing: false
   upgrade_existing: false
@@ -375,8 +373,8 @@ radarr:
   plex_path:
   ignore_cache: false
 sonarr:
-  url: ${SONARR_URL}
-  token: ${SONARR_TOKEN}
+  url: <<KOMETA_SONARR_URL>>
+  token: <<KOMETA_SONARR_TOKEN>>
   add_missing: false
   add_existing: false
   upgrade_existing: false
@@ -394,9 +392,9 @@ sonarr:
   plex_path:
   ignore_cache: false
 trakt:
-  client_id: ${TRAKT_CLIENT_ID}
-  client_secret: ${TRAKT_CLIENT_SECRET}
-  pin: ${TRAKT_PIN}
+  client_id: <<KOMETA_TRAKT_CLIENT_ID>>
+  client_secret: <<KOMETA_TRAKT_CLIENT_SECRET>>
+  pin: <<KOMETA_TRAKT_PIN>>
   authorization:
     access_token:
     token_type:
