@@ -99,11 +99,11 @@ libraries:
           use_popular: false
           collection_section: "01"
           sync_mode_watched: sync
-      - file: config/metadata/movies.yml
-      - file: config/metadata/genres.yml
-      - file: config/metadata/studios.yml
-      - file: config/metadata/suggestions.yml
-      - file: config/metadata/refresh.yml
+      - file: metadata/movies.yml
+      - file: metadata/genres.yml
+      - file: metadata/studios.yml
+      - file: metadata/suggestions.yml
+      - file: metadata/refresh.yml
         template_variables:
           library_type: movie
           search_field: release
@@ -226,9 +226,9 @@ libraries:
           use_recommended: false
           use_watched: false
           collection_section: "02"
-      - file: config/metadata/networks.yml
-      - file: config/metadata/suggestions_shows.yml
-      - file: config/metadata/refresh.yml
+      - file: metadata/networks.yml
+      - file: metadata/suggestions_shows.yml
+      - file: metadata/refresh.yml
         template_variables:
           library_type: show
           search_field: episode_air_date
@@ -363,10 +363,10 @@ radarr:
   add_existing: false
   upgrade_existing: false
   monitor_existing: false
-  root_folder_path:
+  root_folder_path: <<RADARRROOTFOLDERPATH>>
   monitor: true
   availability: announced
-  quality_profile:
+  quality_profile: <<RADARRQUALITYPROFILE>>
   tag: kometa
   search: false
   radarr_path:
@@ -379,9 +379,9 @@ sonarr:
   add_existing: false
   upgrade_existing: false
   monitor_existing: false
-  root_folder_path:
+  root_folder_path: <<SONARRROOTFOLDERPATH>>
   monitor: all
-  quality_profile:
+  quality_profile: <<SONARRQUALITYPROFILE>>
   language_profile: English
   series_type: standard
   season_folder: true
