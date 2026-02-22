@@ -12,151 +12,149 @@ libraries:
       save_report: true
       minimum_items: 2
       asset_directory:
-        - assets/movies
+      - assets/movies
       prioritize_assets: true
     template_variables:
       use_separator: false
     collection_files:
-      - default: seasonal
-        template_variables:
-          emoji_christmas: "🎄"
-          schedule_christmas: range(11/01-12/31)
-          url_poster_christmas: https://theposterdb.com/api/assets/69443
-          trakt_list_christmas:
-            - https://trakt.tv/users/nickelshits/lists/christmas-favourites?sort=released,asc
-          emoji_halloween: "🎃"
-          schedule_halloween: range(09/01-10/31)
-          url_poster_halloween: https://theposterdb.com/api/assets/111218
-          emoji_years: "🎆"
-          schedule_years: range(12/26-01/05)
-          emoji_valentine: "💘"
-          schedule_valentine: range(02/01-02/14)
-          emoji_patrick: "🍀"
-          schedule_patrick: range(03/01-03/17)
-          emoji_thanksgiving: "🦃"
-          schedule_thanksgiving: range(10/01-10/15)
-          url_poster_thanksgiving: https://theposterdb.com/api/assets/112251
-          emoji_easter: "🐣"
-          schedule_easter: range(03/22-04/25)
-          url_poster_easter: https://theposterdb.com/api/assets/60970
-          url_poster_black_history: https://theposterdb.com/api/assets/686790
-          name_black_history: "Black History Month"
-          collection_section: "03"
-          visible_shared: true
-          visible_home: true
-          visible_library: true
-          sync_mode: sync
-          run_again: true
-          delete_not_scheduled: true
-          exclude:
-            - separator
-            - aapi
-            - disabilities
-            - independence
-            - memorial
-            - veteran
-      - default: imdb
-        template_variables:
-          url_poster_top: https://theposterdb.com/api/assets/294454
-          summary_top: "Collection of Top 250 Movies which are currently available on NickflixTV"
-          collection_section: "01"
-          sync_mode_top: sync
-          use_lowest: false
-          use_popular: false
-      - default: oscars
-        template_variables:
-          url_poster_best_picture: https://theposterdb.com/api/assets/10047
-          sync_mode_oscars: sync
-          collection_section: "02"
-          use_best_director: false
-          use_year_collections: false
-      - default: streaming
-        template_variables:
-          url_poster_appletv: https://theposterdb.com/api/assets/198950
-          name_appletv: "Apple TV+ Movies"
-          collection_section: "04"
-          region: ca
-          exclude:
-            - separator
-            - now
-            - movistar
-            - itvx
-            - filmin
-            - atresplayer
-      - default: universe
-        template_variables:
-          url_poster_marvel: https://theposterdb.com/api/assets/203027
-          url_poster_mcu: https://theposterdb.com/api/assets/162885
-          url_poster_dcu: https://theposterdb.com/api/assets/171350
-          url_poster_wizard: https://theposterdb.com/api/assets/166278
-          url_poster_conjuring: https://theposterdb.com/api/assets/5437
-          url_poster_star: https://theposterdb.com/api/assets/70805
-          url_poster_trek: https://theposterdb.com/api/assets/48818
-          url_poster_fast: https://theposterdb.com/api/assets/10036
-          url_poster_middle: https://theposterdb.com/api/assets/1716
-          url_poster_avp: https://theposterdb.com/api/assets/43455
-          url_poster_rocky: https://theposterdb.com/api/assets/5907
-          url_poster_xmen: https://theposterdb.com/api/assets/32304
-          collection_section: "06"
-      - default: tautulli
-        template_variables:
-          url_poster_watched: https://theposterdb.com/api/assets/345270
-          name_watched: "Trending on NickflixTV"
-          list_days: 30
-          list_size: 10
-          use_popular: false
-          collection_section: "01"
-          sync_mode_watched: sync
-      - file: /config/metadata/movies.yml
-      - file: /config/metadata/genres.yml
-      - file: /config/metadata/studios.yml
-      - file: /config/metadata/suggestions.yml
-      - file: /config/metadata/refresh.yml
-        template_variables:
-          library_type: movie
-          search_field: release
-          days_number: 7
+    - default: seasonal
+      template_variables:
+        emoji_christmas: "🎄"
+        schedule_christmas: range(11/01-12/31)
+        url_poster_christmas: https://theposterdb.com/api/assets/69443
+        trakt_list_christmas:
+        - https://trakt.tv/users/nickelshits/lists/christmas-favourites?sort=released,asc
+        emoji_halloween: "🎃"
+        schedule_halloween: range(09/01-10/31)
+        url_poster_halloween: https://theposterdb.com/api/assets/111218
+        emoji_years: "🎆"
+        schedule_years: range(12/26-01/05)
+        emoji_valentine: "💘"
+        schedule_valentine: range(02/01-02/14)
+        emoji_patrick: "🍀"
+        schedule_patrick: range(03/01-03/17)
+        emoji_thanksgiving: "🦃"
+        schedule_thanksgiving: range(10/01-10/15)
+        url_poster_thanksgiving: https://theposterdb.com/api/assets/112251
+        emoji_easter: "🐣"
+        schedule_easter: range(03/22-04/25)
+        url_poster_easter: https://theposterdb.com/api/assets/60970
+        url_poster_black_history: https://theposterdb.com/api/assets/686790
+        name_black_history: "Black History Month"
+        collection_section: "03"
+        visible_shared: true
+        visible_home: true
+        visible_library: true
+        sync_mode: sync
+        run_again: true
+        delete_not_scheduled: true
+        exclude:
+        - aapi
+        - disabilities
+        - independence
+        - memorial
+        - veteran
+    - default: imdb
+      template_variables:
+        url_poster_top: https://theposterdb.com/api/assets/294454
+        summary_top: "Collection of Top 250 Movies which are currently available on NickflixTV"
+        collection_section: "01"
+        sync_mode_top: sync
+        use_lowest: false
+        use_popular: false
+    - default: oscars
+      template_variables:
+        url_poster_best_picture: https://theposterdb.com/api/assets/10047
+        sync_mode_oscars: sync
+        collection_section: "02"
+        use_best_director: false
+        use_year_collections: false
+    - default: streaming
+      template_variables:
+        url_poster_appletv: https://theposterdb.com/api/assets/198950
+        name_appletv: "Apple TV+ Movies"
+        collection_section: "04"
+        region: ca
+        exclude:
+        - now
+        - movistar
+        - itvx
+        - filmin
+        - atresplayer
+    - default: universe
+      template_variables:
+        url_poster_marvel: https://theposterdb.com/api/assets/203027
+        url_poster_mcu: https://theposterdb.com/api/assets/162885
+        url_poster_dcu: https://theposterdb.com/api/assets/171350
+        url_poster_wizard: https://theposterdb.com/api/assets/166278
+        url_poster_conjuring: https://theposterdb.com/api/assets/5437
+        url_poster_star: https://theposterdb.com/api/assets/70805
+        url_poster_trek: https://theposterdb.com/api/assets/48818
+        url_poster_fast: https://theposterdb.com/api/assets/10036
+        url_poster_middle: https://theposterdb.com/api/assets/1716
+        url_poster_avp: https://theposterdb.com/api/assets/43455
+        url_poster_rocky: https://theposterdb.com/api/assets/5907
+        url_poster_xmen: https://theposterdb.com/api/assets/32304
+        collection_section: "06"
+    - default: tautulli
+      template_variables:
+        url_poster_watched: https://theposterdb.com/api/assets/345270
+        name_watched: "Trending on NickflixTV"
+        list_days: 30
+        list_size: 10
+        use_popular: false
+        collection_section: "01"
+        sync_mode_watched: sync
+    - file: /config/metadata/movies.yml
+    - file: /config/metadata/genres.yml
+    - file: /config/metadata/studios.yml
+    - file: /config/metadata/suggestions.yml
+    - file: /config/metadata/refresh.yml
+      template_variables:
+        library_type: movie
+        search_field: release
+        days_number: 7
     overlay_files:
-      - default: studio
-        template_variables:
-          horizontal_align: center
-          vertical_align: top
-      - default: video_format
-        template_variables:
-          vertical_offset: 10%
-          vertical_align: bottom
-      - default: resolution
-        template_variables:
-          use_edition: false
-      - default: ribbon
-        template_variables:
-          style: yellow
-          use_oscars_director: false
-          use_golden_director: false
-          use_cannes: false
-          use_venice: false
-          use_berlinale: false
-          use_sundance: false
-          use_spirit: false
-          use_cesar: false
-          use_letterboxd: false
-          use_rottenverified: false
-          use_metacritic: false
-          use_common: false
-          use_razzie: false
-      - default: ratings
-        template_variables:
-          rating1: critic
-          rating1_image: imdb
-          rating1_font_size: 63
-          rating2: audience
-          rating2_image: rt_popcorn
-          rating2_font_size: 70
-          rating3: user
-          rating3_image: tmdb
-          rating3_font_size: 70
-          horizontal_position: right
-      - folder: metadata/overlays
+    - default: studio
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
+    - default: video_format
+      template_variables:
+        vertical_offset: 10%
+        vertical_align: bottom
+    - default: resolution
+      template_variables:
+        use_edition: false
+    - default: ribbon
+      template_variables:
+        style: yellow
+        use_oscars_director: false
+        use_golden_director: false
+        use_cannes: false
+        use_venice: false
+        use_berlinale: false
+        use_sundance: false
+        use_spirit: false
+        use_cesar: false
+        use_letterboxd: false
+        use_rottenverified: false
+        use_metacritic: false
+        use_common: false
+        use_razzie: false
+    - default: ratings
+      template_variables:
+        rating1: critic
+        rating1_image: imdb
+        rating1_font_size: 63
+        rating2: audience
+        rating2_image: rt_popcorn
+        rating2_font_size: 70
+        rating3: user
+        rating3_image: tmdb
+        rating3_font_size: 70
+        horizontal_position: right
+    - folder: metadata/overlays
     operations:
       split_duplicates: false
       assets_for_all: true
@@ -168,18 +166,18 @@ libraries:
         managed: true
         less: 1
       mass_genre_update:
-        - tmdb
-        - imdb
-        - tvdb
+      - tmdb
+      - imdb
+      - tvdb
       mass_content_rating_update:
-        - mdb_commonsense
-        - omdb
+      - mdb_commonsense
+      - omdb
       mass_studio_update:
-        - tmdb
+      - tmdb
       mass_originally_available_update:
-        - tmdb
-        - tvdb
-        - omdb
+      - tmdb
+      - tvdb
+      - omdb
       mass_imdb_parental_labels: none
       # mass_poster_update: tmdb
 
@@ -192,100 +190,99 @@ libraries:
       save_report: true
       minimum_items: 1
       asset_directory:
-        - assets/shows
+      - assets/shows
       prioritize_assets: true
     template_variables:
       use_separator: false
     collection_files:
-      - default: imdb
-        template_variables:
-          url_poster_top: https://theposterdb.com/api/assets/294454
-          summary_top: "Collection of Top 250 Movies which are currently available on NickflixTV"
-          collection_section: "01"
-          sync_mode_top: sync
-          use_lowest: false
-          use_popular: false
-      - default: streaming
-        template_variables:
-          url_poster_appletv: https://theposterdb.com/api/assets/198950
-          name_appletv: "Apple TV+ Shows"
-          collection_section: "04"
-          region: ca
-          exclude:
-            - separator
-            - now
-            - movistar
-            - itvx
-            - filmin
-            - atresplayer
-      - default: tautulli
-        template_variables:
-          url_poster_watched: https://theposterdb.com/api/assets/345270
-          list_days: 30
-          list_size: 10
-          use_popular: false
-          collection_section: "01"
-          sync_mode_watched: sync
-      - default: trakt
-        template_variables:
-          url_poster_trending: https://theposterdb.com/api/assets/396719
-          limit: 50
-          sync_mode: sync
-          use_collected: false
-          use_popular: false
-          use_recommended: false
-          use_watched: false
-          collection_section: "02"
-      - file: /config/metadata/networks.yml
-      - file: /config/metadata/suggestions_shows.yml
-      - file: /config/metadata/refresh.yml
-        template_variables:
-          library_type: show
-          search_field: episode_air_date
-          days_number: 7
+    - default: imdb
+      template_variables:
+        url_poster_top: https://theposterdb.com/api/assets/294454
+        summary_top: "Collection of Top 250 Movies which are currently available on NickflixTV"
+        collection_section: "01"
+        sync_mode_top: sync
+        use_lowest: false
+        use_popular: false
+    - default: streaming
+      template_variables:
+        url_poster_appletv: https://theposterdb.com/api/assets/198950
+        name_appletv: "Apple TV+ Shows"
+        collection_section: "04"
+        region: ca
+        exclude:
+        - now
+        - movistar
+        - itvx
+        - filmin
+        - atresplayer
+    - default: tautulli
+      template_variables:
+        url_poster_watched: https://theposterdb.com/api/assets/345270
+        list_days: 30
+        list_size: 10
+        use_popular: false
+        collection_section: "01"
+        sync_mode_watched: sync
+    - default: trakt
+      template_variables:
+        url_poster_trending: https://theposterdb.com/api/assets/396719
+        limit: 50
+        sync_mode: sync
+        use_collected: false
+        use_popular: false
+        use_recommended: false
+        use_watched: false
+        collection_section: "02"
+    - file: /config/metadata/networks.yml
+    - file: /config/metadata/suggestions_shows.yml
+    - file: /config/metadata/refresh.yml
+      template_variables:
+        library_type: show
+        search_field: episode_air_date
+        days_number: 7
     overlay_files:
-      - default: studio
-        template_variables:
-          horizontal_align: center
-          vertical_align: top
-      - default: resolution
-        template_variables:
-          use_edition: false
-      - default: resolution
-        template_variables:
-          builder_level: episode
-      - default: resolution
-        template_variables:
-          builder_level: season
-      - default: ribbon
-        template_variables:
-          style: yellow
-          use_oscars_director: false
-          use_golden_director: false
-          use_cannes: false
-          use_venice: false
-          use_berlinale: false
-          use_sundance: false
-          use_spirit: false
-          use_cesar: false
-          use_letterboxd: false
-          use_rottenverified: false
-          use_metacritic: false
-          use_common: false
-          use_razzie: false
-      - default: ratings
-        template_variables:
-          rating1: critic
-          rating1_image: imdb
-          rating1_font_size: 63
-          rating2: audience
-          rating2_image: rt_popcorn
-          rating2_font_size: 70
-          rating3: user
-          rating3_image: tmdb
-          rating3_font_size: 70
-          horizontal_position: right
-      - folder: metadata/overlays
+    - default: studio
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
+    - default: resolution
+      template_variables:
+        use_edition: false
+    - default: resolution
+      template_variables:
+        builder_level: episode
+    - default: resolution
+      template_variables:
+        builder_level: season
+    - default: ribbon
+      template_variables:
+        style: yellow
+        use_oscars_director: false
+        use_golden_director: false
+        use_cannes: false
+        use_venice: false
+        use_berlinale: false
+        use_sundance: false
+        use_spirit: false
+        use_cesar: false
+        use_letterboxd: false
+        use_rottenverified: false
+        use_metacritic: false
+        use_common: false
+        use_razzie: false
+    - default: ratings
+      template_variables:
+        rating1: critic
+        rating1_image: imdb
+        rating1_font_size: 63
+        rating2: audience
+        rating2_image: rt_popcorn
+        rating2_font_size: 70
+        rating3: user
+        rating3_image: tmdb
+        rating3_font_size: 70
+        horizontal_position: right
+    - folder: metadata/overlays
     operations:
       split_duplicates: false
       assets_for_all: true
@@ -297,33 +294,33 @@ libraries:
       mass_critic_rating_update: imdb
       mass_audience_rating_update: mdb_tomatoesaudience
       mass_genre_update:
-        - tmdb
-        - imdb
-        - tvdb
+      - tmdb
+      - imdb
+      - tvdb
       mass_content_rating_update:
-        - mdb_commonsense
-        - omdb
+      - mdb_commonsense
+      - omdb
       mass_studio_update:
-        - tmdb
+      - tmdb
       mass_originally_available_update:
-        - tmdb
-        - tvdb
-        - omdb
+      - tmdb
+      - tvdb
+      - omdb
       mass_episode_critic_rating_update: imdb
       mass_episode_audience_rating_update: tmdb
       mass_imdb_parental_labels: none
       # mass_poster_update: tmdb
 playlist_files:
-  - default: playlist
-    template_variables:
-      libraries: Movies, TV Shows
+- default: playlist
+  template_variables:
+    libraries: Movies, TV Shows
 
 settings:
   run_order:
-    - operations
-    - metadata
-    - collections
-    - overlays
+  - operations
+  - metadata
+  - collections
+  - overlays
   cache: true
   cache_expiration: 60
   asset_folders: true
@@ -362,12 +359,14 @@ settings:
   custom_repo:
   overlay_artwork_filetype: webp_lossy
   overlay_artwork_quality: 90
+  asset_directory:
 webhooks:
   error: gotify
   version: gotify
   run_start: gotify
   run_end: gotify
   changes: gotify
+  delete:
 gotify:
   url: <<GOTIFYURL>>
   token: <<GOTIFYTOKEN>>
@@ -440,3 +439,4 @@ trakt:
     refresh_token:
     scope: public
     created_at:
+  force_refresh:

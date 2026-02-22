@@ -5,3 +5,5 @@ logs/*
 !assets/.gitkeep
 /reports/*
 !reports/.gitkeep
+/overlays/*
+!overlays/.gitkeep
