@@ -5,7 +5,10 @@ logs/*
 !assets/.gitkeep
 /reports/*
 !reports/.gitkeep
-/overlays/*original
+overlays/*
+!overlays/networks/*
 !overlays/.gitkeep
-.cache
-.swp
+*.cache
+*.swp
+*temp*
+*.tmp
