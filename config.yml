@@ -14,6 +14,8 @@ libraries:
       asset_directory:
         - assets/movies
       prioritize_assets: true
+    template_variables:
+      use_separator: false
     collection_files:
       - default: seasonal
         template_variables:
@@ -37,6 +39,8 @@ libraries:
           emoji_easter: "🐣"
           schedule_easter: range(03/22-04/25)
           url_poster_easter: https://theposterdb.com/api/assets/60970
+          url_poster_black_history: https://theposterdb.com/api/assets/686790
+          name_black_history: "Black History Month"
           collection_section: "03"
           visible_shared: true
           visible_home: true
@@ -68,8 +72,9 @@ libraries:
           use_year_collections: false
       - default: streaming
         template_variables:
+          url_poster_appletv: https://theposterdb.com/api/assets/198950
+          name_appletv: "Apple TV+ Movies"
           collection_section: "04"
-          originals_only: true
           region: ca
           exclude:
             - separator
@@ -80,7 +85,8 @@ libraries:
             - atresplayer
       - default: universe
         template_variables:
-          url_poster_marvel: https://theposterdb.com/api/assets/18648
+          url_poster_marvel: https://theposterdb.com/api/assets/203027
+          url_poster_mcu: https://theposterdb.com/api/assets/162885
           url_poster_dcu: https://theposterdb.com/api/assets/171350
           url_poster_wizard: https://theposterdb.com/api/assets/166278
           url_poster_conjuring: https://theposterdb.com/api/assets/5437
@@ -88,22 +94,24 @@ libraries:
           url_poster_trek: https://theposterdb.com/api/assets/48818
           url_poster_fast: https://theposterdb.com/api/assets/10036
           url_poster_middle: https://theposterdb.com/api/assets/1716
+          url_poster_avp: https://theposterdb.com/api/assets/43455
+          url_poster_rocky: https://theposterdb.com/api/assets/5907
+          url_poster_xmen: https://theposterdb.com/api/assets/32304
           collection_section: "06"
-          exclude:
-            - separator
       - default: tautulli
         template_variables:
           url_poster_watched: https://theposterdb.com/api/assets/345270
+          name_watched: "Trending on NickflixTV"
           list_days: 30
           list_size: 10
           use_popular: false
           collection_section: "01"
           sync_mode_watched: sync
-      - file: metadata/movies.yml
-      - file: metadata/genres.yml
-      - file: metadata/studios.yml
-      - file: metadata/suggestions.yml
-      - file: metadata/refresh.yml
+      - file: /config/metadata/movies.yml
+      - file: /config/metadata/genres.yml
+      - file: /config/metadata/studios.yml
+      - file: /config/metadata/suggestions.yml
+      - file: /config/metadata/refresh.yml
         template_variables:
           library_type: movie
           search_field: release
@@ -123,7 +131,6 @@ libraries:
       - default: ribbon
         template_variables:
           style: yellow
-          use_all: false
           use_oscars_director: false
           use_golden_director: false
           use_cannes: false
@@ -187,6 +194,8 @@ libraries:
       asset_directory:
         - assets/shows
       prioritize_assets: true
+    template_variables:
+      use_separator: false
     collection_files:
       - default: imdb
         template_variables:
@@ -198,8 +207,9 @@ libraries:
           use_popular: false
       - default: streaming
         template_variables:
+          url_poster_appletv: https://theposterdb.com/api/assets/198950
+          name_appletv: "Apple TV+ Shows"
           collection_section: "04"
-          originals_only: true
           region: ca
           exclude:
             - separator
@@ -226,15 +236,43 @@ libraries:
           use_recommended: false
           use_watched: false
           collection_section: "02"
-      - file: metadata/networks.yml
-      - file: metadata/suggestions_shows.yml
-      - file: metadata/refresh.yml
+      - file: /config/metadata/networks.yml
+      - file: /config/metadata/suggestions_shows.yml
+      - file: /config/metadata/refresh.yml
         template_variables:
           library_type: show
           search_field: episode_air_date
           days_number: 7
     overlay_files:
+      - default: studio
+        template_variables:
+          horizontal_align: center
+          vertical_align: top
       - default: resolution
+        template_variables:
+          use_edition: false
+      - default: resolution
+        template_variables:
+          builder_level: episode
+      - default: resolution
+        template_variables:
+          builder_level: season
+      - default: ribbon
+        template_variables:
+          style: yellow
+          use_oscars_director: false
+          use_golden_director: false
+          use_cannes: false
+          use_venice: false
+          use_berlinale: false
+          use_sundance: false
+          use_spirit: false
+          use_cesar: false
+          use_letterboxd: false
+          use_rottenverified: false
+          use_metacritic: false
+          use_common: false
+          use_razzie: false
       - default: ratings
         template_variables:
           rating1: critic
