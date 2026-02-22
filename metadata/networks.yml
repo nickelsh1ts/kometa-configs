@@ -4,12 +4,12 @@ templates:
       - network
     tmdb_network: <<network>>
     url_poster: <<poster>>
-    sort_title: +2_<<collection_name>>
+    sort_title: '!02_30_<<collection_name>>'
     sync_mode: sync
     run_again: false
   programming:
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: +1_<<collection_name>>
+    sort_title: '!01_25_<<collection_name>>'
     collection_mode: show_items
     sync_mode: sync
     run_again: false
@@ -27,7 +27,7 @@ collections:
       {
         name: network,
         network: "2, 75, 2791",
-        poster: https://theposterdb.com/api/assets/206662,
+        poster: https://theposterdb.com/api/assets/204356,
       }
   Adult Swim:
     template:
@@ -35,20 +35,6 @@ collections:
         name: network,
         network: 80,
         poster: https://theposterdb.com/api/assets/98825,
-      }
-  Apple TV+:
-    template:
-      {
-        name: network,
-        network: 2552,
-        poster: https://theposterdb.com/api/assets/168823,
-      }
-  AMC:
-    template:
-      {
-        name: network,
-        network: "174, 4661",
-        poster: https://theposterdb.com/api/assets/104445,
       }
   Cartoon Network:
     template:
@@ -79,13 +65,6 @@ collections:
         name: network,
         network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741",
         poster: https://theposterdb.com/api/assets/137385,
-      }
-  Disney+:
-    template:
-      {
-        name: network,
-        network: "2739, 2919",
-        poster: https://theposterdb.com/api/assets/120939,
       }
   Fox:
     template:
@@ -129,33 +108,12 @@ collections:
         network: 210,
         poster: https://theposterdb.com/api/assets/98967,
       }
-  Hulu:
-    template:
-      {
-        name: network,
-        network: 453,
-        poster: https://theposterdb.com/api/assets/168826,
-      }
   National Geographic:
     template:
       {
         name: network,
         network: "43, 799, 1756, 1825, 3355, 4293, 4476",
         poster: https://theposterdb.com/api/assets/121026,
-      }
-  Netflix:
-    template:
-      {
-        name: network,
-        network: 213,
-        poster: https://theposterdb.com/api/assets/168827,
-      }
-  Prime Video:
-    template:
-      {
-        name: network,
-        network: 1024,
-        poster: https://theposterdb.com/api/assets/168830,
       }
   Showtime:
     template:
@@ -269,26 +227,12 @@ collections:
         network: 13,
         poster: https://theposterdb.com/api/assets/224781,
       }
-  Paramount+:
-    template:
-      {
-        name: network,
-        network: "4330, 2076",
-        poster: https://theposterdb.com/api/assets/206169,
-      }
   PBS:
     template:
       {
         name: network,
         network: "14, 122, 2354",
         poster: https://theposterdb.com/api/assets/205858,
-      }
-  Peacock:
-    template:
-      {
-        name: network,
-        network: 3353,
-        poster: https://theposterdb.com/api/assets/168829,
       }
   Shudder:
     template:

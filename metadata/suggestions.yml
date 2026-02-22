@@ -1,57 +1,13 @@
-templates:
-  Tautulli:
-    url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: ++++++++++_<<collection_name>>
-    collection_mode: hide
-    collection_order: alpha
-    sync_mode: sync
-
 collections:
   #####################################
   #         Trakt Collections         #
   #####################################
-  Trending:
-    trakt_chart:
-      chart: trending
-      limit: 100
-    tmdb_trending_daily: 50
-    tmdb_trending_weekly: 50
-    sort_title: +01_10_Trending
-    sync_mode: sync
-    smart_label: year.desc
-    summary: "The most popular movies trending across all platforms"
-    radarr_add_missing: false
-    radarr_search: false
-    radarr_monitor: false
-    url_poster: https://i.imgur.com/4vpMZoA.png
-  Most Watched This Week:
-    trakt_chart:
-      chart: watched
-      limit: 10
-      time_period: weekly
-    sort_title: "+02_05_Watched This Week"
-    sync_mode: sync
-    radarr_add_missing: false
-    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Trakt_Weekly.jpg
-    collection_order: custom
-    collection_mode: show_items
-  Most Watched This Year:
-    trakt_chart:
-      chart: watched
-      limit: 250
-      time_period: yearly
-    sort_title: "+02_10_Watched This Year"
-    sync_mode: sync
-    radarr_add_missing: false
-    url_poster: https://i.imgur.com/smHhrpE.jpg
-    collection_order: custom
-    collection_mode: show_items
   Box Office Top 10:
     sync_mode: sync
-    sort_title: +02_00_Box Office
+    sort_title: "!01_10_Box Office"
     trakt_boxoffice: true
     summary: Top 10 grossing movies in the U.S. box office last weekend currently available on NickflixTV. Updated every Monday morning.
-    url_poster: https://i.imgur.com/iLTMGzj.jpg
+    file_poster: config/overlays/suggestions/trakt_boxoffice.jpeg
     smart_label: release.desc
     collection_mode: show_items
     radarr_add_missing: true
@@ -61,11 +17,47 @@ collections:
     run_again: true
     visible_home: true
     visible_shared: true
+  Trending:
+    trakt_chart:
+      chart: trending
+      limit: 100
+    tmdb_trending_daily: 50
+    tmdb_trending_weekly: 50
+    sort_title: "!02_00_Trending"
+    sync_mode: sync
+    smart_label: year.desc
+    summary: "The most popular movies trending across all platforms"
+    radarr_add_missing: false
+    radarr_search: false
+    radarr_monitor: false
+    url_poster: https://theposterdb.com/api/assets/264265
+  Most Watched This Week:
+    trakt_chart:
+      chart: watched
+      limit: 10
+      time_period: weekly
+    sort_title: "!02_05_Watched This Week"
+    sync_mode: sync
+    radarr_add_missing: false
+    url_poster: https://theposterdb.com/api/assets/264264
+    collection_order: custom
+    collection_mode: show_items
+  Most Watched This Year:
+    trakt_chart:
+      chart: watched
+      limit: 250
+      time_period: yearly
+    sort_title: "!02_10_Watched This Year"
+    sync_mode: sync
+    radarr_add_missing: false
+    file_poster: config/overlays/suggestions/trakt_yearly.jpeg
+    collection_order: custom
+    collection_mode: show_items
   Top Ten Pirated Weekly:
     trakt_list: https://trakt.tv/users/hdlists/lists/top-ten-pirated-movies-of-the-week-torrent-freak-com
     smart_label: year.desc
     sync_mode: sync
-    sort_title: +02_15_Pirated Weekly
+    sort_title: "!02_15_Pirated Weekly"
     summary: Most Pirated Movies of The Week
     radarr_add_missing: true
     radarr_search: false

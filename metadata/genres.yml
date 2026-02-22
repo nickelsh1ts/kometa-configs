@@ -3,9 +3,14 @@ templates:
     plex_search:
       genre: <<genre>>
     url_poster: <<poster>>
-    sort_title: +03_01_<<collection_name>>
+    sort_title: "!03_01_<<collection_name>>"
     collection_order: alpha
     sync_mode: sync
+    run_again: false
+  Special Genre:
+    url_poster: <<poster>>
+    sort_title: +00_00_<<collection_name>>
+    collection_order: release
     run_again: false
 
 collections:

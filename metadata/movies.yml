@@ -1,16 +1,22 @@
 templates:
-    Movie:
-        tmdb_collection: <<collection>>
-        tmdb_summary: <<summary>>
-        url_poster: <<poster>>
-        sort_title: +05_10_<<collection_name>>
-        collection_order: release
-        run_again: false
-    Special Genre:
-        url_poster: <<poster>>
-        sort_title: +00_00_<<collection_name>>
-        collection_order: release
-        run_again: false
+  tmdb:
+    optional:
+    - collections
+    - lists
+    - movies
+    - tmdb_summary
+    - summary
+    tmdb_collection: <<collections>>
+    tmdb_list: <<lists>>
+    tmdb_movie: <<movies>>
+    tmdb_summary: <<tmdb_summary>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    sort_title: +05_05_<<collection_name>>
+    collection_order: release
+    collection_mode: show_items
+    run_again: false
 
 collections:
 ######################################################

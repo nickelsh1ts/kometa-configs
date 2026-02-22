@@ -42,7 +42,7 @@ libraries:
         emoji_black_history: ✊🏿
         url_poster_black_history: https://theposterdb.com/api/assets/686790
         name_black_history: Black History Month
-        collection_section: '03'
+        collection_section: '03_00'
         visible_shared: true
         visible_home: true
         visible_library: true
@@ -59,22 +59,22 @@ libraries:
       template_variables:
         url_poster_top: https://theposterdb.com/api/assets/294454
         summary_top: Collection of Top 250 Movies which are currently available on NickflixTV
-        collection_section: '01'
+        collection_section: '01_30'
         sync_mode_top: sync
         use_lowest: false
         use_popular: false
     - default: oscars
       template_variables:
-        url_poster_best_picture: https://theposterdb.com/api/assets/10047
+        url_poster_best_picture: https://theposterdb.com/api/assets/589966
         sync_mode_oscars: sync
-        collection_section: '02'
+        collection_section: '02_25'
         use_best_director: false
         use_year_collections: false
     - default: streaming
       template_variables:
         url_poster_appletv: https://theposterdb.com/api/assets/198950
         name_appletv: Apple TV+ Movies
-        collection_section: '04'
+        collection_section: '02_20'
         region: ca
         exclude:
         - now
@@ -94,9 +94,9 @@ libraries:
         url_poster_fast: https://theposterdb.com/api/assets/10036
         url_poster_middle: https://theposterdb.com/api/assets/1716
         url_poster_avp: https://theposterdb.com/api/assets/43455
-        url_poster_rocky: https://theposterdb.com/api/assets/5907
+        url_poster_rocky: https://theposterdb.com/api/assets/416179
         url_poster_xmen: https://theposterdb.com/api/assets/32304
-        collection_section: '06'
+        collection_section: '05_05'
         minimum_items: 1
     - default: tautulli
       template_variables:
@@ -107,7 +107,7 @@ libraries:
         list_size: 10
         list_minimum: 1
         use_popular: false
-        collection_section: '01'
+        collection_section: '01_05'
         sync_mode_watched: sync
     - file: config/metadata/movies.yml
     - file: config/metadata/genres.yml
@@ -204,15 +204,15 @@ libraries:
       template_variables:
         url_poster_top: https://theposterdb.com/api/assets/294454
         summary_top: Collection of Top 250 Movies which are currently available on NickflixTV
-        collection_section: '01'
+        collection_section: '01_30'
         sync_mode_top: sync
         use_lowest: false
         use_popular: false
     - default: streaming
       template_variables:
-        url_poster_appletv: https://theposterdb.com/api/assets/198950
+        url_poster_appletv: https://theposterdb.com/api/assets/168823
         name_appletv: Apple TV+ Shows
-        collection_section: '04'
+        collection_section: '02_20'
         region: ca
         exclude:
         - now
@@ -229,7 +229,7 @@ libraries:
         list_size: 10
         list_minimum: 1
         use_popular: false
-        collection_section: '01'
+        collection_section: '01_05'
         sync_mode_watched: sync
     - default: trakt
       template_variables:
@@ -242,7 +242,7 @@ libraries:
         use_popular: false
         use_recommended: false
         use_watched: false
-        collection_section: '02'
+        collection_section: '01_10'
     - file: config/metadata/networks.yml
     - file: config/metadata/suggestions_shows.yml
     - file: config/metadata/refresh.yml

@@ -6,7 +6,7 @@ templates:
     sort_title: +04_10_<<collection_name>>
     collection_order: alpha
     run_again: false
-  MarvelCU:
+  mcu:
     sort_title: +05_01_<<collection_name>>
     sync_mode: sync
     collection_mode: hide
@@ -28,6 +28,17 @@ templates:
     sort_title: +05_05_<<collection_name>>
     collection_order: release
     collection_mode: show_items
+    run_again: false
+  StudioMD:
+    optional:
+      - company
+      - list
+    tmdb_company: <<company>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: +04_10_<<collection_name>>
     run_again: false
 
 collections:
@@ -161,7 +172,7 @@ collections:
   #         Marvel Collections        #
   #####################################
   Marvel Cinematic Universe Phase 1:
-    template: { name: MarvelCU }
+    template: { name: mcu }
     letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-1/
     url_poster: https://theposterdb.com/api/assets/324669
     collection_order: release
@@ -172,7 +183,7 @@ collections:
     radarr_search: false
     radarr_monitor: true
   Marvel Cinematic Universe Phase 2:
-    template: { name: MarvelCU }
+    template: { name: mcu }
     letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-2/
     url_poster: https://theposterdb.com/api/assets/324670
     collection_order: release
@@ -183,7 +194,7 @@ collections:
     radarr_search: false
     radarr_monitor: true
   Marvel Cinematic Universe Phase 3:
-    template: { name: MarvelCU }
+    template: { name: mcu }
     letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-3/
     url_poster: https://theposterdb.com/api/assets/324673
     collection_order: release
@@ -194,7 +205,7 @@ collections:
     radarr_search: false
     radarr_monitor: true
   Marvel Cinematic Universe Phase 4:
-    template: { name: MarvelCU }
+    template: { name: mcu }
     letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-4/
     url_poster: https://theposterdb.com/api/assets/324674
     collection_order: release
@@ -205,7 +216,7 @@ collections:
     radarr_search: false
     radarr_monitor: true
   Marvel Cinematic Universe Phase 5:
-    template: { name: MarvelCU }
+    template: { name: mcu }
     letterboxd_list: https://letterboxd.com/catherine_gal/list/marvel-cinematic-universe-phase-5/
     url_poster: https://theposterdb.com/api/assets/324675
     collection_order: release
