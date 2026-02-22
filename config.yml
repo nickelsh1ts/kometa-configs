@@ -335,8 +335,8 @@ settings:
   asset_folders: true
   asset_depth: 1
   asset_directory:
-  - assets/movies
-  - assets/shows
+  - config/assets/movies
+  - config/assets/shows
   create_asset_folders: true
   prioritize_assets: true
   dimensional_asset_rename: false
