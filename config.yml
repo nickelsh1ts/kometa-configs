@@ -138,12 +138,15 @@ libraries:
         vertical_align: top
     - default: video_format
       template_variables:
+        horizontal_align: center
+        horizontal_offset: 0
         vertical_offset: 10%
         vertical_align: top
         back_width: 1000
         back_radius: 0
         back_color: '#b91c1c'
-        text_telesync: cam
+        text_telesync: poor quality
+        text_cam: poor quality
         use_remux: false
         use_bluray: false
         use_web: false
