@@ -1,42 +1,42 @@
 queues:
-  queues:
-    stream:
-      - horizontal_offset: 15
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
-      - horizontal_offset: 130
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
-      - horizontal_offset: 245
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
-      - horizontal_offset: 360
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
-      - horizontal_offset: 475
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
-      - horizontal_offset: 590
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
-      - horizontal_offset: 705
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
-      - horizontal_offset: 820
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
-      - horizontal_offset: 935
-        horizontal_align: center
-        vertical_offset: 10
-        vertical_align: bottom
+  stream:
+    - horizontal_offset: 15
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 130
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 245
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 360
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 475
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 590
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 705
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 820
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 935
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+
 templates:
   Streaming:
     optional:
