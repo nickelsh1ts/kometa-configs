@@ -25,6 +25,7 @@ collections:
     tmdb_trending_weekly: 50
     sort_title: "!02_00_Trending"
     sync_mode: sync
+    item_label: "Trending"
     smart_label: year.desc
     summary: "The most popular movies trending across all platforms"
     radarr_add_missing: false
