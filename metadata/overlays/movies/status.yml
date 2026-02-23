@@ -1,0 +1,8 @@
+overlays:
+  InTheaters:
+    overlay:
+      name: In Theaters
+      file: config/overlays/status/in_theatres_small.png
+      group: STATUS
+      weight: 1000
+    imdb_chart: box_office

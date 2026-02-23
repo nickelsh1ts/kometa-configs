@@ -184,7 +184,7 @@ libraries:
         rating3_image: tmdb
         rating3_font_size: 70
         horizontal_position: right
-    - folder: config/metadata/overlays
+    - folder: config/metadata/overlays/movies
     operations:
       split_duplicates: false
       assets_for_all: true
@@ -283,7 +283,7 @@ libraries:
         horizontal_align: center
         horizontal_offset: 0
         vertical_align: bottom
-        vertical_offset: 0
+        vertical_offset: 10
         back_radius: 0
         back_width: 1000
         back_color: '#000000'
@@ -334,7 +334,7 @@ libraries:
         rating3_image: tmdb
         rating3_font_size: 70
         horizontal_position: right
-    - folder: config/metadata/overlays
+    - folder: config/metadata/overlays/shows
     operations:
       split_duplicates: false
       assets_for_all: true
