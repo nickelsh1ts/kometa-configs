@@ -17,6 +17,7 @@ libraries:
     template_variables:
       use_separator: false
       back_color: '#FFFFFF00'
+      back_line_color: '#974ede'
     collection_files:
     - default: seasonal
       template_variables:
@@ -203,6 +204,8 @@ libraries:
       prioritize_assets: true
     template_variables:
       use_separator: false
+      back_color: '#FFFFFF00'
+      back_line_color: '#974ede'
     collection_files:
     - default: imdb
       template_variables:
