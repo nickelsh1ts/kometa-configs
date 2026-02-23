@@ -1,56 +1,24 @@
 queues:
   stream:
-    - horizontal_offset: 15
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-    - horizontal_offset: 130
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-    - horizontal_offset: 245
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-    - horizontal_offset: 360
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-    - horizontal_offset: 475
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-    - horizontal_offset: 590
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-    - horizontal_offset: 705
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-    - horizontal_offset: 820
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-    - horizontal_offset: 935
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
+    settings:
+      dynamic_position:
+        initial_vertical_align: bottom
+        initial_horizontal_align: center
+        initial_vertical_offset: 10
+        initial_horizontal_offset: 15
+        vertical_spacing: 0
+        horizontal_spacing: 115
+        surround: false
+      overlay_limit: 4
 
 templates:
   Streaming:
     optional:
       - use_<<slug>>
     default:
-      queue: stream
       overlay: <<overlay_name>>
-      horizontal_offset: 15
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
-      weight_<<key>>: <<weight>>
       style: Round
-    ignore_blank_results: true
+    ignore_blank_results: false
     mdblist_list:
       url: https://mdblist.com/lists/k0meta/<<type>>-originals/
     overlay:
@@ -58,63 +26,11 @@ templates:
       queue: stream
       style: <<style>>
       weight: <<weight_<<key>>>>
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
       file: config/overlays/networks/<<overlay_name>>-<<style>>.png
 
 overlays:
   STREAMBLANK:
-    template: {name: Streaming, type: netflix}
-    overlay:
-      name: STREAMBLANK
-      file: config/overlays/networks/STREAMBLANK.png
-
-  STREAMBLANK1:
-    template:  {name: Streaming, type: amazon}
-    overlay:
-      name: STREAMBLANK
-      file: config/overlays/networks/STREAMBLANK.png
-
-  STREAMBLANK2:
-    template: {name: Streaming, type: hulu}
-    overlay:
-      name: STREAMBLANK
-      file: config/overlays/networks/STREAMBLANK.png
-
-  STREAMBLANK3:
-    template: {name: Streaming, type: paramount}
-    overlay:
-      name: STREAMBLANK
-      file: config/overlays/networks/STREAMBLANK.png
-
-  STREAMBLANK4:
-    template: {name: Streaming, type: peacock}
-    overlay:
-      name: STREAMBLANK
-      file: config/overlays/networks/STREAMBLANK.png
-
-  STREAMBLANK5:
-    template: {name: Streaming, type: discovery}
-    overlay:
-      name: STREAMBLANK
-      file: config/overlays/networks/STREAMBLANK.png
-
-  STREAMBLANK6:
-    template: {name: Streaming, type: disney}
-    overlay:
-      name: STREAMBLANK
-      file: config/overlays/networks/STREAMBLANK.png
-
-  STREAMBLANK7:
-    template: {name: Streaming, type: max}
-    overlay:
-      name: STREAMBLANK
-      file: config/overlays/networks/STREAMBLANK.png
-
-  STREAMBLANK8:
-    template: {name: Streaming, type: appletv}
+    template: { name: Streaming }
     overlay:
       name: STREAMBLANK
       file: config/overlays/networks/STREAMBLANK.png
