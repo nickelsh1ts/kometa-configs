@@ -52,7 +52,7 @@ templates:
       style: Round
     ignore_blank_results: true
     mdblist_list:
-      url: https://mdblist.com/lists/plexmetamanager/<<type>>-<<library_type>>s/
+      url: https://mdblist.com/lists/k0meta/<<type>>-originals/
     overlay:
       name: <<overlay_name>>
       queue: stream
