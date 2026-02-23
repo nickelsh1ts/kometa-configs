@@ -54,10 +54,10 @@ overlays:
     filters:
       tmdb_status: ended
 
-  Canceled:
+  Cancelled:
     overlay:
-      name: canceled
-      file: config/overlays/status/canceled_small.png
+      name: cancelled
+      file: config/overlays/status/cancelled_small.png
       group: STATUS
       weight: 600
     plex_all: true

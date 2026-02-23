@@ -66,11 +66,24 @@ templates:
 
 overlays:
   STREAMBLANK:
+    mdblist:
+      url:
+        - https://mdblist.com/lists/k0meta/netflix-originals/
+        - https://mdblist.com/lists/k0meta/amazon-originals/
+        - https://mdblist.com/lists/k0meta/hulu-originals/
+        - https://mdblist.com/lists/k0meta/paramount-originals/
+        - https://mdblist.com/lists/k0meta/peacock-originals/
+        - https://mdblist.com/lists/k0meta/discovery-originals/
+        - https://mdblist.com/lists/k0meta/disney-originals/
+        - https://mdblist.com/lists/k0meta/max-originals/
+        - https://mdblist.com/lists/k0meta/apple-originals/
     overlay:
       name: STREAMBLANK
-      horizontal_offset: 0
-      horizontal_align: left
-      vertical_offset: 0
+      weight: 0
+      queue: stream
+      horizontal_offset: 15
+      horizontal_align: center
+      vertical_offset: 10
       vertical_align: bottom
       file: config/overlays/networks/STREAMBLANK.png
   Netflix:
