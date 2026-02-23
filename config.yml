@@ -277,20 +277,20 @@ libraries:
         search_field: episode_air_date
         days_number: 7
     overlay_files:
+    - default: studio
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
     - default: streaming
       template_variables:
         region: ca
         horizontal_align: center
         horizontal_offset: 0
-        vertical_align: bottom
-        vertical_offset: 10
+        vertical_align: top
+        vertical_offset: 0
         back_radius: 0
         back_width: 1000
         back_color: '#000000'
-    - default: studio
-      template_variables:
-        horizontal_align: center
-        vertical_align: top
     - default: runtimes
       template_variables:
         builder_level: episode
