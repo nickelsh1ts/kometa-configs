@@ -66,26 +66,59 @@ templates:
 
 overlays:
   STREAMBLANK:
-    mdblist:
-      url:
-        - https://mdblist.com/lists/k0meta/netflix-originals/
-        - https://mdblist.com/lists/k0meta/amazon-originals/
-        - https://mdblist.com/lists/k0meta/hulu-originals/
-        - https://mdblist.com/lists/k0meta/paramount-originals/
-        - https://mdblist.com/lists/k0meta/peacock-originals/
-        - https://mdblist.com/lists/k0meta/discovery-originals/
-        - https://mdblist.com/lists/k0meta/disney-originals/
-        - https://mdblist.com/lists/k0meta/max-originals/
-        - https://mdblist.com/lists/k0meta/apple-originals/
+    template: {name: Streaming, type: netflix}
     overlay:
       name: STREAMBLANK
-      weight: 0
-      queue: stream
-      horizontal_offset: 15
-      horizontal_align: center
-      vertical_offset: 10
-      vertical_align: bottom
       file: config/overlays/networks/STREAMBLANK.png
+
+  STREAMBLANK1:
+    template:  {name: Streaming, type: amazon}
+    overlay:
+      name: STREAMBLANK
+      file: config/overlays/networks/STREAMBLANK.png
+
+  STREAMBLANK2:
+    template: {name: Streaming, type: hulu}
+    overlay:
+      name: STREAMBLANK
+      file: config/overlays/networks/STREAMBLANK.png
+
+  STREAMBLANK3:
+    template: {name: Streaming, type: paramount}
+    overlay:
+      name: STREAMBLANK
+      file: config/overlays/networks/STREAMBLANK.png
+
+  STREAMBLANK4:
+    template: {name: Streaming, type: peacock}
+    overlay:
+      name: STREAMBLANK
+      file: config/overlays/networks/STREAMBLANK.png
+
+  STREAMBLANK5:
+    template: {name: Streaming, type: discovery}
+    overlay:
+      name: STREAMBLANK
+      file: config/overlays/networks/STREAMBLANK.png
+
+  STREAMBLANK6:
+    template: {name: Streaming, type: disney}
+    overlay:
+      name: STREAMBLANK
+      file: config/overlays/networks/STREAMBLANK.png
+
+  STREAMBLANK7:
+    template: {name: Streaming, type: max}
+    overlay:
+      name: STREAMBLANK
+      file: config/overlays/networks/STREAMBLANK.png
+
+  STREAMBLANK8:
+    template: {name: Streaming, type: appletv}
+    overlay:
+      name: STREAMBLANK
+      file: config/overlays/networks/STREAMBLANK.png
+
   Netflix:
     template: { name: Streaming, weight: 900, slug: netflix, type: netflix }
   Prime:
