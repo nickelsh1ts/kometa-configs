@@ -144,9 +144,9 @@ libraries:
         vertical_align: top
         back_width: 1000
         back_radius: 0
-        back_color: '#b91c1c'
-        text_telesync: poor quality
-        text_cam: poor quality
+        back_color: '#B91C1CB0'
+        text_telesync: Poor Quality
+        text_cam: Poor Quality
         use_remux: false
         use_bluray: false
         use_web: false
