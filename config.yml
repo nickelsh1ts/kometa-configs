@@ -16,6 +16,7 @@ libraries:
       prioritize_assets: true
     template_variables:
       use_separator: false
+      back_color: '#FFFFFF00'
     collection_files:
     - default: seasonal
       template_variables:
