@@ -72,7 +72,7 @@ libraries:
         use_year_collections: false
     - default: streaming
       template_variables:
-        url_poster_appletv: https://theposterdb.com/api/assets/198950
+        url_poster_appletv: https://theposterdb.com/api/assets/168823
         name_appletv: Apple TV+ Movies
         collection_section: '02_20'
         region: ca

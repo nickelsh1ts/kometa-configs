@@ -7,7 +7,7 @@ templates:
     collection_order: alpha
     run_again: false
   mcu:
-    sort_title: "!05_01_<<collection_name>>"
+    sort_title: "!05_05_<<collection_name>>"
     sync_mode: sync
     collection_mode: hide
     run_again: false
