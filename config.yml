@@ -122,6 +122,12 @@ libraries:
         search_field: release
         days_number: 7
     overlay_files:
+    - default: streaming
+      template_variables:
+        region: ca
+        horizontal_align: center
+        vertical_align: bottom
+        back_width: 1000
     - default: studio
       template_variables:
         horizontal_align: center
