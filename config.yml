@@ -59,7 +59,7 @@ libraries:
       template_variables:
         url_poster_top: https://theposterdb.com/api/assets/294454
         summary_top: Collection of Top 250 Movies which are currently available on NickflixTV
-        collection_section: '02_25'
+        collection_section: '02_20'
         sync_mode_top: sync
         use_lowest: false
         use_popular: false
@@ -67,14 +67,14 @@ libraries:
       template_variables:
         url_poster_best_picture: https://theposterdb.com/api/assets/589966
         sync_mode_oscars: sync
-        collection_section: '02_25'
+        collection_section: '02_20'
         use_best_director: false
         use_year_collections: false
     - default: streaming
       template_variables:
         url_poster_appletv: https://theposterdb.com/api/assets/168823
         name_appletv: Apple TV+ Movies
-        collection_section: '02_20'
+        collection_section: '02_25'
         region: ca
         exclude:
         - now
@@ -207,7 +207,7 @@ libraries:
       template_variables:
         url_poster_top: https://theposterdb.com/api/assets/294454
         summary_top: Collection of Top 250 Movies which are currently available on NickflixTV
-        collection_section: '02_25'
+        collection_section: '02_20'
         sync_mode_top: sync
         use_lowest: false
         use_popular: false
@@ -215,7 +215,7 @@ libraries:
       template_variables:
         url_poster_appletv: https://theposterdb.com/api/assets/168823
         name_appletv: Apple TV+ Shows
-        collection_section: '02_20'
+        collection_section: '02_25'
         region: ca
         exclude:
         - now
