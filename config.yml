@@ -151,13 +151,13 @@ libraries:
         use_razzie: false
     - default: ratings
       template_variables:
-        rating1: critic
-        rating1_image: imdb
+        rating1: user
+        rating1_image: rt_tomato
         rating1_font_size: 63
-        rating2: audience
-        rating2_image: rt_popcorn
+        rating2: critic
+        rating2_image: imdb
         rating2_font_size: 70
-        rating3: user
+        rating3: audience
         rating3_image: tmdb
         rating3_font_size: 70
         horizontal_position: right
@@ -165,9 +165,9 @@ libraries:
     operations:
       split_duplicates: false
       assets_for_all: true
-      mass_user_rating_update: tmdb
+      mass_user_rating_update: mdb_tomatoes
       mass_critic_rating_update: imdb
-      mass_audience_rating_update: mdb_tomatoesaudience
+      mass_audience_rating_update: tmdb
       delete_collections:
         configured: false
         managed: true
@@ -258,6 +258,12 @@ libraries:
       template_variables:
         horizontal_align: center
         vertical_align: top
+    - default: runtimes
+      template_variables:
+        builder_level: episode
+        text: ''
+        horizontal_align: center
+        vertical_align: bottom
     - default: resolution
       template_variables:
         use_edition: false
@@ -285,13 +291,13 @@ libraries:
         use_razzie: false
     - default: ratings
       template_variables:
-        rating1: critic
-        rating1_image: imdb
+        rating1: user
+        rating1_image: rt_tomato
         rating1_font_size: 63
-        rating2: audience
-        rating2_image: rt_popcorn
+        rating2: critic
+        rating2_image: imdb
         rating2_font_size: 70
-        rating3: user
+        rating3: audience
         rating3_image: tmdb
         rating3_font_size: 70
         horizontal_position: right
@@ -304,9 +310,9 @@ libraries:
         managed: true
         less: 1
         ignore_empty_smart_collections: true
-      mass_user_rating_update: tmdb
+      mass_user_rating_update: mdb_tomatoes
       mass_critic_rating_update: imdb
-      mass_audience_rating_update: mdb_tomatoesaudience
+      mass_audience_rating_update: tmdb
       mass_genre_update:
       - tmdb
       - imdb
