@@ -288,6 +288,7 @@ libraries:
         horizontal_offset: 0
         vertical_align: top
         vertical_offset: 0
+        back_height: 135
         back_radius: 0
         back_width: 1000
         back_color: '#000000'
@@ -306,6 +307,19 @@ libraries:
     - default: resolution
       template_variables:
         builder_level: season
+    - default: ratings
+      template_variables:
+        rating1: user
+        rating1_image: rt_tomato
+        rating1_font_size: 63
+        rating2: critic
+        rating2_image: imdb
+        rating2_font_size: 70
+        rating3: audience
+        rating3_image: tmdb
+        rating3_font_size: 70
+        horizontal_position: right
+    - folder: config/metadata/overlays/shows
     - default: ribbon
       template_variables:
         style: yellow
@@ -322,19 +336,6 @@ libraries:
         use_metacritic: false
         use_common: false
         use_razzie: false
-    - default: ratings
-      template_variables:
-        rating1: user
-        rating1_image: rt_tomato
-        rating1_font_size: 63
-        rating2: critic
-        rating2_image: imdb
-        rating2_font_size: 70
-        rating3: audience
-        rating3_image: tmdb
-        rating3_font_size: 70
-        horizontal_position: right
-    - folder: config/metadata/overlays/shows
     operations:
       split_duplicates: false
       assets_for_all: true
