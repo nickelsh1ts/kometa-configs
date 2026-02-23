@@ -3,11 +3,11 @@ templates:
     plex_search:
       studio: <<studio>>
     url_poster: <<poster>>
-    sort_title: +04_10_<<collection_name>>
+    sort_title: "!04_10_<<collection_name>>"
     collection_order: alpha
     run_again: false
   mcu:
-    sort_title: +05_01_<<collection_name>>
+    sort_title: "!05_01_<<collection_name>>"
     sync_mode: sync
     collection_mode: hide
     run_again: false
@@ -25,7 +25,7 @@ templates:
     summary: <<summary>>
     url_poster: <<poster>>
     sync_mode: sync
-    sort_title: +05_05_<<collection_name>>
+    sort_title: "!05_05_<<collection_name>>"
     collection_order: release
     collection_mode: show_items
     run_again: false
@@ -38,7 +38,7 @@ templates:
     sync_mode: sync
     collection_order: release
     url_poster: <<poster>>
-    sort_title: +04_10_<<collection_name>>
+    sort_title: "!04_10_<<collection_name>>"
     run_again: false
 
 collections:
@@ -51,6 +51,7 @@ collections:
         name: tmdb,
         lists: "7103808, 7103807",
         summary: "A collection of Disney Animation movies.",
+        sort_title: "!04_10_Walt Disney Animation",
         poster: https://theposterdb.com/api/assets/57891,
       }
     summary: Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is one of the oldest-running animation studios in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California.
@@ -156,14 +157,14 @@ collections:
   A24:
     trakt_list: https://trakt.tv/users/fidel-cb/lists/a24-movies-and-tv-shows?sort=released,asc
     summary: Movies produced by A24. Usually indicative of quality content.
-    sort_title: "+04_10_A24"
+    sort_title: "!04_10_A24"
     url_poster: https://theposterdb.com/api/assets/234004
     collection_order: release
     collection_mode: default
   Studio Ghibli:
     trakt_list: https://trakt.tv/users/asterlea/lists/studio-ghibli?sort=released,asc
     summary: Studio Ghibli, Inc. is a Japanese animation studio based in Koganei, Tokyo. It has a strong presence in the animation industry and has expanded its portfolio to include various media formats, such as short subjects, television commercials, and two television films.
-    sort_title: "+04_10_Studio Ghibli"
+    sort_title: "!04_10_Studio Ghibli"
     url_poster: https://theposterdb.com/api/assets/234005
     collection_order: release
     collection_mode: default

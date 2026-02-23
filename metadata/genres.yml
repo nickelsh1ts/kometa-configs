@@ -9,7 +9,7 @@ templates:
     run_again: false
   Special Genre:
     url_poster: <<poster>>
-    sort_title: +00_00_<<collection_name>>
+    sort_title: "!00_00_<<collection_name>>"
     collection_order: release
     run_again: false
 
@@ -108,7 +108,7 @@ collections:
   Gangster:
     template:
       { name: Special Genre, poster: https://theposterdb.com/api/assets/62561 }
-    sort_title: +03_01_Gangster
+    sort_title: "!03_01_Gangster"
     imdb_list:
       - https://www.imdb.com/list/ls026270180/
       - https://www.imdb.com/list/ls000093502/
@@ -132,7 +132,7 @@ collections:
   Martial Arts:
     template:
       { name: Special Genre, poster: https://theposterdb.com/api/assets/51773 }
-    sort_title: +03_01_Martial_Arts
+    sort_title: "!03_01_Martial_Arts"
     imdb_list:
       - https://www.imdb.com/list/ls000099643/
       - https://www.imdb.com/list/ls068611186/
@@ -166,7 +166,7 @@ collections:
   Pandemic:
     template:
       { name: Special Genre, poster: https://theposterdb.com/api/assets/55837 }
-    sort_title: +03_01_Pandemic
+    sort_title: "!03_01_Pandemic"
     imdb_list: https://www.imdb.com/list/ls092321048/
     summary: A Pandemic film resolves around widespread viruses, plagues, and diseases.
   Romance:
@@ -214,7 +214,7 @@ collections:
   Sword & Sorcery:
     template:
       { name: Special Genre, poster: https://theposterdb.com/api/assets/74604 }
-    sort_title: +03_01_Sword_&_Sorcery
+    sort_title: "!03_01_Sword_&_Sorcery"
     imdb_list: https://www.imdb.com/list/ls022909805
     summary: Sword and Sorcery film is a sub-genre of Fantasy that tend to be more plot-driven. These films rely on heavy action and battle scenes. Common themes in Sword and Sorcery films include a rescue mission, saving a princess, and battling a fantastical monster. The worlds and characters in these films are often much less developed than in other fantasy sub-genres. Of all the Fantasy sub-genres, Sword and Sorcery is most likely to be geared towards a younger audience, as many of these films are animated.
   Thriller:
@@ -244,6 +244,6 @@ collections:
   LGBTQ+:
     template:
       { name: Special Genre, poster: https://theposterdb.com/api/assets/96519 }
-    sort_title: +03_01_LGBTQ+
+    sort_title: "!03_01_LGBTQ+"
     trakt_list: https://trakt.tv/users/jholla452/lists/lgbtq-movies-2000?sort=rank,asc
     summary: Films that represent or heavily incorporate LGBTQIA characters or people.

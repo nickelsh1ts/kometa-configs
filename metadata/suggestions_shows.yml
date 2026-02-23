@@ -1,7 +1,7 @@
 templates:
   suggestion:
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: '!02_00_<<collection_name>>'
+    sort_title: "!02_00_<<collection_name>>"
     collection_mode: hide
     sync_mode: sync
 

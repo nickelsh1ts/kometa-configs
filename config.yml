@@ -96,6 +96,8 @@ libraries:
         url_poster_avp: https://theposterdb.com/api/assets/43455
         url_poster_rocky: https://theposterdb.com/api/assets/416179
         url_poster_xmen: https://theposterdb.com/api/assets/32304
+        url_poster_mummy: https://theposterdb.com/api/assets/129405
+        use_askew: false
         collection_section: '05_05'
         minimum_items: 1
     - default: tautulli

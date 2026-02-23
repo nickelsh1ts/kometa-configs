@@ -1,11 +1,11 @@
 templates:
   tmdb:
     optional:
-    - collections
-    - lists
-    - movies
-    - tmdb_summary
-    - summary
+      - collections
+      - lists
+      - movies
+      - tmdb_summary
+      - summary
     tmdb_collection: <<collections>>
     tmdb_list: <<lists>>
     tmdb_movie: <<movies>>
@@ -13,59 +13,103 @@ templates:
     summary: <<summary>>
     url_poster: <<poster>>
     sync_mode: sync
-    sort_title: +05_05_<<collection_name>>
+    sort_title: "!05_05_<<collection_name>>"
     collection_order: release
     collection_mode: show_items
     run_again: false
 
 collections:
-######################################################
-#                Movie Collections                   #
-######################################################
+  ######################################################
+  #                Movie Collections                   #
+  ######################################################
   Star Trek Alternate Reality:
-    template: {name: tmdb, poster: "https://theposterdb.com/api/assets/146213"}
+    template:
+      { name: tmdb, poster: "https://theposterdb.com/api/assets/146213" }
     trakt_list: https://trakt.tv/lists/official/star-trek-alternate-reality-collection
     trakt_list_details: https://trakt.tv/lists/official/star-trek-alternate-reality-collection
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
   Pirates of the Caribbean:
-    template: {name: tmdb, collections: "295", tmdb_summary: 295, poster: https://theposterdb.com/api/assets/72259}
+    template:
+      {
+        name: tmdb,
+        collections: "295",
+        tmdb_summary: 295,
+        poster: https://theposterdb.com/api/assets/72259,
+      }
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
   Transformers:
-    template: {name: tmdb, collections: "8650", movies: 424783, tmdb_summary: 8650, poster: https://theposterdb.com/api/assets/33217}
+    template:
+      {
+        name: tmdb,
+        collections: "8650",
+        movies: 424783,
+        tmdb_summary: 8650,
+        poster: https://theposterdb.com/api/assets/33217,
+      }
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
   John Wick:
-    template: {name: tmdb, collections: "404609", tmdb_summary: 404609, poster: https://theposterdb.com/api/assets/11590}
+    template:
+      {
+        name: tmdb,
+        collections: "404609",
+        tmdb_summary: 404609,
+        poster: https://theposterdb.com/api/assets/11590,
+      }
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
   Kingsman:
-    template: {name: tmdb, collections: "391860", tmdb_summary: 391860, poster: https://theposterdb.com/api/assets/83074}
+    template:
+      {
+        name: tmdb,
+        collections: "391860",
+        tmdb_summary: 391860,
+        poster: https://theposterdb.com/api/assets/83074,
+      }
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
   The Lord of the Rings:
-    template: {name: tmdb, collections: "119", tmdb_summary: 119, poster: https://theposterdb.com/api/assets/49793}
+    template:
+      {
+        name: tmdb,
+        collections: "119",
+        tmdb_summary: 119,
+        poster: https://theposterdb.com/api/assets/49793,
+      }
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
   The Hobbit:
-    template: {name: tmdb, collections: "121938", tmdb_summary: 121938, poster: https://theposterdb.com/api/assets/264227}
+    template:
+      {
+        name: tmdb,
+        collections: "121938",
+        tmdb_summary: 121938,
+        poster: https://theposterdb.com/api/assets/264227,
+      }
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
 
-#####################################
-#         Retro Collection          #
-#####################################
+  #####################################
+  #         Retro Collection          #
+  #####################################
   The Godfather:
-    template: {name: tmdb, collections: "230", tmdb_summary: 230, poster: https://theposterdb.com/api/assets/8934}
-    sort_title: +05_00_The Godfather
+    template:
+      {
+        name: tmdb,
+        collections: "230",
+        tmdb_summary: 230,
+        poster: https://theposterdb.com/api/assets/8934,
+      }
+    sort_title: "!05_00_The Godfather"
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true

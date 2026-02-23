@@ -4,12 +4,12 @@ templates:
       - network
     tmdb_network: <<network>>
     url_poster: <<poster>>
-    sort_title: '!02_30_<<collection_name>>'
+    sort_title: "!02_30_<<collection_name>>"
     sync_mode: sync
     run_again: false
   programming:
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: '!01_25_<<collection_name>>'
+    sort_title: "!01_25_<<collection_name>>"
     collection_mode: show_items
     sync_mode: sync
     run_again: false
