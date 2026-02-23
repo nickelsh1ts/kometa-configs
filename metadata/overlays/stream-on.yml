@@ -18,6 +18,7 @@ templates:
     default:
       overlay: <<overlay_name>>
       style: Round
+      weight_<<key>>: <<weight>>
     ignore_blank_results: false
     mdblist_list:
       url: https://mdblist.com/lists/k0meta/<<type>>-originals/
