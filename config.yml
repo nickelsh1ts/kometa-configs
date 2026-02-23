@@ -59,7 +59,7 @@ libraries:
       template_variables:
         url_poster_top: https://theposterdb.com/api/assets/294454
         summary_top: Collection of Top 250 Movies which are currently available on NickflixTV
-        collection_section: '01_30'
+        collection_section: '02_25'
         sync_mode_top: sync
         use_lowest: false
         use_popular: false
@@ -206,7 +206,7 @@ libraries:
       template_variables:
         url_poster_top: https://theposterdb.com/api/assets/294454
         summary_top: Collection of Top 250 Movies which are currently available on NickflixTV
-        collection_section: '01_30'
+        collection_section: '02_25'
         sync_mode_top: sync
         use_lowest: false
         use_popular: false

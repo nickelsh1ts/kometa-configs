@@ -4,7 +4,7 @@ collections:
   #####################################
   Box Office Top 10:
     sync_mode: sync
-    sort_title: "!01_10_Box Office"
+    sort_title: "!01_20_Box Office"
     trakt_boxoffice: true
     summary: Top 10 grossing movies in the U.S. box office last weekend currently available on NickflixTV. Updated every Monday morning.
     file_poster: config/overlays/suggestions/trakt_boxoffice.jpeg
