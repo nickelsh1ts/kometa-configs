@@ -110,7 +110,7 @@ libraries:
         list_size: 10
         list_minimum: 1
         use_popular: false
-        collection_section: '01_05'
+        collection_section: '01_10'
         sync_mode_watched: sync
     - file: config/metadata/movies.yml
     - file: config/metadata/genres.yml
