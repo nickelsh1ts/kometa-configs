@@ -126,8 +126,12 @@ libraries:
       template_variables:
         region: ca
         horizontal_align: center
+        horizontal_offset: 0
         vertical_align: bottom
+        vertical_offset: 0
+        back_radius: 0
         back_width: 1000
+        back_color: '#000000'
     - default: studio
       template_variables:
         horizontal_align: center
@@ -135,7 +139,17 @@ libraries:
     - default: video_format
       template_variables:
         vertical_offset: 10%
-        vertical_align: bottom
+        vertical_align: top
+        back_width: 1000
+        back_radius: 0
+        back_color: '#b91c1c'
+        text_telesync: cam
+        use_remux: false
+        use_bluray: false
+        use_web: false
+        use_hdtv: false
+        use_dvd: false
+        use_sdtv: false
     - default: resolution
       template_variables:
         use_edition: false
@@ -260,6 +274,16 @@ libraries:
         search_field: episode_air_date
         days_number: 7
     overlay_files:
+    - default: streaming
+      template_variables:
+        region: ca
+        horizontal_align: center
+        horizontal_offset: 0
+        vertical_align: bottom
+        vertical_offset: 0
+        back_radius: 0
+        back_width: 1000
+        back_color: '#000000'
     - default: studio
       template_variables:
         horizontal_align: center
