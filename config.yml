@@ -18,6 +18,10 @@ libraries:
       use_separator: false
     collection_files:
     - file: config/metadata/refresh.yml
+      template_variables: &REFRESHMOVIES
+        condition: all
+        search_field: release
+        days_number: 7
     - default: seasonal
       template_variables: &SEASONAL
         emoji_christmas: 🎄
@@ -111,10 +115,6 @@ libraries:
     - file: config/metadata/genres.yml
     - file: config/metadata/studios.yml
     - file: config/metadata/suggestions.yml
-      template_variables: &SUGGESTIONSMOVIES
-        condition: all
-        search_field: release
-        days_number: 7
     overlay_files:
     - default: streaming
       template_variables: &STREAMINGOVERLAYMOVIES
@@ -221,6 +221,10 @@ libraries:
       use_separator: false
     collection_files:
     - file: config/metadata/refresh.yml
+      template_variables: &REFRESHSHOWS
+        condition: all
+        search_field: episode_air_date
+        days_number: 7
     - default: imdb
       template_variables: &IMDBSHOWS
         url_poster_top: https://theposterdb.com/api/assets/294454
@@ -260,10 +264,6 @@ libraries:
         collection_section: '01_10'
     - file: config/metadata/networks.yml
     - file: config/metadata/suggestions_shows.yml
-      template_variables: &SUGGESTIONSSHOWS
-        condition: all
-        search_field: episode_air_date
-        days_number: 7
     overlay_files:
     - default: studio
       template_variables:
