@@ -4,12 +4,12 @@ templates:
       - network
     tmdb_network: <<network>>
     url_poster: <<poster>>
-    sort_title: "!02_30_<<collection_name>>"
+    sort_title: "!02_35_<<collection_name>>"
     sync_mode: sync
     run_again: false
   programming:
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: "!01_25_<<collection_name>>"
+    sort_title: "!02_30_<<collection_name>>"
     collection_mode: show_items
     sync_mode: sync
     run_again: false
@@ -93,13 +93,6 @@ collections:
         name: network,
         network: 1035,
         poster: https://theposterdb.com/api/assets/220368,
-      }
-  Max:
-    template:
-      {
-        name: network,
-        network: "49, 2593, 3186, 3308, 6783",
-        poster: https://theposterdb.com/api/assets/406470,
       }
   HGTV:
     template:
