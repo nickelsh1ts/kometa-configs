@@ -13,7 +13,7 @@ collections:
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
-    radarr_tag: pmm-boxoffice
+    radarr_tag: ko-boxoffice
     run_again: true
     visible_home: true
     visible_shared: true
@@ -63,5 +63,5 @@ collections:
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
-    radarr_tag: pmm-pirated
+    radarr_tag: ko-pirated
     url_poster: https://theposterdb.com/api/assets/257368

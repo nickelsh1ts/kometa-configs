@@ -6,3 +6,4 @@ overlays:
       group: STATUS
       weight: 1000
     imdb_chart: box_office
+    trakt_boxoffice: true
