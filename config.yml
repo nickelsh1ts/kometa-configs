@@ -8,7 +8,7 @@ libraries:
     remove_overlays: <<REMOVEOVERLAYSMOVIES>>
     reapply_overlays: <<REAPPLYOVERLAYSMOVIES>>
     # reset_overlays: tmdb
-    settings: &MOVIESSETTINGS
+    settings:
       save_report: true
       minimum_items: 2
       asset_directory:
@@ -18,12 +18,12 @@ libraries:
       use_separator: false
     collection_files:
     - file: config/metadata/refresh.yml
-      template_variables: &REFRESHMOVIES
+      template_variables:
         condition: all
         search_field: release
         days_number: 7
     - default: seasonal
-      template_variables: &SEASONAL
+      template_variables:
         emoji_christmas: 🎄
         schedule_christmas: range(11/01-12/31)
         url_poster_christmas: https://theposterdb.com/api/assets/69443
@@ -61,7 +61,7 @@ libraries:
         - memorial
         - veteran
     - default: imdb
-      template_variables: &IMDBMOVIES
+      template_variables:
         url_poster_top: https://theposterdb.com/api/assets/294454
         summary_top: Collection of Top 250 Movies which are currently available on NickflixTV
         collection_section: '02_20'
@@ -69,20 +69,20 @@ libraries:
         use_lowest: false
         use_popular: false
     - default: oscars
-      template_variables: &OSCARS
+      template_variables:
         url_poster_best_picture: https://theposterdb.com/api/assets/589966
         sync_mode_oscars: sync
         collection_section: '02_20'
         use_best_director: false
         use_year_collections: false
     - default: streaming
-      template_variables: &STREAMINGMOVIES
+      template_variables:
         url_poster_appletv: https://theposterdb.com/api/assets/168823
         name_appletv: Apple TV+ Movies
         collection_section: '02_25'
         region: ca
     - default: universe
-      template_variables: &UNIVERSEMOVIES
+      template_variables:
         url_poster_marvel: https://theposterdb.com/api/assets/203027
         url_poster_mcu: https://theposterdb.com/api/assets/162885
         url_poster_dcu: https://theposterdb.com/api/assets/171350
@@ -101,7 +101,7 @@ libraries:
         collection_section: '05_05'
         minimum_items: 1
     - default: tautulli
-      template_variables: &TAUTULLIMOVIES
+      template_variables:
         url_poster_watched: https://theposterdb.com/api/assets/345270
         name_watched: Trending on NickflixTV
         summary_watched: Collection of Movies trending on NickflixTV in the last 30 days
@@ -131,7 +131,7 @@ libraries:
         horizontal_align: center
         vertical_align: top
     - default: video_format
-      template_variables: &VIDEOFORMATOVERLAY
+      template_variables:
         horizontal_align: center
         horizontal_offset: 0
         vertical_offset: 10%
@@ -179,7 +179,7 @@ libraries:
         use_metacritic: false
         use_common: false
         use_razzie: false
-    operations: &MOVIESOPERATIONS
+    operations:
       split_duplicates: false
       assets_for_all: true
       mass_user_rating_update: mdb_tomatoes
@@ -251,7 +251,7 @@ libraries:
         collection_section: '01_05'
         sync_mode_watched: sync
     - default: trakt
-      template_variables: &TRAKTSHOWS
+      template_variables:
         url_poster_trending: https://theposterdb.com/api/assets/396719
         name_trending: Trending on Trakt
         summary_trending: Collection of TV Shows trending on Trakt in the last 30 days
@@ -409,7 +409,7 @@ libraries:
       template_variables: *RIBBONOVERLAY
     operations: *SHOWSOPERATIONS
 
-  'Kids Movies': *MOVIES
+  Kids Movies: *MOVIES
   'Retro: Kids Movies': *MOVIES
 
 playlist_files:
