@@ -24,9 +24,12 @@ collections:
   ######################################################
   Star Trek Alternate Reality:
     template:
-      { name: tmdb, poster: "https://theposterdb.com/api/assets/146213" }
-    trakt_list: https://trakt.tv/lists/official/star-trek-alternate-reality-collection
-    trakt_list_details: https://trakt.tv/lists/official/star-trek-alternate-reality-collection
+      {
+        name: tmdb,
+        collections: "115575",
+        tmdb_summary: 115575,
+        poster: "https://theposterdb.com/api/assets/146213",
+      }
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true

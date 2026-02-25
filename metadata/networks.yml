@@ -40,7 +40,7 @@ collections:
     template:
       {
         name: network,
-        network: "56, 217, 1232, 1483, 2193, 3917, 4771",
+        network: "56, 217, 1232, 1483, 2193, 6869, 1232, 6315, 7133",
         poster: https://theposterdb.com/api/assets/172187,
       }
   CBS:
@@ -119,7 +119,7 @@ collections:
     template:
       {
         name: network,
-        network: "318, 758, 4906",
+        network: "318, 758, 6222, 6292, 5594",
         poster: https://theposterdb.com/api/assets/81775,
       }
   Syfy:
@@ -133,14 +133,14 @@ collections:
     template:
       {
         name: network,
-        network: "68, 160, 4888",
+        network: "68, 160, 8545, 5625, 5968",
         poster: https://theposterdb.com/api/assets/193552,
       }
   YouTube:
     template:
       {
         name: network,
-        network: "247, 1436, 4869",
+        network: "247, 1436",
         poster: https://theposterdb.com/api/assets/193485,
       }
   BBC:
