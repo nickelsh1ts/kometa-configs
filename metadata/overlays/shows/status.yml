@@ -22,6 +22,10 @@ overlays:
         percentage: 1
         added: 21
         title.not: Specials
+      tmdb_status:
+        - returning
+        - planned
+        - production
 
   Airing:
     overlay:
