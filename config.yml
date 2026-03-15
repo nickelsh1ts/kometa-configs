@@ -19,7 +19,6 @@ libraries:
     collection_files:
     - file: config/metadata/refresh.yml
       template_variables:
-        condition: all
         search_field: release
         days_number: 7
     - default: seasonal
@@ -222,7 +221,6 @@ libraries:
     collection_files:
     - file: config/metadata/refresh.yml
       template_variables: &REFRESHSHOWS
-        condition: all
         search_field: episode_air_date
         days_number: 7
     - default: imdb

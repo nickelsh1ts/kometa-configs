@@ -1,7 +1,14 @@
-collections:
-  Refresh Metadata:
+templates:
+  refresh_metadata:
     plex_search:
       all:
-        <<search_field>>: <<days_number|7>>
+        <<search_field>>: <<days_number>>
     item_refresh: true
     build_collection: false
+
+collections:
+  Refresh Metadata:
+    template:
+      name: refresh_metadata
+      search_field: release
+      days_number: 7
