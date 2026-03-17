@@ -10,3 +10,4 @@ logs/*
 *.swp
 *temp*
 *.tmp
+/overlays
