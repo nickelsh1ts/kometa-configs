@@ -17,7 +17,7 @@ collections:
     run_again: true
     visible_home: true
     visible_shared: true
-  Trending On Trakt:
+  Trending on Trakt:
     trakt_chart:
       chart: trending
       limit: 100
