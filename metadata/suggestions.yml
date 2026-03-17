@@ -26,7 +26,7 @@ collections:
     sort_title: "!02_00_Trending"
     sync_mode: sync
     item_label: "Trending"
-    smart_label: year.desc
+    collection_order: release
     summary: "Collection of Movies trending on Trakt in the last 7 days"
     radarr_add_missing: false
     radarr_search: false

@@ -11,3 +11,4 @@ logs/*
 *temp*
 *.tmp
 /overlays
+__pycache__/

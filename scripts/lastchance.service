@@ -1,0 +1,8 @@
+[Unit]
+Description=Last Chance Removal Script - Deletes items leaving
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%LASTCHANCE_WORKDIR%
+ExecStart=/usr/bin/python3 %LASTCHANCE_WORKDIR%/config/scripts/lastchance.py --env-file %LASTCHANCE_WORKDIR%/config/.env

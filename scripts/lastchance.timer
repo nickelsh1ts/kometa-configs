@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Last Chance cleanup on the 1st of each month
+
+[Timer]
+OnCalendar=*-*-01 %LASTCHANCE_TIME%
+Persistent=true
+
+[Install]
+WantedBy=timers.target
