@@ -12,7 +12,7 @@ overlays:
   NewSeason:
     overlay:
       name: NewSeason
-      file: config/overlays/status/new_season.png
+      file: config/assets/overlays/status/new_season.png
       group: STATUS
       weight: 900
     plex_all: true
@@ -30,7 +30,7 @@ overlays:
   Airing:
     overlay:
       name: airing
-      file: config/overlays/status/airing_small.png
+      file: config/assets/overlays/status/airing_small.png
       group: STATUS
       weight: 850
     tmdb_on_the_air: 2000
@@ -38,7 +38,7 @@ overlays:
   Returning:
     overlay:
       name: returning
-      file: config/overlays/status/returning_small.png
+      file: config/assets/overlays/status/returning_small.png
       group: STATUS
       weight: 800
     plex_all: true
@@ -51,7 +51,7 @@ overlays:
   Ended:
     overlay:
       name: ended
-      file: config/overlays/status/ended_small.png
+      file: config/assets/overlays/status/ended_small.png
       group: STATUS
       weight: 700
     plex_all: true
@@ -61,7 +61,7 @@ overlays:
   Cancelled:
     overlay:
       name: cancelled
-      file: config/overlays/status/cancelled_small.png
+      file: config/assets/overlays/status/cancelled_small.png
       group: STATUS
       weight: 600
     plex_all: true

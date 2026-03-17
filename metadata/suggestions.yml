@@ -7,17 +7,17 @@ collections:
     sort_title: "!01_05_Box Office"
     trakt_boxoffice: true
     summary: Top 10 grossing movies in the U.S. box office last weekend currently available on NickflixTV. Updated every Monday morning.
-    file_poster: config/overlays/suggestions/trakt_boxoffice.jpeg
+    file_poster: config/assets/posters/boxoffice.png
     smart_label: release.desc
     collection_mode: show_items
     radarr_add_missing: true
-    radarr_search: false
+    radarr_search: true
     radarr_monitor: true
     radarr_tag: ko-boxoffice
     run_again: true
     visible_home: true
     visible_shared: true
-  Trending:
+  Trending On Trakt:
     trakt_chart:
       chart: trending
       limit: 100
@@ -27,11 +27,11 @@ collections:
     sync_mode: sync
     item_label: "Trending"
     smart_label: year.desc
-    summary: "The most popular movies trending across all platforms"
+    summary: "Collection of Movies trending on Trakt in the last 7 days"
     radarr_add_missing: false
     radarr_search: false
     radarr_monitor: false
-    url_poster: https://theposterdb.com/api/assets/264265
+    file_poster: config/assets/posters/trakttrending.png
   Most Watched This Week:
     trakt_chart:
       chart: watched
@@ -39,8 +39,9 @@ collections:
       time_period: weekly
     sort_title: "!02_05_Watched This Week"
     sync_mode: sync
+    summary: "Collection of Movies most watched this week on Trakt"
     radarr_add_missing: false
-    url_poster: https://theposterdb.com/api/assets/264264
+    file_poster: config/assets/posters/mostwatchedweek.png
     collection_order: custom
     collection_mode: show_items
   Most Watched This Year:
@@ -50,8 +51,9 @@ collections:
       time_period: yearly
     sort_title: "!02_10_Watched This Year"
     sync_mode: sync
+    summary: "Collection of Movies most watched this year on Trakt"
     radarr_add_missing: false
-    file_poster: config/overlays/suggestions/trakt_yearly.jpeg
+    file_poster: config/assets/posters/mostwatchedyear.png
     collection_order: custom
     collection_mode: show_items
   Top Ten Pirated Weekly:
@@ -59,9 +61,9 @@ collections:
     smart_label: year.desc
     sync_mode: sync
     sort_title: "!02_15_Pirated Weekly"
-    summary: Most Pirated Movies of The Week
+    summary: "Collection of the top 10 pirated movies of the week"
     radarr_add_missing: true
-    radarr_search: false
+    radarr_search: true
     radarr_monitor: true
     radarr_tag: ko-pirated
-    url_poster: https://theposterdb.com/api/assets/257368
+    file_poster: config/assets/posters/toppirated.png

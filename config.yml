@@ -62,7 +62,7 @@ libraries:
     - default: imdb
       template_variables:
         url_poster_top: https://theposterdb.com/api/assets/294454
-        summary_top: Collection of Top 250 Movies which are currently available on NickflixTV
+        summary_top: Collection of the Top 250 Movies from IMDB
         collection_section: '02_20'
         sync_mode_top: sync
         use_lowest: false
@@ -101,7 +101,7 @@ libraries:
         minimum_items: 1
     - default: tautulli
       template_variables:
-        url_poster_watched: https://theposterdb.com/api/assets/345270
+        file_poster_watched: config/assets/posters/plextrending.png
         name_watched: Trending on NickflixTV
         summary_watched: Collection of Movies trending on NickflixTV in the last 30 days
         list_days: 30
@@ -226,7 +226,7 @@ libraries:
     - default: imdb
       template_variables: &IMDBSHOWS
         url_poster_top: https://theposterdb.com/api/assets/294454
-        summary_top: Collection of Top 250 TV Shows which are currently available on NickflixTV
+        summary_top: Collection of the Top 250 TV Shows from IMDB
         collection_section: '02_20'
         sync_mode_top: sync
         use_lowest: false
@@ -239,7 +239,7 @@ libraries:
         region: ca
     - default: tautulli
       template_variables: &TAUTULLISHOWS
-        url_poster_watched: https://theposterdb.com/api/assets/345270
+        file_poster_watched: config/assets/posters/plextrending.png
         name_watched: Trending on NickflixTV
         summary_watched: Collection of TV Shows trending on NickflixTV in the last 30 days
         list_days: 30
@@ -250,7 +250,7 @@ libraries:
         sync_mode_watched: sync
     - default: trakt
       template_variables:
-        url_poster_trending: https://theposterdb.com/api/assets/396719
+        file_poster_trending: config/assets/posters/trakttrending.png
         name_trending: Trending on Trakt
         summary_trending: Collection of TV Shows trending on Trakt in the last 30 days
         limit: 50
@@ -261,7 +261,6 @@ libraries:
         use_watched: false
         collection_section: '01_10'
     - file: config/metadata/networks.yml
-    - file: config/metadata/suggestions_shows.yml
     overlay_files:
     - default: studio
       template_variables:
