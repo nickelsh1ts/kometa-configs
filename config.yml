@@ -190,7 +190,7 @@ libraries:
         configured: false
         managed: true
         less: 1
-        ignore_empty_smart_collections: true
+        ignore_empty_smart_collections: false
       mass_genre_update:
       - tmdb
       - imdb
@@ -307,7 +307,7 @@ libraries:
         configured: false
         managed: true
         less: 1
-        ignore_empty_smart_collections: true
+        ignore_empty_smart_collections: false
       mass_user_rating_update: mdb_tomatoes
       mass_critic_rating_update: imdb
       mass_audience_rating_update: tmdb
