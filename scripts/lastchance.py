@@ -90,13 +90,21 @@ class KometaFormatter(logging.Formatter):
     def format(self, record):
         msg = record.getMessage()
         level = f"[{record.levelname}]"
+        content_w = self.width - 1  # space for leading space
 
         if msg and len(set(msg)) == 1 and msg[0] in "=-~*":
             padded = f"|{msg[0] * self.width}|"
         elif getattr(record, "center", False) and msg:
             padded = f"|{msg:^{self.width}}|"
+        elif len(msg) > content_w:
+            # Wrap long messages across multiple padded lines
+            lines = []
+            while msg:
+                lines.append(f"| {msg[:content_w]:<{content_w}}|")
+                msg = msg[content_w:]
+            padded = "\n".join(lines)
         else:
-            padded = f"| {msg:<{self.width - 1}}|"
+            padded = f"| {msg:<{content_w}}|"
 
         if self.include_timestamp:
             ts = self.formatTime(record, "%Y-%m-%d %H:%M:%S")
@@ -432,7 +440,7 @@ def main():
     delete_files = not args.no_delete_files
     import_exclude = args.import_exclude
 
-    _secrets.extend(v for v in [plex_token, gotify_token] if v)
+    _secrets.extend(v for v in [plex_url, plex_token, gotify_url, gotify_token] if v)
 
     # Connect to Plex
     log.info("=")
@@ -446,6 +454,8 @@ def main():
         cfg["token"] = get_env(cfg["token_env"])
         if cfg["token"]:
             _secrets.append(cfg["token"])
+            if cfg["url"]:
+                _secrets.append(cfg["url"])
         log.info("=")
         log.info("Connecting to %s...", cfg["label"])
         cfg["catalog"] = fetch_arr_catalog(
