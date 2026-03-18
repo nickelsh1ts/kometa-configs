@@ -96,13 +96,6 @@ class KometaFormatter(logging.Formatter):
             padded = f"|{msg[0] * self.width}|"
         elif getattr(record, "center", False) and msg:
             padded = f"|{msg:^{self.width}}|"
-        elif len(msg) > content_w:
-            # Wrap long messages across multiple padded lines
-            lines = []
-            while msg:
-                lines.append(f"| {msg[:content_w]:<{content_w}}|")
-                msg = msg[content_w:]
-            padded = "\n".join(lines)
         else:
             padded = f"| {msg:<{content_w}}|"
 
