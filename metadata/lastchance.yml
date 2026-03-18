@@ -7,19 +7,14 @@ collections:
   # then Kometa rebuilds the collection from any newly tagged items.
   Last Chance:
     schedule: monthly(1)
-    sync_mode: sync
     minimum_items: 1
     delete_below_minimum: true
     delete_not_scheduled: false
     sort_title: "!02_12_Last Chance"
     summary: "Collection of media leaving NickflixTV at the end of the month"
     file_poster: config/assets/posters/lastchance.png
-    collection_order: release
     collection_mode: show_items
-    visible_home: true
-    visible_shared: true
-    visible_library: true
-    run_again: true
-    plex_search:
+    smart_filter:
+      sort_by: release.asc
       all:
         label: leaving
