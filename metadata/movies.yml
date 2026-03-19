@@ -11,7 +11,7 @@ templates:
     tmdb_movie: <<movies>>
     tmdb_summary: <<tmdb_summary>>
     summary: <<summary>>
-    url_poster: <<poster>>
+    file_poster: <<poster>>
     sync_mode: sync
     sort_title: "!05_05_<<collection_name>>"
     collection_order: release
@@ -28,7 +28,7 @@ collections:
         name: tmdb,
         collections: "115575",
         tmdb_summary: 115575,
-        poster: "https://theposterdb.com/api/assets/146213",
+        poster: config/assets/posters/movies/star_trek_alternate_reality.png,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -39,7 +39,7 @@ collections:
         name: tmdb,
         collections: "295",
         tmdb_summary: 295,
-        poster: https://theposterdb.com/api/assets/72259,
+        poster: config/assets/posters/movies/pirates_of_the_caribbean.png,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -51,7 +51,7 @@ collections:
         collections: "8650",
         movies: 424783,
         tmdb_summary: 8650,
-        poster: https://theposterdb.com/api/assets/33217,
+        poster: config/assets/posters/movies/transformers.png,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -62,7 +62,7 @@ collections:
         name: tmdb,
         collections: "404609",
         tmdb_summary: 404609,
-        poster: https://theposterdb.com/api/assets/11590,
+        poster: config/assets/posters/movies/john_wick.png,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -73,7 +73,7 @@ collections:
         name: tmdb,
         collections: "391860",
         tmdb_summary: 391860,
-        poster: https://theposterdb.com/api/assets/83074,
+        poster: config/assets/posters/movies/kingsman.png,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -84,7 +84,7 @@ collections:
         name: tmdb,
         collections: "119",
         tmdb_summary: 119,
-        poster: https://theposterdb.com/api/assets/49793,
+        poster: config/assets/posters/movies/the_lord_of_the_rings.png,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -95,7 +95,7 @@ collections:
         name: tmdb,
         collections: "121938",
         tmdb_summary: 121938,
-        poster: https://theposterdb.com/api/assets/264227,
+        poster: config/assets/posters/movies/the_hobbit.png,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -110,7 +110,7 @@ collections:
         name: tmdb,
         collections: "230",
         tmdb_summary: 230,
-        poster: https://theposterdb.com/api/assets/8934,
+        poster: config/assets/posters/movies/the_godfather.png,
       }
     sort_title: "!05_00_The Godfather"
     radarr_add_missing: true

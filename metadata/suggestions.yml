@@ -7,7 +7,7 @@ collections:
     sort_title: "!01_05_Box Office"
     trakt_boxoffice: true
     summary: Top 10 grossing movies in the U.S. box office last weekend currently available on NickflixTV. Updated every Monday morning.
-    file_poster: config/assets/posters/boxoffice.png
+    file_poster: config/assets/posters/suggestions/boxoffice.png
     smart_label: release.desc
     collection_mode: show_items
     radarr_add_missing: true
@@ -31,7 +31,7 @@ collections:
     radarr_add_missing: false
     radarr_search: false
     radarr_monitor: false
-    file_poster: config/assets/posters/trakttrending.png
+    file_poster: config/assets/posters/suggestions/trakttrending.png
   Most Watched This Week:
     trakt_chart:
       chart: watched
@@ -41,7 +41,7 @@ collections:
     sync_mode: sync
     summary: "Collection of Movies most watched this week on Trakt"
     radarr_add_missing: false
-    file_poster: config/assets/posters/mostwatchedweek.png
+    file_poster: config/assets/posters/suggestions/mostwatchedweek.png
     collection_order: custom
     collection_mode: show_items
   Most Watched This Year:
@@ -53,7 +53,7 @@ collections:
     sync_mode: sync
     summary: "Collection of Movies most watched this year on Trakt"
     radarr_add_missing: false
-    file_poster: config/assets/posters/mostwatchedyear.png
+    file_poster: config/assets/posters/suggestions/mostwatchedyear.png
     collection_order: custom
     collection_mode: show_items
   Top Ten Pirated Weekly:
@@ -66,4 +66,4 @@ collections:
     radarr_search: true
     radarr_monitor: true
     radarr_tag: ko-pirated
-    file_poster: config/assets/posters/toppirated.png
+    file_poster: config/assets/posters/suggestions/toppirated.png

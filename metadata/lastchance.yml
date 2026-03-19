@@ -12,7 +12,7 @@ collections:
     delete_not_scheduled: false
     sort_title: "!02_12_Last Chance"
     summary: "Collection of media leaving NickflixTV at the end of the month"
-    file_poster: config/assets/posters/lastchance.png
+    file_poster: config/assets/posters/suggestions/lastchance.png
     collection_mode: show_items
     visible_home: true
     visible_library: true

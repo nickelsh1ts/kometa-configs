@@ -26,12 +26,12 @@ libraries:
       template_variables:
         emoji_christmas: 🎄
         schedule_christmas: range(11/01-12/31)
-        url_poster_christmas: https://theposterdb.com/api/assets/69443
+        file_poster_christmas: config/assets/posters/defaults/christmas.png
         trakt_list_christmas:
         - https://trakt.tv/users/nickelshits/lists/christmas-favourites?sort=released,asc
         emoji_halloween: 🎃
         schedule_halloween: range(09/01-10/31)
-        url_poster_halloween: https://theposterdb.com/api/assets/111218
+        file_poster_halloween: config/assets/posters/defaults/halloween.png
         emoji_years: 🎆
         schedule_years: range(12/26-01/05)
         emoji_valentine: 💘
@@ -40,12 +40,12 @@ libraries:
         schedule_patrick: range(03/01-03/17)
         emoji_thanksgiving: 🦃
         schedule_thanksgiving: range(10/01-10/15)
-        url_poster_thanksgiving: https://theposterdb.com/api/assets/112251
+        file_poster_thanksgiving: config/assets/posters/defaults/thanksgiving.png
         emoji_easter: 🐣
         schedule_easter: range(03/22-04/25)
-        url_poster_easter: https://theposterdb.com/api/assets/60970
+        file_poster_easter: config/assets/posters/defaults/easter.png
         emoji_black_history: 🖤
-        url_poster_black_history: https://theposterdb.com/api/assets/686790
+        file_poster_black_history: config/assets/posters/defaults/black_history.png
         name_black_history: Black History Month
         collection_section: '01_00'
         visible_shared: true
@@ -62,7 +62,7 @@ libraries:
         - veteran
     - default: imdb
       template_variables:
-        url_poster_top: https://theposterdb.com/api/assets/294454
+        file_poster_top: config/assets/posters/defaults/top.png
         summary_top: Collection of the Top 250 Movies from IMDB
         collection_section: '02_20'
         sync_mode_top: sync
@@ -70,39 +70,39 @@ libraries:
         use_popular: false
     - default: oscars
       template_variables:
-        url_poster_best_picture: https://theposterdb.com/api/assets/589966
+        file_poster_best_picture: config/assets/posters/defaults/best_picture.png
         sync_mode_oscars: sync
         collection_section: '02_20'
         use_best_director: false
         use_year_collections: false
     - default: streaming
       template_variables:
-        url_poster_appletv: https://theposterdb.com/api/assets/168823
+        file_poster_appletv: config/assets/posters/defaults/appletv.png
         name_appletv: Apple TV+ Movies
         collection_section: '02_25'
         region: ca
     - default: universe
       template_variables:
-        url_poster_marvel: https://theposterdb.com/api/assets/203027
-        url_poster_mcu: https://theposterdb.com/api/assets/162885
-        url_poster_dcu: https://theposterdb.com/api/assets/171350
-        url_poster_wizard: https://theposterdb.com/api/assets/166278
-        url_poster_conjuring: https://theposterdb.com/api/assets/5437
-        url_poster_star: https://theposterdb.com/api/assets/70805
-        url_poster_trek: https://theposterdb.com/api/assets/48818
-        url_poster_fast: https://theposterdb.com/api/assets/10036
-        url_poster_middle: https://theposterdb.com/api/assets/1716
-        url_poster_avp: https://theposterdb.com/api/assets/43455
-        url_poster_rocky: https://theposterdb.com/api/assets/416179
-        url_poster_xmen: https://theposterdb.com/api/assets/32304
-        url_poster_mummy: https://theposterdb.com/api/assets/129405
+        file_poster_marvel: config/assets/posters/defaults/marvel.png
+        file_poster_mcu: config/assets/posters/defaults/mcu.png
+        file_poster_dcu: config/assets/posters/defaults/dcu.png
+        file_poster_wizard: config/assets/posters/defaults/wizard.png
+        file_poster_conjuring: config/assets/posters/defaults/conjuring.png
+        file_poster_star: config/assets/posters/defaults/star.png
+        file_poster_trek: config/assets/posters/defaults/trek.png
+        file_poster_fast: config/assets/posters/defaults/fast.png
+        file_poster_middle: config/assets/posters/defaults/middle.png
+        file_poster_avp: config/assets/posters/defaults/avp.png
+        file_poster_rocky: config/assets/posters/defaults/rocky.png
+        file_poster_xmen: config/assets/posters/defaults/xmen.png
+        file_poster_mummy: config/assets/posters/defaults/mummy.png
         name_middle: The Middle Earth
         use_askew: false
         collection_section: '05_05'
         minimum_items: 1
     - default: tautulli
       template_variables:
-        file_poster_watched: config/assets/posters/plextrending.png
+        file_poster_watched: config/assets/posters/suggestions/plextrending.png
         name_watched: Trending on NickflixTV
         summary_watched: Collection of Movies trending on NickflixTV in the last 30 days
         list_days: 30
@@ -227,7 +227,7 @@ libraries:
         days_number: 7
     - default: imdb
       template_variables: &IMDBSHOWS
-        url_poster_top: https://theposterdb.com/api/assets/294454
+        file_poster_top: config/assets/posters/defaults/top.png
         summary_top: Collection of the Top 250 TV Shows from IMDB
         collection_section: '02_20'
         sync_mode_top: sync
@@ -235,13 +235,13 @@ libraries:
         use_popular: false
     - default: streaming
       template_variables: &STREAMINGSHOWS
-        url_poster_appletv: https://theposterdb.com/api/assets/168823
+        file_poster_appletv: config/assets/posters/defaults/appletv.png
         name_appletv: Apple TV+ Shows
         collection_section: '02_25'
         region: ca
     - default: tautulli
       template_variables: &TAUTULLISHOWS
-        file_poster_watched: config/assets/posters/plextrending.png
+        file_poster_watched: config/assets/posters/suggestions/plextrending.png
         name_watched: Trending on NickflixTV
         summary_watched: Collection of TV Shows trending on NickflixTV in the last 30 days
         list_days: 30
@@ -252,7 +252,7 @@ libraries:
         sync_mode_watched: sync
     - default: trakt
       template_variables:
-        file_poster_trending: config/assets/posters/trakttrending.png
+        file_poster_trending: config/assets/posters/suggestions/trakttrending.png
         name_trending: Trending on Trakt
         summary_trending: Collection of TV Shows trending on Trakt in the last 30 days
         limit: 50
