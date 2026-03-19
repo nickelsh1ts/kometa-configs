@@ -1,7 +1,7 @@
 templates:
   suggestion:
     file_poster: <<poster>>
-    sort_title: "!02_17_<<collection_name>>"
+    sort_title: "!01_15_<<collection_name>>"
     collection_mode: show_items
     sync_mode: sync
 

@@ -263,6 +263,7 @@ libraries:
         use_watched: false
         collection_section: '01_10'
     - file: config/metadata/networks.yml
+    - file: config/metadata/suggestions_shows.yml
     - file: config/metadata/lastchance.yml
     overlay_files:
     - default: studio
