@@ -17,7 +17,7 @@ collections:
     visible_home: true
     visible_library: true
     visible_shared: true
-    smart_filter:
+    plex_search:
       sort_by: release.asc
       all:
         label: leaving
