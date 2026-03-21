@@ -3,12 +3,12 @@
 ##                              Kometa                                ##
 ########################################################################
 libraries:
-  Movies: &MOVIES
+  Movies:
     report_path: config/reports/movies.yml
     remove_overlays: <<REMOVEOVERLAYSMOVIES>>
     reapply_overlays: <<REAPPLYOVERLAYSMOVIES>>
     # reset_overlays: tmdb
-    settings:
+    settings: &MOVIES_SETTINGS
       save_report: true
       minimum_items: 2
       asset_directory:
@@ -19,11 +19,11 @@ libraries:
     collection_files:
     - file: config/metadata/preroll.yml
     - file: config/metadata/refresh.yml
-      template_variables:
+      template_variables: &REFRESHMOVIES
         search_field: release
         days_number: 7
     - default: seasonal
-      template_variables:
+      template_variables: &SEASONAL
         emoji_christmas: 🎄
         schedule_christmas: range(11/01-12/31)
         file_poster_christmas: config/assets/posters/defaults/christmas.png
@@ -61,7 +61,7 @@ libraries:
         - memorial
         - veteran
     - default: imdb
-      template_variables:
+      template_variables: &TOP250
         file_poster_top: config/assets/posters/defaults/top.png
         summary_top: Collection of the Top 250 Movies from IMDB
         collection_section: '02_20'
@@ -69,20 +69,20 @@ libraries:
         use_lowest: false
         use_popular: false
     - default: oscars
-      template_variables:
+      template_variables: &OSCARS
         file_poster_best_picture: config/assets/posters/defaults/best_picture.png
         sync_mode_oscars: sync
         collection_section: '02_20'
         use_best_director: false
         use_year_collections: false
     - default: streaming
-      template_variables:
+      template_variables: &STREAMINGMOVIES
         file_poster_appletv: config/assets/posters/defaults/appletv.png
         name_appletv: Apple TV+ Movies
         collection_section: '02_25'
         region: ca
     - default: universe
-      template_variables:
+      template_variables: &UNIVERSE
         file_poster_marvel: config/assets/posters/defaults/marvel.png
         file_poster_mcu: config/assets/posters/defaults/mcu.png
         file_poster_dcu: config/assets/posters/defaults/dcu.png
@@ -101,7 +101,7 @@ libraries:
         collection_section: '05_05'
         minimum_items: 1
     - default: tautulli
-      template_variables:
+      template_variables: &TAUTULLI
         file_poster_watched: config/assets/posters/suggestions/plextrending.png
         name_watched: Trending on NickflixTV
         summary_watched: Collection of Movies trending on NickflixTV in the last 30 days
@@ -115,6 +115,7 @@ libraries:
     - file: config/metadata/genres.yml
     - file: config/metadata/studios.yml
     - file: config/metadata/suggestions.yml
+    - file: config/metadata/boxoffice.yml
     - file: config/metadata/lastchance.yml
     overlay_files:
     - default: streaming
@@ -128,11 +129,11 @@ libraries:
         back_width: 1000
         back_color: '#000000'
     - default: studio
-      template_variables:
+      template_variables: &MOVIETUDIOS
         horizontal_align: center
         vertical_align: top
     - default: video_format
-      template_variables:
+      template_variables: &VIDEOFORMATOVERLAY
         horizontal_align: center
         horizontal_offset: 0
         vertical_offset: 10%
@@ -140,8 +141,8 @@ libraries:
         back_width: 1000
         back_radius: 0
         back_color: '#B91C1CB0'
-        text_telesync: Poor Quality
-        text_cam: Poor Quality
+        text_telesync: Poor Quality (telesync)
+        text_cam: Poor Quality (cam)
         use_remux: false
         use_bluray: false
         use_web: false
@@ -180,7 +181,7 @@ libraries:
         use_metacritic: false
         use_common: false
         use_razzie: false
-    operations:
+    operations: &MOVIES_OPERATIONS
       split_duplicates: false
       assets_for_all: true
       mass_user_rating_update: mdb_tomatoes
@@ -251,7 +252,7 @@ libraries:
         collection_section: '01_05'
         sync_mode_watched: sync
     - default: trakt
-      template_variables:
+      template_variables: &TRAKTSHOWS
         file_poster_trending: config/assets/posters/suggestions/trakttrending.png
         name_trending: Trending on Trakt
         summary_trending: Collection of TV Shows trending on Trakt in the last 30 days
@@ -330,9 +331,50 @@ libraries:
       mass_imdb_parental_labels: none
       # mass_poster_update: tmdb
 
-  'Retro: Movies': *MOVIES
+  'Retro: Movies': &BASICMOVIES
+    report_path: config/reports/movies.yml
+    remove_overlays: <<REMOVEOVERLAYSMOVIES>>
+    reapply_overlays: <<REAPPLYOVERLAYSMOVIES>>
+    settings: *MOVIES_SETTINGS
+    template_variables:
+      use_separator: false
+    collection_files:
+    - file: config/metadata/refresh.yml
+      template_variables: *REFRESHMOVIES
+    - default: seasonal
+      template_variables: *SEASONAL
+    - default: imdb
+      template_variables: *TOP250
+    - default: oscars
+      template_variables: *OSCARS
+    - default: streaming
+      template_variables: *STREAMINGMOVIES
+    - default: universe
+      template_variables: *UNIVERSE
+    - default: tautulli
+      template_variables: *TAUTULLI
+    - file: config/metadata/movies.yml
+    - file: config/metadata/genres.yml
+    - file: config/metadata/studios.yml
+    - file: config/metadata/suggestions.yml
+    - file: config/metadata/lastchance.yml
+    overlay_files:
+    - default: streaming
+      template_variables: *STREAMINGOVERLAYMOVIES
+    - default: studio
+      template_variables: *MOVIETUDIOS
+    - default: video_format
+      template_variables: *VIDEOFORMATOVERLAY
+    - default: resolution
+      template_variables:
+        use_edition: false
+    - default: ratings
+      template_variables: *RATINGSOVERLAY
+    - default: ribbon
+      template_variables: *RIBBONOVERLAY
+    operations: *MOVIES_OPERATIONS
 
-  'Retro: TV Shows':
+  'Retro: TV Shows': &BASICSHOWS
     report_path: config/reports/shows.yml
     remove_overlays: <<REMOVEOVERLAYSRETROSHOWS>>
     reapply_overlays: <<REAPPLYOVERLAYSRETROSHOWS>>
@@ -349,6 +391,8 @@ libraries:
       template_variables: *STREAMINGSHOWS
     - default: tautulli
       template_variables: *TAUTULLISHOWS
+    - default: trakt
+      template_variables: *TRAKTSHOWS
     - file: config/metadata/networks.yml
     - file: config/metadata/lastchance.yml
     overlay_files:
@@ -373,47 +417,10 @@ libraries:
       template_variables: *RIBBONOVERLAY
     operations: *SHOWSOPERATIONS
 
-  'Retro: Kids Shows':
-    report_path: config/reports/shows.yml
-    remove_overlays: <<REMOVEOVERLAYSRETROKIDSSHOWS>>
-    reapply_overlays: <<REAPPLYOVERLAYSRETROKIDSSHOWS>>
-    # reset_overlays: tmdb
-    settings: *SHOWSSETTINGS
-    template_variables:
-      use_separator: false
-    collection_files:
-    - file: config/metadata/refresh.yml
-      template_variables: *REFRESHSHOWS
-    - default: imdb
-      template_variables: *IMDBSHOWS
-    - default: streaming
-      template_variables: *STREAMINGSHOWS
-    - file: config/metadata/networks.yml
-    - file: config/metadata/lastchance.yml
-    overlay_files:
-    - default: studio
-      template_variables:
-        horizontal_align: center
-        vertical_align: top
-    - default: streaming
-      template_variables: *STREAMINGOVERLAYMOVIES
-    - default: runtimes
-      template_variables: *RUNTIMESOVERLAYSHOWS
-    - default: resolution
-      template_variables:
-        use_edition: false
-    - default: resolution
-      template_variables:
-        builder_level: episode
-    - default: resolution
-      template_variables:
-        builder_level: season
-    - default: ribbon
-      template_variables: *RIBBONOVERLAY
-    operations: *SHOWSOPERATIONS
-
-  Kids Movies: *MOVIES
-  'Retro: Kids Movies': *MOVIES
+  Kids Movies: *BASICMOVIES
+  Kids Shows: *BASICSHOWS
+  'Retro: Kids Movies': *BASICMOVIES
+  'Retro: Kids Shows': *BASICSHOWS
 
 playlist_files:
 - default: playlist

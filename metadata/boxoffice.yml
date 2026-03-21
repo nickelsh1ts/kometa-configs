@@ -1,0 +1,16 @@
+collections:
+  Box Office Top 10:
+    sync_mode: sync
+    sort_title: "!01_05_Box Office"
+    trakt_boxoffice: true
+    summary: Collection of the Top 10 grossing movies in the U.S. box office last weekend. Updated every Monday morning.
+    file_poster: config/assets/posters/suggestions/boxoffice.png
+    smart_label: release.desc
+    collection_mode: show_items
+    radarr_add_missing: true
+    radarr_search: true
+    radarr_monitor: true
+    radarr_tag: ko-boxoffice
+    run_again: true
+    visible_home: true
+    visible_shared: true
