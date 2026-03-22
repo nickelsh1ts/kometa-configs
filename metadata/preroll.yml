@@ -15,7 +15,7 @@ collections:
     server_preroll:
       - - "/mnt/hdd1/pre-roll/NickflixTV.mp4"
         - "/mnt/hdd1/pre-roll/Happy Holidays.mkv"
-    schedule: range(01/01-03/31)
+    schedule: range(01/01-03/21)
   spring:
     build_collection: false
     server_preroll:
@@ -23,7 +23,7 @@ collections:
         - "/mnt/hdd1/pre-roll/Spring Flowers.mkv"
       - - "/mnt/hdd1/pre-roll/NickflixTV.mp4"
         - "/mnt/hdd1/pre-roll/Spring Time.mkv"
-    schedule: range(04/01-05/31)
+    schedule: range(03/22-05/31)
   base:
     build_collection: false
     server_preroll:
