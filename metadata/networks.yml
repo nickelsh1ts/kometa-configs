@@ -47,9 +47,7 @@ collections:
     template:
       {
         name: network,
-        network: "16, 2528",
-        "1709",
-        "2621",
+        network: "16, 2528, 1709, 2621",
         poster: config/assets/posters/networks/cbs.png,
       }
   Cinemax:
