@@ -477,9 +477,9 @@ settings:
 webhooks:
   error: gotify
   version: gotify
-  run_start: gotify
-  run_end: gotify
-  changes: gotify
+  run_start:
+  run_end:
+  changes:
   delete:
 gotify:
   url: <<GOTIFYURL>>
