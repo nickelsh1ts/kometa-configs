@@ -24,7 +24,7 @@ collections:
         genre: Action,
         poster: config/assets/posters/genres/action.png,
       }
-    summary: Action film is a genre wherein physical action takes precedence in the storytelling. The film will often have continuous motion and action including physical stunts, chases, fights, battles, and races. The story usually revolves around a hero that has a goal, but is facing incredible odds to obtain it.
+    summary: A genre of film in which the protagonist is thrust into a series of events that typically involve violence, extended fighting, physical feats, and frantic chases. Action films are usually categorized by a resourceful hero struggling against incredible odds, which include life-threatening situations, an evil villain, or a pursuit which usually concludes in victory for the hero.
   Adventure:
     template:
       {
@@ -32,7 +32,7 @@ collections:
         genre: Adventure,
         poster: config/assets/posters/genres/adventure.png,
       }
-    summary: Adventure film is a genre that revolves around the conquests and explorations of a protagonist. The purpose of the conquest can be to retrieve a person or treasure, but often the main focus is simply the pursuit of the unknown. These films generally take place in exotic locations and play on historical myths. Adventure films incorporate suspenseful puzzles and intricate obstacles that the protagonist must overcome in order to achieve the end goal.
+    summary: A genre of film that typically features a protagonist who embarks on a journey or quest, often in an exotic or fantastical setting, facing various challenges and obstacles along the way. Adventure films often include elements of action, exploration, and discovery, and may involve themes of heroism, bravery, and the pursuit of a goal or treasure.
   Animation:
     template:
       {
@@ -40,7 +40,7 @@ collections:
         genre: Animation,
         poster: config/assets/posters/genres/animation.png,
       }
-    summary: Animated film is a collection of illustrations that are photographed frame-by-frame and then played in a quick succession. Since its inception, animation has had a creative and imaginative tendency. Being able to bring animals and objects to life, this genre has catered towards fairy tales and children’s stories. However, animation has long been a genre enjoyed by all ages. As of recent, there has even been an influx of animation geared towards adults. Animation is commonly thought of as a technique, thus it’s ability to span over many different genres.
+    summary: A genre of film that uses animation techniques to create the illusion of movement, often featuring colorful and imaginative visuals. Animated films can be targeted towards children or adults and can encompass a wide range of sub-genres, including comedy, fantasy, science fiction, and more. They often rely on storytelling, character development, and visual creativity to engage audiences.
   Anime:
     template:
       {
@@ -48,7 +48,7 @@ collections:
         genre: Anime,
         poster: config/assets/posters/genres/anime.png,
       }
-    summary: A collection of Anime movies
+    summary: A genre of film that originates from Japan and is characterized by its distinct animation style, often featuring colorful artwork, fantastical themes, and vibrant characters. Anime can encompass a wide range of genres and themes, including action, adventure, romance, science fiction, fantasy, and more. It is known for its unique storytelling techniques and has gained a global following for its diverse and imaginative content.
   Biography:
     template:
       {
@@ -56,7 +56,7 @@ collections:
         genre: Biography,
         poster: config/assets/posters/genres/biography.png,
       }
-    summary: A collection of Biography movies
+    summary: A genre of film that tells the story of a real person's life, often focusing on their achievements, struggles, and significant events. Biographical films, or biopics, aim to provide insight into the subject's character and experiences, often portraying their impact on society or history. These films can cover a wide range of subjects, including historical figures, celebrities, political leaders, and more.
   Comedy:
     template:
       {
@@ -64,7 +64,7 @@ collections:
         genre: Comedy,
         poster: config/assets/posters/genres/comedy.png,
       }
-    summary: Comedy is a genre of film that uses humor as a driving force. The aim of a comedy film is to illicit laughter from the audience through entertaining stories and characters. Although the comedy film may take on some serious material, most have a happy ending. Comedy film has the tendency to become a hybrid sub-genre because humor can be incorporated into many other genres. Comedies are more likely than other films to fall back on the success and popularity of an individual star.
+    summary: A genre of film that is designed to entertain and amuse audiences through humor. Comedy films often feature exaggerated characters, situations, and dialogue to create laughter and provide a lighthearted escape from reality. Sub-genres of comedy include romantic comedy, slapstick, satire, dark comedy, and more, each offering a different style of humor to cater to various tastes.
   Crime:
     template:
       {
@@ -72,7 +72,7 @@ collections:
         genre: Crime,
         poster: config/assets/posters/genres/crime.png,
       }
-    summary: Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal. This genre tends to be fast paced with an air of mystery – this mystery can come from the plot or from the characters themselves.
+    summary: A genre of film that focuses on criminal activities, often involving a protagonist who is either a criminal or a law enforcement officer. Crime films typically explore themes of morality, justice, and the consequences of illegal actions. They can include elements of suspense, mystery, and action, and may be set in various time periods and locations, ranging from gritty urban environments to glamorous settings.
   Documentary:
     template:
       {
@@ -80,7 +80,7 @@ collections:
         genre: Documentary,
         poster: config/assets/posters/genres/documentary.png,
       }
-    summary: Documentary film is a non-fiction genre intended to document reality primarily for the purposes of instruction, education, or maintaining a historical record.
+    summary: A genre of film that presents factual information about real-life events, people, or issues. Documentaries aim to educate, inform, or raise awareness about a particular subject, often using interviews, archival footage, and narration to tell a compelling story. They can cover a wide range of topics, including history, science, social issues, nature, and more, and may be presented in various styles, such as observational, participatory, or expository.
   Drama:
     template:
       {
@@ -88,7 +88,7 @@ collections:
         genre: Drama,
         poster: config/assets/posters/genres/drama.png,
       }
-    summary: Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues. Whether heroes or heroines are facing a conflict from the outside or a conflict within themselves, Drama film aims to tell an honest story of human struggles.
+    summary: A genre of film that focuses on realistic storytelling, character development, and emotional themes. Drama films often explore complex relationships, moral dilemmas, and social issues, aiming to evoke empathy and provoke thought in the audience. They can encompass a wide range of sub-genres, including romantic drama, historical drama, crime drama, and more, each offering a different perspective on human experiences and emotions.
   Family:
     template:
       {
@@ -96,7 +96,7 @@ collections:
         genre: Family,
         poster: config/assets/posters/genres/family.png,
       }
-    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+    summary: A genre of film that is suitable for viewers of all ages, often featuring themes of togetherness, love, and moral lessons. Family films typically include content that is appropriate for children while also appealing to adults, making them enjoyable for the entire family. They can encompass a wide range of sub-genres, including animated films, adventure stories, comedies, and more, often emphasizing positive values and heartwarming narratives.
   Fantasy:
     template:
       {
@@ -104,7 +104,7 @@ collections:
         genre: Fantasy,
         poster: config/assets/posters/genres/fantasy.png,
       }
-    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+    summary: A genre of film that features magical, supernatural, or otherworldly elements that are not found in the real world. Fantasy films often take place in imaginary worlds or alternate realities and may include mythical creatures, magical powers, and epic quests. They can explore themes of heroism, good versus evil, and the power of imagination, offering audiences an escape into fantastical adventures and imaginative storytelling.
   Gangster:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/gangster.png }
@@ -112,7 +112,7 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls026270180/
       - https://www.imdb.com/list/ls000093502/
-    summary: Gangster film is a sub-genre of crime films that center on organized crime or the mafia. Often the plot revolves around the rise and fall of an organized crime leader. Many Gangster films explore the destructive nature of organized crime, while others attempt to show the humanity of the individual characters.
+    summary: A genre of film that focuses on the lives and activities of criminals, often centered around organized crime and the underworld. Gangster films typically explore themes of power, loyalty, betrayal, and the consequences of a life of crime. They may feature antiheroes or morally ambiguous characters who navigate the dangerous world of crime, often leading to violent confrontations and dramatic storylines.
   History:
     template:
       {
@@ -120,7 +120,7 @@ collections:
         genre: History,
         poster: config/assets/posters/genres/history.png,
       }
-    summary: History film is a genre that takes historical events and people and interprets them in a larger scale. Historical accuracy is not the main focus, but rather the telling of a grandiose story. The drama of an History film is often accentuated by a sweeping musical score, lavish costumes, and high production value.
+    summary: A genre of film that depicts historical events, figures, or periods, often with a focus on accuracy and authenticity. Historical films aim to provide insight into the past, exploring significant moments in history and the people who shaped them. They can cover a wide range of topics, including wars, political movements, cultural shifts, and more, often blending factual storytelling with dramatic elements to engage audiences.
   Horror:
     template:
       {
@@ -128,7 +128,7 @@ collections:
         genre: Horror,
         poster: config/assets/posters/genres/horror.png,
       }
-    summary: Horror film is a genre that aims to create a sense of fear, panic, alarm, and dread for the audience. These films are often unsettling and rely on scaring the audience through a portrayal of their worst fears and nightmares. Horror films usually center on the arrival of an evil force, person, or event. Many Horror films include mythical creatures such as ghosts, vampires, and zombies. Traditionally, Horror films incorporate a large amount of violence and gore into the plot. Though it has its own style, Horror film often overlaps into Fantasy, Thriller, and Science-Fiction genres.
+    summary: A genre of film that is designed to evoke fear, suspense, and terror in the audience. Horror films often feature supernatural elements, monsters, or psychological themes that create a sense of dread and unease. They can explore various sub-genres, including slasher films, supernatural horror, psychological horror, and more, each offering a different approach to scaring and thrilling viewers.
   Martial Arts:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/martial_arts.png }
@@ -138,15 +138,15 @@ collections:
       - https://www.imdb.com/list/ls068611186/
       - https://www.imdb.com/list/ls068378513/
       - https://www.imdb.com/list/ls090404120/
-    summary: Martial Arts film is a sub-genre of action films that feature numerous martial arts combat between characters. These combats are usually the films' primary appeal and entertainment value, and often are a method of storytelling and character expression and development. Martial Arts are frequently featured in training scenes and other sequences in addition to fights. Martial Arts films commonly include other types of action, such as hand-to-hand combat, stuntwork, chases, and gunfights.
-  # Music:
-  #   template: {name: Genre, poster: https://theposterdb.com/api/assets/51398}
-  #   imdb_list:
-  #   - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music
-  #     limit: 200
-  #   - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music&sort=user_rating,desc
-  #     limit: 200
-  #   summary: Music film is genre that revolves around music being an integral part of the characters lives.
+    summary: A genre of film that focuses on martial arts combat and techniques, often featuring skilled fighters, intense action sequences, and themes of honor, discipline, and self-improvement. Martial arts films can encompass a wide range of styles and settings, from traditional kung fu movies to modern action films, and may include elements of fantasy or historical drama. They often showcase impressive choreography and physical feats, making them popular among fans of action and combat cinema.
+  Music:
+    template: {name: Genre, poster: https://theposterdb.com/api/assets/51398}
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music&sort=user_rating,desc
+      limit: 200
+    summary: A genre of film that centers around music and musicians, often featuring musical performances, biographical stories of famous musicians, or fictional narratives that incorporate music as a central theme. Music films can encompass a wide range of sub-genres, including musicals, concert films, music documentaries, and more. They often explore themes of creativity, passion, and the transformative power of music in people's lives.
   Musical:
     template:
       {
@@ -154,7 +154,7 @@ collections:
         genre: Musical,
         poster: config/assets/posters/genres/musical.png,
       }
-    summary: A Musical interweaves vocal and dance performances into the narrative of the film. The songs of a film can either be used to further the story or simply enhance the experience of the audience. These films are often done on a grand scale and incorporate lavish costumes and sets. Traditional musicals center on a well-known star, famous for their dancing or singing skills (i.e. Fred Astaire, Gene Kelly, Judy Garland). These films explore concepts such are love and success, allowing the audience to escape from reality.
+    summary: A genre of film that combines music, singing, and dancing with storytelling to create a unique cinematic experience. Musical films often feature characters who express their emotions and advance the plot through song and dance numbers. They can encompass a wide range of sub-genres, including romantic musicals, comedy musicals, and more, each offering a different style of music and storytelling. Musicals are known for their vibrant visuals, catchy songs, and energetic performances that captivate audiences.
   Mystery:
     template:
       {
@@ -162,13 +162,13 @@ collections:
         genre: Mystery,
         poster: config/assets/posters/genres/mystery.png,
       }
-    summary: A Mystery film centers on a person of authority, usually a detective, that is trying to solve a mysterious crime. The main protagonist uses clues, investigation, and logical reasoning. The biggest element in these films is a sense of “whodunit” suspense, usually created through visual cues and unusual plot twists.
+    summary: A genre of film that revolves around the solving of a puzzle, crime, or unexplained event, often featuring a protagonist who is a detective, investigator, or amateur sleuth. Mystery films typically involve suspenseful storytelling, red herrings, and plot twists that keep audiences guessing until the resolution. They can encompass a wide range of sub-genres, including detective stories, psychological thrillers, and more, each offering a different approach to unraveling the mystery at hand.
   Pandemic:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/pandemic.png }
     sort_title: "!03_01_Pandemic"
     imdb_list: https://www.imdb.com/list/ls092321048/
-    summary: A Pandemic film resolves around widespread viruses, plagues, and diseases.
+    summary: A genre of film that focuses on the outbreak and spread of infectious diseases, often depicting the impact of a pandemic on society and individuals. Pandemic films typically explore themes of survival, fear, and the human response to crisis, often featuring characters who must navigate the challenges of a rapidly spreading disease. They can include elements of horror, science fiction, and drama, offering a gripping portrayal of the consequences of a global health crisis.
   Romance:
     template:
       {
@@ -176,7 +176,7 @@ collections:
         genre: Romance,
         poster: config/assets/posters/genres/romance.png,
       }
-    summary: "Romance film can be defined as a genre wherein the plot revolves around the love between two protagonists. This genre usually has a theme that explores an issue within love, including but not limited to: love at first sight, forbidden love, love triangles, and sacrificial love. The tone of Romance film can vary greatly. Whether the end is happy or tragic, Romance film aims to evoke strong emotions in the audience."
+    summary: A genre of film that focuses on romantic relationships between characters, often exploring themes of love, passion, and emotional connection. Romance films typically feature a central love story that drives the plot, with characters facing obstacles and challenges that test their relationship. They can encompass a wide range of sub-genres, including romantic comedies, romantic dramas, and more, each offering a different perspective on the complexities of love and relationships.
   Science Fiction:
     template:
       {
@@ -184,7 +184,7 @@ collections:
         genre: Science Fiction,
         poster: config/assets/posters/genres/science_fiction.png,
       }
-    summary: Science Fiction (Sci-Fi) film is a genre that incorporates hypothetical, science-based themes into the plot of the film. Often, this genre incorporates futuristic elements and technologies to explore social, political, and philosophical issues. The film itself is usually set in the future, either on earth or in space. Traditionally, a Science Fiction film will incorporate heroes, villains, unexplored locations, fantastical quests, and advanced technology.
+    summary: A genre of film that explores imaginative and futuristic concepts, often involving advanced technology, space exploration, time travel, parallel universes, and extraterrestrial life. Science fiction films can encompass a wide range of sub-genres, including cyberpunk, space opera, dystopian fiction, and more, each offering a different vision of the future and the impact of scientific advancements on society. They often explore themes of humanity, ethics, and the consequences of technological progress.
   Short:
     template:
       {
@@ -192,7 +192,7 @@ collections:
         genre: Short,
         poster: config/assets/posters/genres/short.png,
       }
-    summary: A collection of Short movies
+    summary: A genre of film that is characterized by its shorter runtime, typically under 40 minutes, and often focuses on a single idea, theme, or story. Short films can encompass a wide range of genres and styles, including animation, documentary, experimental, and narrative fiction. They are often used as a platform for emerging filmmakers to showcase their talent and creativity, and can be a powerful medium for storytelling in a concise format.
   Sports:
     template:
       {
@@ -200,7 +200,7 @@ collections:
         genre: Sport,
         poster: config/assets/posters/genres/sports.png,
       }
-    summary: A Sport Film revolves around a sport setting, event, or an athlete. Often, these films will center on a single sporting event that carries significant importance. Sports films traditionally have a simple plot that builds up to the significant sporting event. This genre is known for incorporating film techniques to build anticipation and intensity. Sport films have a large range of sub-genres, from comedies to dramas, and are more likely than other genres to be based true-life events.
+    summary: A genre of film that centers around sports and athletic competition, often featuring stories of perseverance, teamwork, and triumph. Sports films can encompass a wide range of sub-genres, including biographical sports dramas, underdog stories, and more, each offering a different perspective on the world of sports. They often explore themes of dedication, sacrifice, and the pursuit of excellence, making them inspiring and engaging for audiences.
   Stand Up Comedy:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/stand_up_comedy.png }
@@ -210,13 +210,13 @@ collections:
       - https://www.imdb.com/list/ls086584751/
       - https://www.imdb.com/list/ls086022668/
       - https://www.imdb.com/list/ls049792208/
-    summary: Stand-up comedy is a comedic style in which a comedian performs in front of a live audience, speaking directly to them through a microphone. Comedians give the illusion that they are dialoguing, but in actuality, they are monologuing a grouping of humorous stories, jokes and one-liners, typically called a shtick, routine, act, or set. Some stand-up comedians use props, music or magic tricks to enhance their acts. Stand-up comedians perform quasi-autobiographical and fictionalized extensions of their offstage selves.
+    summary: A genre of film that features stand-up comedians performing their routines in front of a live audience, often recorded for distribution as a comedy special. Stand-up comedy films typically showcase the comedian's unique style and material, covering a wide range of topics and humor styles. They can include observational comedy, satire, dark humor, and more, offering audiences a chance to experience the energy and spontaneity of a live comedy performance from the comfort of their own home.
   Sword & Sorcery:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/sword_and_sorcery.png }
     sort_title: "!03_01_Sword_&_Sorcery"
     imdb_list: https://www.imdb.com/list/ls022909805
-    summary: Sword and Sorcery film is a sub-genre of Fantasy that tend to be more plot-driven. These films rely on heavy action and battle scenes. Common themes in Sword and Sorcery films include a rescue mission, saving a princess, and battling a fantastical monster. The worlds and characters in these films are often much less developed than in other fantasy sub-genres. Of all the Fantasy sub-genres, Sword and Sorcery is most likely to be geared towards a younger audience, as many of these films are animated.
+    summary: A subgenre of fantasy that typically features heroic characters, often warriors or adventurers, who engage in battles against supernatural forces, such as sorcerers, monsters, and mythical creatures. Sword & Sorcery films often take place in a fantastical world filled with magic, ancient civilizations, and epic quests. They emphasize action, adventure, and the struggle between good and evil, often featuring themes of heroism, bravery, and the triumph of the human spirit against overwhelming odds.
   Thriller:
     template:
       {
@@ -224,7 +224,7 @@ collections:
         genre: Thriller,
         poster: config/assets/posters/genres/thriller.png,
       }
-    summary: Thriller Film is a genre that revolves around anticipation and suspense. The aim for Thrillers is to keep the audience alert and on the edge of their seats. The protagonist in these films is set against a problem – an escape, a mission, or a mystery. No matter what sub-genre a Thriller film falls into, it will emphasize the danger that the protagonist faces. The tension with the main problem is built on throughout the film and leads to a highly stressful climax.
+    summary: A genre of film that is designed to create suspense, excitement, and tension in the audience. Thriller films often feature a protagonist who is in danger or facing a high-stakes situation, with the plot revolving around the pursuit of a goal or the resolution of a conflict. They can encompass a wide range of sub-genres, including psychological thrillers, crime thrillers, and more, each offering a different approach to keeping audiences on the edge of their seats.
   War:
     template:
       {
@@ -232,7 +232,7 @@ collections:
         genre: War,
         poster: config/assets/posters/genres/war.png,
       }
-    summary: War Film is a genre that looks at the reality of war on a grand scale. They often focus on landmark battles as well as political issues within war. This genre usually focuses on a main character and his team of support, giving the audience an inside look into the gritty reality of war.
+    summary: A genre of film that focuses on the depiction of warfare, often exploring the experiences of soldiers, civilians, and the impact of war on society. War films can encompass a wide range of sub-genres, including historical war dramas, anti-war films, and more, each offering a different perspective on the realities of conflict. They often explore themes of heroism, sacrifice, and the moral complexities of war, providing audiences with a powerful and thought-provoking portrayal of one of humanity's most significant challenges.
   Western:
     template:
       {
@@ -240,10 +240,66 @@ collections:
         genre: Western,
         poster: config/assets/posters/genres/western.png,
       }
-    summary: "Western Film is a genre that revolves around stories primarily set in the late 19th century in the American Old West. Most Westerns are set between the American Civil War (1865) and the early 1900s. Common themes within Western Film include: the conquest of the wild west, the cultural separation of the East and the West, the West’s resistance to modern change, the conflict between Cowboys and Indians, outlaws, and treasure/gold hunting. American Western Film usually revolves around a stoic hero and emphasizes the importance of honor and sacrifice."
+    summary: A genre of film that is set in the American Old West, typically during the late 19th century, and often features themes of frontier life, lawlessness, and the struggle for survival. Western films often include iconic elements such as cowboys, outlaws, sheriffs, and Native Americans, with storylines that revolve around conflicts over land, justice, and personal honor. They can encompass a wide range of sub-genres, including classic Westerns, revisionist Westerns, and more, each offering a different perspective on the mythology and reality of the American West.
   LGBTQ+:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/lgbtq.png }
     sort_title: "!03_01_LGBTQ+"
     trakt_list: https://trakt.tv/users/jholla452/lists/lgbtq-movies-2000?sort=rank,asc
-    summary: Films that represent or heavily incorporate LGBTQIA characters or people.
+    summary: A genre of film that focuses on LGBTQ+ themes, characters, and stories, often exploring the experiences, challenges, and triumphs of individuals within the LGBTQ+ community. LGBTQ+ films can encompass a wide range of sub-genres, including romantic dramas, comedies, documentaries, and more, each offering a different perspective on the diverse experiences of LGBTQ+ individuals. They often explore themes of identity, love, acceptance, and social issues, providing representation and visibility for the LGBTQ+ community in cinema.
+  Superhero:
+    template:
+      { name: Special Genre, poster: config/assets/posters/genres/superhero.png }
+    sort_title: "!03_01_Superhero"
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=2000-01-01,&user_rating=5.0,10.0&num_votes=25000,&genres=action&keywords=superhero
+        limit: 200
+    summary: A genre of film that features characters with superhuman powers or abilities, often centered around their heroic missions and battles against powerful adversaries. Superhero films typically explore themes of heroism, responsibility, redemption, and the struggle between good and evil. They can encompass a wide range of storylines, from origin stories to ensemble adventures, featuring iconic heroes from comic books and expanding universes with interconnected narratives and spectacular action sequences.
+  Film Noir:
+    template:
+      { name: Special Genre, poster: config/assets/posters/genres/film_noir.jpg }
+    sort_title: "!03_01_Film Noir"
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1930-01-01,2020-01-01&user_rating=5.0,10.0&genres=crime,drama&keywords=noir
+        limit: 200
+    summary: A genre of film characterized by dark, moody atmospheres, cynical characters, and morally complex narratives, often set in urban environments and featuring crime, corruption, and betrayal. Film noir typically employs low-key lighting, dramatic shadows, and a pessimistic worldview to create a sense of danger and intrigue. These films often feature troubled protagonists, femme fatales, and themes of fate, justice, and the darker aspects of human nature, establishing a distinct visual and narrative style that has influenced cinema for decades.
+  Heist:
+    template:
+      { name: Special Genre, poster: config/assets/posters/genres/heist.jpg }
+    sort_title: "!03_01_Heist"
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1980-01-01,&user_rating=5.0,10.0&num_votes=25000,&keywords=heist
+        limit: 200
+    summary: A genre of film that revolves around the planning and execution of a major theft or robbery, often featuring a team of skilled criminals assembling to pull off an elaborate scheme. Heist films typically emphasize careful planning, clever strategies, and unexpected twists, exploring themes of teamwork, ambition, and the risks of criminal enterprise. These films combine elements of suspense, action, and drama, keeping audiences engaged through the intricacies of the plot and the tension of whether the heist will succeed or fail.
+  Spy:
+    template:
+      { name: Special Genre, poster: config/assets/posters/genres/spy.jpg }
+    sort_title: "!03_01_Spy"
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1980-01-01,&user_rating=5.0,10.0&num_votes=25000,&genres=action,thriller&keywords=spy
+        limit: 200
+    summary: A genre of film that focuses on espionage, surveillance, and intelligence operations, often featuring spies, secret agents, and covert missions. Espionage films typically explore themes of loyalty, betrayal, deception, and the moral complexities of intelligence work. They can range from realistic portrayals of spycraft to theatrical adventures featuring gadgets and exotic locations, with protagonists navigating dangerous situations, double-crosses, and high-stakes international conflicts.
+  Post-Apocalyptic:
+    template:
+      { name: Special Genre, poster: config/assets/posters/genres/post_apocalyptic.png }
+    sort_title: "!03_01_Post-Apocalyptic"
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1980-01-01,&user_rating=5.0,10.0&num_votes=25000,&genres=action,sci-fi&keywords=post-apocalyptic
+        limit: 200
+    summary: A genre of film set in a world after a cataclysmic event has devastated civilization, leaving survivors to navigate a harsh and dangerous landscape. Post-apocalyptic films explore themes of survival, human resilience, moral ambiguity, and the rebuilding of society in the face of extinction-level threats. They can feature elements of action, science fiction, and thriller genres, depicting worlds ravaged by war, disease, natural disasters, or technological collapse, where protagonists must adapt to new realities and confront both environmental and human threats.
+  Disaster:
+    template:
+      { name: Special Genre, poster: config/assets/posters/genres/disaster.png }
+    sort_title: "!03_01_Disaster"
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1970-01-01,&user_rating=5.0,10.0&num_votes=25000,&genres=action,drama&keywords=disaster
+        limit: 200
+    summary: A genre of film that depicts large-scale catastrophic events or natural disasters and their impact on individuals and society. Disaster films typically feature intense action sequences, spectacular visual effects, and high-stakes survival scenarios as characters navigate environmental threats such as earthquakes, tsunamis, volcanic eruptions, storms, or asteroid impacts. These films explore themes of human courage, sacrifice, and the triumph of survival instincts, often combining elements of action, drama, and suspense to showcase both the awesome destructive power of nature and the resilience of humanity.
+  Romantic Comedy:
+    template:
+      {
+        name: Genre,
+        genre: Romance,
+        poster: config/assets/posters/genres/romantic_comedy.jpg,
+      }
+    summary: A genre of film that combines elements of romantic love stories with comedic humor and lighthearted entertainment. Romantic comedy films, often known as "rom-coms," typically revolve around the development of a romantic relationship between characters, featuring witty dialogue, humorous situations, and emotional moments that balance comedy with genuine affection. They often explore themes of love, attraction, compatibility, and the amusing complications of relationships, offering audiences an entertaining escape that celebrates the joys and challenges of finding and maintaining romantic connections.
