@@ -154,7 +154,7 @@ collections:
       }
     summary: Warner Bros. Pictures is an American film production company of the Warner Bros. Pictures Group division of Warner Bros. (both ultimately owned by Warner Bros. Discovery). The studio is the flagship producer of live-action feature films within the Warner Bros. Pictures Group unit, and is based at the Warner Bros. Studios complex in Burbank, California. Animated films produced the Warner Animation Group are also released under the studio banner.
   A24:
-    mdblist: https://mdblist.com/lists/joaozinho254/a24-all-movies-js5igeknih
+    trakt_list: https://trakt.tv/users/laryan/lists/a24-films?sort=released,asc
     summary: Movies produced by A24. Usually indicative of quality content.
     sort_title: "!04_10_A24"
     file_poster: config/assets/posters/studios/a24.png
