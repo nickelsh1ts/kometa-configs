@@ -335,7 +335,7 @@ collections:
     template:
       {
         name: Special Genre,
-        poster: config/assets/posters/genres/post_apocalyptic.png,
+        poster: config/assets/posters/genres/post_apocalyptic.jpg,
       }
     sort_title: "!03_01_Post-Apocalyptic"
     imdb_list: https://www.imdb.com/list/ls063157256/
