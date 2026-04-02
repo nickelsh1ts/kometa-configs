@@ -139,7 +139,10 @@ collections:
     summary: A genre of film that is designed to evoke fear, suspense, and terror in the audience. Horror films often feature supernatural elements, monsters, or psychological themes that create a sense of dread and unease. They can explore various sub-genres, including slasher films, supernatural horror, psychological horror, and more, each offering a different approach to scaring and thrilling viewers.
   Martial Arts:
     template:
-      { name: Special Genre, poster: config/assets/posters/genres/martial_arts.png }
+      {
+        name: Special Genre,
+        poster: config/assets/posters/genres/martial_arts.png,
+      }
     sort_title: "!03_01_Martial_Arts"
     imdb_list:
       - https://www.imdb.com/list/ls000099643/
@@ -155,7 +158,7 @@ collections:
       limit: 200
     summary: A genre of film that focuses on martial arts combat and techniques, often featuring skilled fighters, intense action sequences, and themes of honor, discipline, and self-improvement. Martial arts films can encompass a wide range of styles and settings, from traditional kung fu movies to modern action films, and may include elements of fantasy or historical drama. They often showcase impressive choreography and physical feats, making them popular among fans of action and combat cinema.
   Music:
-    template: {name: Genre, poster: https://theposterdb.com/api/assets/51398}
+    template: { name: Genre, poster: https://theposterdb.com/api/assets/51398 }
     imdb_search:
       type: movie
       keyword: music
@@ -228,7 +231,10 @@ collections:
     summary: A genre of film that centers around sports and athletic competition, often featuring stories of perseverance, teamwork, and triumph. Sports films can encompass a wide range of sub-genres, including biographical sports dramas, underdog stories, and more, each offering a different perspective on the world of sports. They often explore themes of dedication, sacrifice, and the pursuit of excellence, making them inspiring and engaging for audiences.
   Stand Up Comedy:
     template:
-      { name: Special Genre, poster: config/assets/posters/genres/stand_up_comedy.png }
+      {
+        name: Special Genre,
+        poster: config/assets/posters/genres/stand_up_comedy.png,
+      }
     sort_title: +03_01_Stand_Up_Comedy
     imdb_list:
       - https://www.imdb.com/list/ls070221411/
@@ -244,7 +250,10 @@ collections:
     summary: A genre of film that features stand-up comedians performing their routines in front of a live audience, often recorded for distribution as a comedy special. Stand-up comedy films typically showcase the comedian's unique style and material, covering a wide range of topics and humor styles. They can include observational comedy, satire, dark humor, and more, offering audiences a chance to experience the energy and spontaneity of a live comedy performance from the comfort of their own home.
   Sword & Sorcery:
     template:
-      { name: Special Genre, poster: config/assets/posters/genres/sword_and_sorcery.png }
+      {
+        name: Special Genre,
+        poster: config/assets/posters/genres/sword_and_sorcery.png,
+      }
     sort_title: "!03_01_Sword_&_Sorcery"
     imdb_list:
       - https://www.imdb.com/list/ls022909805/
@@ -266,11 +275,7 @@ collections:
     summary: A genre of film that is designed to create suspense, excitement, and tension in the audience. Thriller films often feature a protagonist who is in danger or facing a high-stakes situation, with the plot revolving around the pursuit of a goal or the resolution of a conflict. They can encompass a wide range of sub-genres, including psychological thrillers, crime thrillers, and more, each offering a different approach to keeping audiences on the edge of their seats.
   War:
     template:
-      {
-        name: Genre,
-        genre: War,
-        poster: config/assets/posters/genres/war.png,
-      }
+      { name: Genre, genre: War, poster: config/assets/posters/genres/war.png }
     summary: A genre of film that focuses on the depiction of warfare, often exploring the experiences of soldiers, civilians, and the impact of war on society. War films can encompass a wide range of sub-genres, including historical war dramas, anti-war films, and more, each offering a different perspective on the realities of conflict. They often explore themes of heroism, sacrifice, and the moral complexities of war, providing audiences with a powerful and thought-provoking portrayal of one of humanity's most significant challenges.
   Western:
     template:
@@ -288,7 +293,10 @@ collections:
     summary: A genre of film that focuses on LGBTQ+ themes, characters, and stories, often exploring the experiences, challenges, and triumphs of individuals within the LGBTQ+ community. LGBTQ+ films can encompass a wide range of sub-genres, including romantic dramas, comedies, documentaries, and more, each offering a different perspective on the diverse experiences of LGBTQ+ individuals. They often explore themes of identity, love, acceptance, and social issues, providing representation and visibility for the LGBTQ+ community in cinema.
   Superhero:
     template:
-      { name: Special Genre, poster: config/assets/posters/genres/superhero.png }
+      {
+        name: Special Genre,
+        poster: config/assets/posters/genres/superhero.png,
+      }
     sort_title: "!03_01_Superhero"
     imdb_search:
       type: movie
@@ -299,7 +307,10 @@ collections:
     summary: A genre of film that features characters with superhuman powers or abilities, often centered around their heroic missions and battles against powerful adversaries. Superhero films typically explore themes of heroism, responsibility, redemption, and the struggle between good and evil. They can encompass a wide range of storylines, from origin stories to ensemble adventures, featuring iconic heroes from comic books and expanding universes with interconnected narratives and spectacular action sequences.
   Film Noir:
     template:
-      { name: Special Genre, poster: config/assets/posters/genres/film_noir.jpg }
+      {
+        name: Special Genre,
+        poster: config/assets/posters/genres/film_noir.jpg,
+      }
     sort_title: "!03_01_Film Noir"
     imdb_search:
       type: movie
@@ -333,7 +344,10 @@ collections:
     summary: A genre of film that focuses on espionage, surveillance, and intelligence operations, often featuring spies, secret agents, and covert missions. Espionage films typically explore themes of loyalty, betrayal, deception, and the moral complexities of intelligence work. They can range from realistic portrayals of spycraft to theatrical adventures featuring gadgets and exotic locations, with protagonists navigating dangerous situations, double-crosses, and high-stakes international conflicts.
   Post-Apocalyptic:
     template:
-      { name: Special Genre, poster: config/assets/posters/genres/post_apocalyptic.png }
+      {
+        name: Special Genre,
+        poster: config/assets/posters/genres/post_apocalyptic.png,
+      }
     sort_title: "!03_01_Post-Apocalyptic"
     imdb_search:
       type: movie
@@ -357,7 +371,7 @@ collections:
     template:
       {
         name: Genre,
-        genre: Romance, Comedy
+        genre: [Romance, Comedy],
         poster: config/assets/posters/genres/romantic_comedy.jpg,
       }
     summary: A genre of film that combines elements of romantic love stories with comedic humor and lighthearted entertainment. Romantic comedy films, often known as "rom-coms," typically revolve around the development of a romantic relationship between characters, featuring witty dialogue, humorous situations, and emotional moments that balance comedy with genuine affection. They often explore themes of love, attraction, compatibility, and the amusing complications of relationships, offering audiences an entertaining escape that celebrates the joys and challenges of finding and maintaining romantic connections.
