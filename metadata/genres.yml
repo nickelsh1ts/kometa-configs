@@ -112,6 +112,14 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls026270180/
       - https://www.imdb.com/list/ls000093502/
+      - https://www.imdb.com/list/ls001818278/
+    imdb_search:
+      type: movie
+      keyword: gangster
+      release.after: 1930-01-01
+      release.before: 2020-01-01
+      genre: crime, drama
+      limit: 200
     summary: A genre of film that focuses on the lives and activities of criminals, often centered around organized crime and the underworld. Gangster films typically explore themes of power, loyalty, betrayal, and the consequences of a life of crime. They may feature antiheroes or morally ambiguous characters who navigate the dangerous world of crime, often leading to violent confrontations and dramatic storylines.
   History:
     template:
@@ -138,13 +146,21 @@ collections:
       - https://www.imdb.com/list/ls068611186/
       - https://www.imdb.com/list/ls068378513/
       - https://www.imdb.com/list/ls090404120/
+      - https://www.imdb.com/list/ls062949711/
+    imdb_search:
+      type: movie
+      keyword: martial-arts
+      release.after: 1970-01-01
+      genre: action
+      limit: 200
     summary: A genre of film that focuses on martial arts combat and techniques, often featuring skilled fighters, intense action sequences, and themes of honor, discipline, and self-improvement. Martial arts films can encompass a wide range of styles and settings, from traditional kung fu movies to modern action films, and may include elements of fantasy or historical drama. They often showcase impressive choreography and physical feats, making them popular among fans of action and combat cinema.
   Music:
     template: {name: Genre, poster: https://theposterdb.com/api/assets/51398}
-    imdb_list:
-    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music
-      limit: 200
-    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music&sort=user_rating,desc
+    imdb_search:
+      type: movie
+      keyword: music
+      release.after: 1990-01-01
+      genre: music
       limit: 200
     summary: A genre of film that centers around music and musicians, often featuring musical performances, biographical stories of famous musicians, or fictional narratives that incorporate music as a central theme. Music films can encompass a wide range of sub-genres, including musicals, concert films, music documentaries, and more. They often explore themes of creativity, passion, and the transformative power of music in people's lives.
   Musical:
@@ -167,7 +183,16 @@ collections:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/pandemic.png }
     sort_title: "!03_01_Pandemic"
-    imdb_list: https://www.imdb.com/list/ls092321048/
+    imdb_list:
+      - https://www.imdb.com/list/ls092321048/
+      - https://www.imdb.com/list/ls567402655/
+      - https://www.imdb.com/list/ls523400700/
+    imdb_search:
+      type: movie
+      keyword: pandemic
+      release.after: 1980-01-01
+      genre: action, thriller, sci-fi
+      limit: 200
     summary: A genre of film that focuses on the outbreak and spread of infectious diseases, often depicting the impact of a pandemic on society and individuals. Pandemic films typically explore themes of survival, fear, and the human response to crisis, often featuring characters who must navigate the challenges of a rapidly spreading disease. They can include elements of horror, science fiction, and drama, offering a gripping portrayal of the consequences of a global health crisis.
   Romance:
     template:
@@ -210,12 +235,26 @@ collections:
       - https://www.imdb.com/list/ls086584751/
       - https://www.imdb.com/list/ls086022668/
       - https://www.imdb.com/list/ls049792208/
+    imdb_search:
+      type: movie
+      keyword: stand-up-comedy
+      release.after: 2000-01-01
+      genre: comedy
+      limit: 200
     summary: A genre of film that features stand-up comedians performing their routines in front of a live audience, often recorded for distribution as a comedy special. Stand-up comedy films typically showcase the comedian's unique style and material, covering a wide range of topics and humor styles. They can include observational comedy, satire, dark humor, and more, offering audiences a chance to experience the energy and spontaneity of a live comedy performance from the comfort of their own home.
   Sword & Sorcery:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/sword_and_sorcery.png }
     sort_title: "!03_01_Sword_&_Sorcery"
-    imdb_list: https://www.imdb.com/list/ls022909805
+    imdb_list:
+      - https://www.imdb.com/list/ls022909805/
+      - https://www.imdb.com/list/ls033395053/
+    umdb_search:
+      type: movie
+      keyword: sword-and-sorcery
+      release.after: 1980-01-01
+      genre: action, fantasy
+      limit: 200
     summary: A subgenre of fantasy that typically features heroic characters, often warriors or adventurers, who engage in battles against supernatural forces, such as sorcerers, monsters, and mythical creatures. Sword & Sorcery films often take place in a fantastical world filled with magic, ancient civilizations, and epic quests. They emphasize action, adventure, and the struggle between good and evil, often featuring themes of heroism, bravery, and the triumph of the human spirit against overwhelming odds.
   Thriller:
     template:
@@ -245,61 +284,80 @@ collections:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/lgbtq.png }
     sort_title: "!03_01_LGBTQ+"
-    trakt_list: https://trakt.tv/users/jholla452/lists/lgbtq-movies-2000?sort=rank,asc
+    trakt_list: https://trakt.tv/users/basinator/lists/lgbtq-movies
     summary: A genre of film that focuses on LGBTQ+ themes, characters, and stories, often exploring the experiences, challenges, and triumphs of individuals within the LGBTQ+ community. LGBTQ+ films can encompass a wide range of sub-genres, including romantic dramas, comedies, documentaries, and more, each offering a different perspective on the diverse experiences of LGBTQ+ individuals. They often explore themes of identity, love, acceptance, and social issues, providing representation and visibility for the LGBTQ+ community in cinema.
   Superhero:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/superhero.png }
     sort_title: "!03_01_Superhero"
-    imdb_list:
-      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=2000-01-01,&user_rating=5.0,10.0&num_votes=25000,&genres=action&keywords=superhero
-        limit: 200
+    imdb_search:
+      type: movie
+      keyword: superhero
+      release.after: 2000-01-01
+      genre: action
+      limit: 200
     summary: A genre of film that features characters with superhuman powers or abilities, often centered around their heroic missions and battles against powerful adversaries. Superhero films typically explore themes of heroism, responsibility, redemption, and the struggle between good and evil. They can encompass a wide range of storylines, from origin stories to ensemble adventures, featuring iconic heroes from comic books and expanding universes with interconnected narratives and spectacular action sequences.
   Film Noir:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/film_noir.jpg }
     sort_title: "!03_01_Film Noir"
-    imdb_list:
-      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1930-01-01,2020-01-01&user_rating=5.0,10.0&genres=crime,drama&keywords=noir
-        limit: 200
+    imdb_search:
+      type: movie
+      keyword: noir
+      release.after: 1930-01-01
+      release.before: 2020-01-01
+      genre: crime, drama
+      limit: 200
     summary: A genre of film characterized by dark, moody atmospheres, cynical characters, and morally complex narratives, often set in urban environments and featuring crime, corruption, and betrayal. Film noir typically employs low-key lighting, dramatic shadows, and a pessimistic worldview to create a sense of danger and intrigue. These films often feature troubled protagonists, femme fatales, and themes of fate, justice, and the darker aspects of human nature, establishing a distinct visual and narrative style that has influenced cinema for decades.
   Heist:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/heist.jpg }
     sort_title: "!03_01_Heist"
-    imdb_list:
-      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1980-01-01,&user_rating=5.0,10.0&num_votes=25000,&keywords=heist
-        limit: 200
+    imdb_search:
+      type: movie
+      keyword: heist
+      release.after: 1980-01-01
+      genre: action, thriller
+      limit: 200
     summary: A genre of film that revolves around the planning and execution of a major theft or robbery, often featuring a team of skilled criminals assembling to pull off an elaborate scheme. Heist films typically emphasize careful planning, clever strategies, and unexpected twists, exploring themes of teamwork, ambition, and the risks of criminal enterprise. These films combine elements of suspense, action, and drama, keeping audiences engaged through the intricacies of the plot and the tension of whether the heist will succeed or fail.
   Spy:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/spy.jpg }
     sort_title: "!03_01_Spy"
-    imdb_list:
-      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1980-01-01,&user_rating=5.0,10.0&num_votes=25000,&genres=action,thriller&keywords=spy
-        limit: 200
+    imdb_search:
+      type: movie
+      keyword: spy
+      release.after: 1980-01-01
+      genre: action, thriller
+      limit: 200
     summary: A genre of film that focuses on espionage, surveillance, and intelligence operations, often featuring spies, secret agents, and covert missions. Espionage films typically explore themes of loyalty, betrayal, deception, and the moral complexities of intelligence work. They can range from realistic portrayals of spycraft to theatrical adventures featuring gadgets and exotic locations, with protagonists navigating dangerous situations, double-crosses, and high-stakes international conflicts.
   Post-Apocalyptic:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/post_apocalyptic.png }
     sort_title: "!03_01_Post-Apocalyptic"
-    imdb_list:
-      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1980-01-01,&user_rating=5.0,10.0&num_votes=25000,&genres=action,sci-fi&keywords=post-apocalyptic
-        limit: 200
+    imdb_search:
+      type: movie
+      keyword: post-apocalyptic
+      release.after: 1980-01-01
+      genre: action, sci-fi
+      limit: 200
     summary: A genre of film set in a world after a cataclysmic event has devastated civilization, leaving survivors to navigate a harsh and dangerous landscape. Post-apocalyptic films explore themes of survival, human resilience, moral ambiguity, and the rebuilding of society in the face of extinction-level threats. They can feature elements of action, science fiction, and thriller genres, depicting worlds ravaged by war, disease, natural disasters, or technological collapse, where protagonists must adapt to new realities and confront both environmental and human threats.
   Disaster:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/disaster.png }
     sort_title: "!03_01_Disaster"
-    imdb_list:
-      - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1970-01-01,&user_rating=5.0,10.0&num_votes=25000,&genres=action,drama&keywords=disaster
-        limit: 200
+    imdb_search:
+      type: movie
+      keyword: disaster
+      release.after: 1970-01-01
+      genre: action, drama
+      limit: 200
     summary: A genre of film that depicts large-scale catastrophic events or natural disasters and their impact on individuals and society. Disaster films typically feature intense action sequences, spectacular visual effects, and high-stakes survival scenarios as characters navigate environmental threats such as earthquakes, tsunamis, volcanic eruptions, storms, or asteroid impacts. These films explore themes of human courage, sacrifice, and the triumph of survival instincts, often combining elements of action, drama, and suspense to showcase both the awesome destructive power of nature and the resilience of humanity.
   Romantic Comedy:
     template:
       {
         name: Genre,
-        genre: Romance,
+        genre: Romance, Comedy
         poster: config/assets/posters/genres/romantic_comedy.jpg,
       }
     summary: A genre of film that combines elements of romantic love stories with comedic humor and lighthearted entertainment. Romantic comedy films, often known as "rom-coms," typically revolve around the development of a romantic relationship between characters, featuring witty dialogue, humorous situations, and emotional moments that balance comedy with genuine affection. They often explore themes of love, attraction, compatibility, and the amusing complications of relationships, offering audiences an entertaining escape that celebrates the joys and challenges of finding and maintaining romantic connections.
