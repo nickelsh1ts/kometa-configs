@@ -386,7 +386,7 @@ collections:
         name: tmdb,
         collections: "762512",
         tmdb_summary: 762512,
-        poster: config/assets/posters/movies/the_lion_king_reboot.jpg,
+        poster: config/assets/posters/movies/the_lion_king_reboot.png,
       }
     radarr_add_missing: true
     radarr_search: false
