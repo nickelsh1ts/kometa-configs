@@ -360,5 +360,7 @@ collections:
     sort_title: "!03_01_Romantic Comedy"
     plex_search:
       all:
-        genre: [Comedy, Romance]
+        genre: Romance
+    filters:
+      genre: Comedy
     summary: A genre of film that combines elements of romantic love stories with comedic humor and lighthearted entertainment. Romantic comedy films, often known as "rom-coms," typically revolve around the development of a romantic relationship between characters, featuring witty dialogue, humorous situations, and emotional moments that balance comedy with genuine affection. They often explore themes of love, attraction, compatibility, and the amusing complications of relationships, offering audiences an entertaining escape that celebrates the joys and challenges of finding and maintaining romantic connections.
