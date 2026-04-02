@@ -108,6 +108,9 @@ collections:
         tmdb_summary: 422834,
         poster: config/assets/posters/movies/ant_man.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Aquaman:
     template:
       {
@@ -116,6 +119,9 @@ collections:
         tmdb_summary: 573693,
         poster: config/assets/posters/movies/aquaman.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Avatar:
     template:
       {
@@ -124,6 +130,9 @@ collections:
         tmdb_summary: 87096,
         poster: config/assets/posters/movies/avatar.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Bad Boys:
     template:
       {
@@ -132,6 +141,9 @@ collections:
         tmdb_summary: 14890,
         poster: config/assets/posters/movies/bad_boys.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Black Panther:
     template:
       {
@@ -140,6 +152,9 @@ collections:
         tmdb_summary: 529892,
         poster: config/assets/posters/movies/black_panther.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Captain America:
     template:
       {
@@ -148,6 +163,9 @@ collections:
         tmdb_summary: 131295,
         poster: config/assets/posters/movies/captain_america.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Deadpool:
     template:
       {
@@ -156,6 +174,9 @@ collections:
         tmdb_summary: 448150,
         poster: config/assets/posters/movies/deadpool.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Despicable Me:
     template:
       {
@@ -164,6 +185,9 @@ collections:
         tmdb_summary: 86066,
         poster: config/assets/posters/movies/despicable_me.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Die Hard:
     template:
       {
@@ -172,6 +196,9 @@ collections:
         tmdb_summary: 1570,
         poster: config/assets/posters/movies/die_hard.jpeg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Divergent:
     template:
       {
@@ -180,6 +207,9 @@ collections:
         tmdb_summary: 283579,
         poster: config/assets/posters/movies/divergent.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Doctor Strange:
     template:
       {
@@ -188,6 +218,9 @@ collections:
         tmdb_summary: 618529,
         poster: config/assets/posters/movies/doctor_strange.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Fantastic Beasts:
     template:
       {
@@ -204,6 +237,9 @@ collections:
         tmdb_summary: 8864,
         poster: config/assets/posters/movies/final_destination.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Freaky Friday:
     template:
       {
@@ -212,6 +248,9 @@ collections:
         tmdb_summary: 1125292,
         poster: config/assets/posters/movies/freaky_friday.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Ghostbusters:
     template:
       {
@@ -220,6 +259,9 @@ collections:
         tmdb_summary: 2980,
         poster: config/assets/posters/movies/ghostbusters.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Guardians of the Galaxy:
     template:
       {
@@ -228,6 +270,9 @@ collections:
         tmdb_summary: 284433,
         poster: config/assets/posters/movies/guardians_of_the_galaxy.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Halloweentown:
     template:
       {
@@ -236,6 +281,9 @@ collections:
         tmdb_summary: 87252,
         poster: config/assets/posters/movies/halloweentown.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   The Hangover:
     template:
       {
@@ -244,6 +292,9 @@ collections:
         tmdb_summary: 86119,
         poster: config/assets/posters/movies/the_hangover.jpeg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   The Hunger Games:
     template:
       {
@@ -252,6 +303,9 @@ collections:
         tmdb_summary: 131635,
         poster: config/assets/posters/movies/the_hunger_games.jpeg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Indiana Jones:
     template:
       {
@@ -260,6 +314,9 @@ collections:
         tmdb_summary: 84,
         poster: config/assets/posters/movies/indiana_jones.jpeg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Insidious:
     template:
       {
@@ -276,6 +333,9 @@ collections:
         tmdb_summary: 131292,
         poster: config/assets/posters/movies/iron_man.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   James Bond:
     template:
       {
@@ -284,6 +344,9 @@ collections:
         tmdb_summary: 645,
         poster: config/assets/posters/movies/james_bond.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Jurassic Park:
     template:
       {
@@ -292,6 +355,9 @@ collections:
         tmdb_summary: 328,
         poster: config/assets/posters/movies/jurassic_park.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Lilo & Stitch:
     template:
       {
@@ -300,6 +366,9 @@ collections:
         tmdb_summary: 97461,
         poster: config/assets/posters/movies/lilo_and_stitch.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   The Lion King:
     template:
       {
@@ -308,6 +377,9 @@ collections:
         tmdb_summary: 94032,
         poster: config/assets/posters/movies/the_lion_king.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   The Lion King (Reboot):
     template:
       {
@@ -316,6 +388,9 @@ collections:
         tmdb_summary: 762512,
         poster: config/assets/posters/movies/the_lion_king_reboot.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Madagascar:
     template:
       {
@@ -324,6 +399,9 @@ collections:
         tmdb_summary: 14740,
         poster: config/assets/posters/movies/madagascar.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   The Maze Runner:
     template:
       {
@@ -332,6 +410,9 @@ collections:
         tmdb_summary: 295130,
         poster: config/assets/posters/movies/the_maze_runner.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Men in Black:
     template:
       {
@@ -340,6 +421,9 @@ collections:
         tmdb_summary: 86055,
         poster: config/assets/posters/movies/men_in_black.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Minions:
     template:
       {
@@ -348,6 +432,9 @@ collections:
         tmdb_summary: 544669,
         poster: config/assets/posters/movies/minions.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Neighbors:
     template:
       {
@@ -364,6 +451,9 @@ collections:
         tmdb_summary: 382685,
         poster: config/assets/posters/movies/now_you_see_me.jpeg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Ocean's:
     template:
       {
@@ -372,6 +462,9 @@ collections:
         tmdb_summary: 304,
         poster: config/assets/posters/movies/oceans.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   The Old Guard:
     template:
       {
@@ -380,6 +473,9 @@ collections:
         tmdb_summary: 847029,
         poster: config/assets/posters/movies/the_old_guard.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Peter Rabbit:
     template:
       {
@@ -396,6 +492,9 @@ collections:
         tmdb_summary: 306031,
         poster: config/assets/posters/movies/pitch_perfect.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Rebel Moon:
     template:
       {
@@ -412,6 +511,9 @@ collections:
         tmdb_summary: 90863,
         poster: config/assets/posters/movies/rush_hour.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   The Santa Clause:
     template:
       {
@@ -420,6 +522,9 @@ collections:
         tmdb_summary: 53159,
         poster: config/assets/posters/movies/the_santa_clause.jpg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Scary Movie:
     template:
       {
@@ -428,6 +533,9 @@ collections:
         tmdb_summary: 4246,
         poster: config/assets/posters/movies/scary_movie.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Scooby-Doo:
     template:
       {
@@ -436,6 +544,9 @@ collections:
         tmdb_summary: 86860,
         poster: config/assets/posters/movies/scooby_doo.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Scream:
     template:
       {
@@ -444,6 +555,9 @@ collections:
         tmdb_summary: 2602,
         poster: config/assets/posters/movies/scream.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Shrek:
     template:
       {
@@ -452,6 +566,9 @@ collections:
         tmdb_summary: 2150,
         poster: config/assets/posters/movies/shrek.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Spider-Man (MCU):
     template:
       {
@@ -460,6 +577,9 @@ collections:
         tmdb_summary: 531241,
         poster: config/assets/posters/movies/spider_man_mcu.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Spider-Man:
     template:
       {
@@ -468,6 +588,9 @@ collections:
         tmdb_summary: 556,
         poster: config/assets/posters/movies/spider_man.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Spider-Verse:
     template:
       {
@@ -476,6 +599,9 @@ collections:
         tmdb_summary: 573436,
         poster: config/assets/posters/movies/spider_verse.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   The Amazing Spider-Man:
     template:
       {
@@ -484,6 +610,9 @@ collections:
         tmdb_summary: 125574,
         poster: config/assets/posters/movies/the_amazing_spider_man.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Thor:
     template:
       {
@@ -492,6 +621,9 @@ collections:
         tmdb_summary: 131296,
         poster: config/assets/posters/movies/thor.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Austin Powers:
     template:
       {
@@ -500,6 +632,9 @@ collections:
         tmdb_summary: 1006,
         poster: config/assets/posters/movies/austin_powers.jpeg,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Child's Play:
     template:
       {
@@ -508,6 +643,9 @@ collections:
         tmdb_summary: 10455,
         poster: config/assets/posters/movies/childs_play.png,
       }
+    radarr_add_missing: true
+    radarr_search: false
+    radarr_monitor: true
   Home Alone:
     template:
       {
