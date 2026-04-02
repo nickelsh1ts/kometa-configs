@@ -88,8 +88,8 @@ libraries:
         file_poster_wizard: config/assets/posters/defaults/wizard.png
         file_poster_conjuring: config/assets/posters/defaults/conjuring.png
         file_poster_star: config/assets/posters/defaults/star.png
-        file_poster_trek: config/assets/posters/defaults/trek.png
-        file_poster_fast: config/assets/posters/defaults/fast.png
+        file_poster_trek: config/assets/posters/defaults/trek.jpg
+        file_poster_fast: config/assets/posters/defaults/fast.jpeg
         file_poster_middle: config/assets/posters/defaults/middle.jpg
         file_poster_avp: config/assets/posters/defaults/avp.png
         file_poster_rocky: config/assets/posters/defaults/rocky.png

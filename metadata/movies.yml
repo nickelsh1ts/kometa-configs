@@ -28,7 +28,7 @@ collections:
         name: tmdb,
         collections: "115575",
         tmdb_summary: 115575,
-        poster: config/assets/posters/movies/star_trek_alternate_reality.png,
+        poster: config/assets/posters/movies/star_trek_alternate_reality.jpg,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -117,7 +117,7 @@ collections:
         name: tmdb,
         collections: "573693",
         tmdb_summary: 573693,
-        poster: config/assets/posters/movies/aquaman.jpg,
+        poster: config/assets/posters/movies/aquaman.png,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -312,7 +312,7 @@ collections:
         name: tmdb,
         collections: "84",
         tmdb_summary: 84,
-        poster: config/assets/posters/movies/indiana_jones.jpeg,
+        poster: config/assets/posters/movies/indiana_jones.jpg,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -542,7 +542,7 @@ collections:
         name: tmdb,
         collections: "86860",
         tmdb_summary: 86860,
-        poster: config/assets/posters/movies/scooby_doo.png,
+        poster: config/assets/posters/movies/scooby_doo.jpg,
       }
     radarr_add_missing: true
     radarr_search: false
@@ -564,7 +564,7 @@ collections:
         name: tmdb,
         collections: "2150",
         tmdb_summary: 2150,
-        poster: config/assets/posters/movies/shrek.png,
+        poster: config/assets/posters/movies/shrek.jpg,
       }
     radarr_add_missing: true
     radarr_search: false
