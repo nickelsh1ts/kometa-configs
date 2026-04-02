@@ -12,12 +12,9 @@ overlays:
       file: config/assets/overlays/status/in_theatres_small.png
       group: STATUS
       weight: 1000
-    tmdb_discover:
-      limit: 300
-      sort_by: release_date.desc
-      with_release_type: 2|3
-      release_date.gte: 01/01/2025
-      release_date.lte: 12/31/2026
+    tmdb_now_playing: 30
+    collection_order: custom
+    sync_mode: sync
   InTheatersFormat:
     overlay:
       name: In Theaters
