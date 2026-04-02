@@ -305,9 +305,7 @@ collections:
     sort_title: "!03_01_Film Noir"
     imdb_search:
       type: movie
-      keyword: noir
       release.after: 1930-01-01
-      release.before: 2020-01-01
       genre: film-noir
       limit: 200
     summary: A genre of film characterized by dark, moody atmospheres, cynical characters, and morally complex narratives, often set in urban environments and featuring crime, corruption, and betrayal. Film noir typically employs low-key lighting, dramatic shadows, and a pessimistic worldview to create a sense of danger and intrigue. These films often feature troubled protagonists, femme fatales, and themes of fate, justice, and the darker aspects of human nature, establishing a distinct visual and narrative style that has influenced cinema for decades.
@@ -359,7 +357,8 @@ collections:
         name: Special Genre,
         poster: config/assets/posters/genres/romantic_comedy.jpg,
       }
+    sort_title: "!03_01_Romantic Comedy"
     plex_search:
       all:
-        genre: Comedy, Romance
+        genre: [Comedy, Romance]
     summary: A genre of film that combines elements of romantic love stories with comedic humor and lighthearted entertainment. Romantic comedy films, often known as "rom-coms," typically revolve around the development of a romantic relationship between characters, featuring witty dialogue, humorous situations, and emotional moments that balance comedy with genuine affection. They often explore themes of love, attraction, compatibility, and the amusing complications of relationships, offering audiences an entertaining escape that celebrates the joys and challenges of finding and maintaining romantic connections.
