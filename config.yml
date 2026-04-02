@@ -364,6 +364,8 @@ libraries:
       template_variables: *STREAMINGMOVIES
     - default: universe
       template_variables: *UNIVERSE
+    - default: other_chart
+      template_variables: *OTHERCHART
     - default: tautulli
       template_variables: *TAUTULLI
     - file: config/metadata/movies.yml
