@@ -492,6 +492,30 @@ collections:
         tmdb_summary: 131296,
         poster: config/assets/posters/movies/thor.png,
       }
+  Austin Powers:
+    template:
+      {
+        name: tmdb,
+        collections: "1006",
+        tmdb_summary: 1006,
+        poster: config/assets/posters/movies/austin_powers.jpeg,
+      }
+  Child's Play:
+    template:
+      {
+        name: tmdb,
+        collections: "10455",
+        tmdb_summary: 10455,
+        poster: config/assets/posters/movies/childs_play.png,
+      }
+  Home Alone:
+    template:
+      {
+        name: tmdb,
+        collections: "9888",
+        tmdb_summary: 9888,
+        poster: config/assets/posters/movies/home_alone.jpeg,
+      }
 
   #####################################
   #         Retro Collection          #
