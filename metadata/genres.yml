@@ -157,15 +157,6 @@ collections:
       genre: action
       limit: 200
     summary: A genre of film that focuses on martial arts combat and techniques, often featuring skilled fighters, intense action sequences, and themes of honor, discipline, and self-improvement. Martial arts films can encompass a wide range of styles and settings, from traditional kung fu movies to modern action films, and may include elements of fantasy or historical drama. They often showcase impressive choreography and physical feats, making them popular among fans of action and combat cinema.
-  Music:
-    template: { name: Genre, poster: https://theposterdb.com/api/assets/51398 }
-    imdb_search:
-      type: movie
-      keyword: music
-      release.after: 1990-01-01
-      genre: music
-      limit: 200
-    summary: A genre of film that centers around music and musicians, often featuring musical performances, biographical stories of famous musicians, or fictional narratives that incorporate music as a central theme. Music films can encompass a wide range of sub-genres, including musicals, concert films, music documentaries, and more. They often explore themes of creativity, passion, and the transformative power of music in people's lives.
   Musical:
     template:
       {
@@ -258,7 +249,7 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls022909805/
       - https://www.imdb.com/list/ls033395053/
-    umdb_search:
+    imdb_search:
       type: movie
       keyword: sword-and-sorcery
       release.after: 1980-01-01
@@ -317,7 +308,7 @@ collections:
       keyword: noir
       release.after: 1930-01-01
       release.before: 2020-01-01
-      genre: crime, drama
+      genre: film-noir
       limit: 200
     summary: A genre of film characterized by dark, moody atmospheres, cynical characters, and morally complex narratives, often set in urban environments and featuring crime, corruption, and betrayal. Film noir typically employs low-key lighting, dramatic shadows, and a pessimistic worldview to create a sense of danger and intrigue. These films often feature troubled protagonists, femme fatales, and themes of fate, justice, and the darker aspects of human nature, establishing a distinct visual and narrative style that has influenced cinema for decades.
   Heist:
@@ -349,12 +340,7 @@ collections:
         poster: config/assets/posters/genres/post_apocalyptic.png,
       }
     sort_title: "!03_01_Post-Apocalyptic"
-    imdb_search:
-      type: movie
-      keyword: post-apocalyptic
-      release.after: 1980-01-01
-      genre: action, sci-fi
-      limit: 200
+    imdb_list: https://www.imdb.com/list/ls063157256/
     summary: A genre of film set in a world after a cataclysmic event has devastated civilization, leaving survivors to navigate a harsh and dangerous landscape. Post-apocalyptic films explore themes of survival, human resilience, moral ambiguity, and the rebuilding of society in the face of extinction-level threats. They can feature elements of action, science fiction, and thriller genres, depicting worlds ravaged by war, disease, natural disasters, or technological collapse, where protagonists must adapt to new realities and confront both environmental and human threats.
   Disaster:
     template:
@@ -370,8 +356,10 @@ collections:
   Romantic Comedy:
     template:
       {
-        name: Genre,
-        genre: [Romance, Comedy],
+        name: Special Genre,
         poster: config/assets/posters/genres/romantic_comedy.jpg,
       }
+    plex_search:
+      all:
+        genre: Comedy, Romance
     summary: A genre of film that combines elements of romantic love stories with comedic humor and lighthearted entertainment. Romantic comedy films, often known as "rom-coms," typically revolve around the development of a romantic relationship between characters, featuring witty dialogue, humorous situations, and emotional moments that balance comedy with genuine affection. They often explore themes of love, attraction, compatibility, and the amusing complications of relationships, offering audiences an entertaining escape that celebrates the joys and challenges of finding and maintaining romantic connections.
