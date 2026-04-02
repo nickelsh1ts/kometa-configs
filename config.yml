@@ -100,6 +100,19 @@ libraries:
         use_askew: false
         collection_section: '05_05'
         minimum_items: 1
+    - default: other_chart
+      template_variables: &OTHERCHART
+        name_pirated: Top Ten Pirated Weekly
+        file_poster_pirated: config/assets/posters/suggestions/toppirated.png
+        sort_prefix: "!02_15_"
+        sync_mode: sync
+        use_commonsense: false
+        use_metacritic: false
+        use_stevenlu: false
+        radarr_add_missing: true
+        radarr_search: true
+        radarr_monitor: true
+        radarr_tag: ko-pirated
     - default: tautulli
       template_variables: &TAUTULLI
         file_poster_watched: config/assets/posters/suggestions/plextrending.png

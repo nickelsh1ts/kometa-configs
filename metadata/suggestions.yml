@@ -41,14 +41,3 @@ collections:
     file_poster: config/assets/posters/suggestions/mostwatchedyear.png
     collection_order: custom
     collection_mode: show_items
-  Top Ten Pirated Weekly:
-    trakt_list: https://trakt.tv/users/hdlists/lists/top-ten-pirated-movies-of-the-week-torrent-freak-com
-    smart_label: year.desc
-    sync_mode: sync
-    sort_title: "!02_15_Pirated Weekly"
-    summary: "Collection of the top 10 pirated movies of the week"
-    radarr_add_missing: true
-    radarr_search: true
-    radarr_monitor: true
-    radarr_tag: ko-pirated
-    file_poster: config/assets/posters/suggestions/toppirated.png
