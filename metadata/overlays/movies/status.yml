@@ -1,9 +1,17 @@
 overlays:
-  InTheaters:
+  InTheatersIMDb:
     overlay:
       name: In Theaters
       file: config/assets/overlays/status/in_theatres_small.png
       group: STATUS
       weight: 1000
     imdb_chart: box_office
-    trakt_boxoffice: true
+  InTheatersFormat:
+    overlay:
+      name: In Theaters
+      file: config/assets/overlays/status/in_theatres_small.png
+      group: STATUS
+      weight: 1000
+    plex_all: true
+    filters:
+      filepath.regex: (?i)\b((?:HD|HQ)?CAM|(?:HD)?TS|TELESYNC)\b
