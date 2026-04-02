@@ -100,6 +100,398 @@ collections:
     radarr_add_missing: true
     radarr_search: false
     radarr_monitor: true
+  Ant-Man:
+    template:
+      {
+        name: tmdb,
+        collections: "422834",
+        tmdb_summary: 422834,
+        poster: config/assets/posters/movies/ant_man.png,
+      }
+  Aquaman:
+    template:
+      {
+        name: tmdb,
+        collections: "573693",
+        tmdb_summary: 573693,
+        poster: config/assets/posters/movies/aquaman.jpg,
+      }
+  Avatar:
+    template:
+      {
+        name: tmdb,
+        collections: "87096",
+        tmdb_summary: 87096,
+        poster: config/assets/posters/movies/avatar.jpg,
+      }
+  Bad Boys:
+    template:
+      {
+        name: tmdb,
+        collections: "14890",
+        tmdb_summary: 14890,
+        poster: config/assets/posters/movies/bad_boys.png,
+      }
+  Black Panther:
+    template:
+      {
+        name: tmdb,
+        collections: "529892",
+        tmdb_summary: 529892,
+        poster: config/assets/posters/movies/black_panther.png,
+      }
+  Captain America:
+    template:
+      {
+        name: tmdb,
+        collections: "131295",
+        tmdb_summary: 131295,
+        poster: config/assets/posters/movies/captain_america.png,
+      }
+  Deadpool:
+    template:
+      {
+        name: tmdb,
+        collections: "448150",
+        tmdb_summary: 448150,
+        poster: config/assets/posters/movies/deadpool.png,
+      }
+  Despicable Me:
+    template:
+      {
+        name: tmdb,
+        collections: "86066",
+        tmdb_summary: 86066,
+        poster: config/assets/posters/movies/despicable_me.png,
+      }
+  Die Hard:
+    template:
+      {
+        name: tmdb,
+        collections: "1570",
+        tmdb_summary: 1570,
+        poster: config/assets/posters/movies/die_hard.jpeg,
+      }
+  Divergent:
+    template:
+      {
+        name: tmdb,
+        collections: "283579",
+        tmdb_summary: 283579,
+        poster: config/assets/posters/movies/divergent.png,
+      }
+  Doctor Strange:
+    template:
+      {
+        name: tmdb,
+        collections: "618529",
+        tmdb_summary: 618529,
+        poster: config/assets/posters/movies/doctor_strange.png,
+      }
+  Fantastic Beasts:
+    template:
+      {
+        name: tmdb,
+        collections: "435259",
+        tmdb_summary: 435259,
+        poster: config/assets/posters/movies/fantastic_beasts.jpg,
+      }
+  Final Destination:
+    template:
+      {
+        name: tmdb,
+        collections: "8864",
+        tmdb_summary: 8864,
+        poster: config/assets/posters/movies/final_destination.jpg,
+      }
+  Freaky Friday:
+    template:
+      {
+        name: tmdb,
+        collections: "1125292",
+        tmdb_summary: 1125292,
+        poster: config/assets/posters/movies/freaky_friday.jpg,
+      }
+  Ghostbusters:
+    template:
+      {
+        name: tmdb,
+        collections: "2980",
+        tmdb_summary: 2980,
+        poster: config/assets/posters/movies/ghostbusters.png,
+      }
+  Guardians of the Galaxy:
+    template:
+      {
+        name: tmdb,
+        collections: "284433",
+        tmdb_summary: 284433,
+        poster: config/assets/posters/movies/guardians_of_the_galaxy.png,
+      }
+  Halloweentown:
+    template:
+      {
+        name: tmdb,
+        collections: "87252",
+        tmdb_summary: 87252,
+        poster: config/assets/posters/movies/halloweentown.jpg,
+      }
+  The Hangover:
+    template:
+      {
+        name: tmdb,
+        collections: "86119",
+        tmdb_summary: 86119,
+        poster: config/assets/posters/movies/the_hangover.jpeg,
+      }
+  The Hunger Games:
+    template:
+      {
+        name: tmdb,
+        collections: "131635",
+        tmdb_summary: 131635,
+        poster: config/assets/posters/movies/the_hunger_games.jpeg,
+      }
+  Indiana Jones:
+    template:
+      {
+        name: tmdb,
+        collections: "84",
+        tmdb_summary: 84,
+        poster: config/assets/posters/movies/indiana_jones.jpeg,
+      }
+  Insidious:
+    template:
+      {
+        name: tmdb,
+        collections: "228446",
+        tmdb_summary: 228446,
+        poster: config/assets/posters/movies/insidious.jpeg,
+      }
+  Iron Man:
+    template:
+      {
+        name: tmdb,
+        collections: "131292",
+        tmdb_summary: 131292,
+        poster: config/assets/posters/movies/iron_man.png,
+      }
+  James Bond:
+    template:
+      {
+        name: tmdb,
+        collections: "645",
+        tmdb_summary: 645,
+        poster: config/assets/posters/movies/james_bond.png,
+      }
+  Jurassic Park:
+    template:
+      {
+        name: tmdb,
+        collections: "328",
+        tmdb_summary: 328,
+        poster: config/assets/posters/movies/jurassic_park.jpg,
+      }
+  Lilo & Stitch:
+    template:
+      {
+        name: tmdb,
+        collections: "97461",
+        tmdb_summary: 97461,
+        poster: config/assets/posters/movies/lilo_and_stitch.png,
+      }
+  The Lion King:
+    template:
+      {
+        name: tmdb,
+        collections: "94032",
+        tmdb_summary: 94032,
+        poster: config/assets/posters/movies/the_lion_king.png,
+      }
+  The Lion King (Reboot):
+    template:
+      {
+        name: tmdb,
+        collections: "762512",
+        tmdb_summary: 762512,
+        poster: config/assets/posters/movies/the_lion_king_reboot.jpg,
+      }
+  Madagascar:
+    template:
+      {
+        name: tmdb,
+        collections: "14740",
+        tmdb_summary: 14740,
+        poster: config/assets/posters/movies/madagascar.png,
+      }
+  The Maze Runner:
+    template:
+      {
+        name: tmdb,
+        collections: "295130",
+        tmdb_summary: 295130,
+        poster: config/assets/posters/movies/the_maze_runner.jpg,
+      }
+  Men in Black:
+    template:
+      {
+        name: tmdb,
+        collections: "86055",
+        tmdb_summary: 86055,
+        poster: config/assets/posters/movies/men_in_black.jpg,
+      }
+  Minions:
+    template:
+      {
+        name: tmdb,
+        collections: "544669",
+        tmdb_summary: 544669,
+        poster: config/assets/posters/movies/minions.png,
+      }
+  Neighbors:
+    template:
+      {
+        name: tmdb,
+        collections: "400700",
+        tmdb_summary: 400700,
+        poster: config/assets/posters/movies/neighbors.jpg,
+      }
+  Now You See Me:
+    template:
+      {
+        name: tmdb,
+        collections: "382685",
+        tmdb_summary: 382685,
+        poster: config/assets/posters/movies/now_you_see_me.jpeg,
+      }
+  Ocean's:
+    template:
+      {
+        name: tmdb,
+        collections: "304",
+        tmdb_summary: 304,
+        poster: config/assets/posters/movies/oceans.jpg,
+      }
+  The Old Guard:
+    template:
+      {
+        name: tmdb,
+        collections: "847029",
+        tmdb_summary: 847029,
+        poster: config/assets/posters/movies/the_old_guard.jpg,
+      }
+  Peter Rabbit:
+    template:
+      {
+        name: tmdb,
+        collections: "595693",
+        tmdb_summary: 595693,
+        poster: config/assets/posters/movies/peter_rabbit.jpg,
+      }
+  Pitch Perfect:
+    template:
+      {
+        name: tmdb,
+        collections: "306031",
+        tmdb_summary: 306031,
+        poster: config/assets/posters/movies/pitch_perfect.png,
+      }
+  Rebel Moon:
+    template:
+      {
+        name: tmdb,
+        collections: "934765",
+        tmdb_summary: 934765,
+        poster: config/assets/posters/movies/rebel_moon.jpg,
+      }
+  Rush Hour:
+    template:
+      {
+        name: tmdb,
+        collections: "90863",
+        tmdb_summary: 90863,
+        poster: config/assets/posters/movies/rush_hour.jpg,
+      }
+  The Santa Clause:
+    template:
+      {
+        name: tmdb,
+        collections: "53159",
+        tmdb_summary: 53159,
+        poster: config/assets/posters/movies/the_santa_clause.jpg,
+      }
+  Scary Movie:
+    template:
+      {
+        name: tmdb,
+        collections: "4246",
+        tmdb_summary: 4246,
+        poster: config/assets/posters/movies/scary_movie.png,
+      }
+  Scooby-Doo:
+    template:
+      {
+        name: tmdb,
+        collections: "86860",
+        tmdb_summary: 86860,
+        poster: config/assets/posters/movies/scooby_doo.png,
+      }
+  Scream:
+    template:
+      {
+        name: tmdb,
+        collections: "2602",
+        tmdb_summary: 2602,
+        poster: config/assets/posters/movies/scream.png,
+      }
+  Shrek:
+    template:
+      {
+        name: tmdb,
+        collections: "2150",
+        tmdb_summary: 2150,
+        poster: config/assets/posters/movies/shrek.png,
+      }
+  Spider-Man (MCU):
+    template:
+      {
+        name: tmdb,
+        collections: "531241",
+        tmdb_summary: 531241,
+        poster: config/assets/posters/movies/spider_man_mcu.png,
+      }
+  Spider-Man:
+    template:
+      {
+        name: tmdb,
+        collections: "556",
+        tmdb_summary: 556,
+        poster: config/assets/posters/movies/spider_man.png,
+      }
+  Spider-Verse:
+    template:
+      {
+        name: tmdb,
+        collections: "573436",
+        tmdb_summary: 573436,
+        poster: config/assets/posters/movies/spider_verse.png,
+      }
+  The Amazing Spider-Man:
+    template:
+      {
+        name: tmdb,
+        collections: "125574",
+        tmdb_summary: 125574,
+        poster: config/assets/posters/movies/the_amazing_spider_man.png,
+      }
+  Thor:
+    template:
+      {
+        name: tmdb,
+        collections: "131296",
+        tmdb_summary: 131296,
+        poster: config/assets/posters/movies/thor.png,
+      }
 
   #####################################
   #         Retro Collection          #
