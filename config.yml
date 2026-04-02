@@ -104,7 +104,7 @@ libraries:
       template_variables: &OTHERCHART
         name_pirated: Top Ten Pirated Weekly
         file_poster_pirated: config/assets/posters/suggestions/toppirated.png
-        sort_prefix: "!02_15_"
+        sort_prefix: '!02_15_'
         sync_mode: sync
         use_commonsense: false
         use_metacritic: false
