@@ -14,3 +14,4 @@ collections:
     run_again: true
     visible_home: true
     visible_shared: true
+    save_report: true

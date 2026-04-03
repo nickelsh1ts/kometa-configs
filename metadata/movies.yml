@@ -17,6 +17,7 @@ templates:
     collection_order: release
     collection_mode: show_items
     run_again: false
+    save_report: true
 
 collections:
   ######################################################

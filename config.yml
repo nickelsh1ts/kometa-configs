@@ -9,7 +9,7 @@ libraries:
     reapply_overlays: <<REAPPLYOVERLAYSMOVIES>>
     # reset_overlays: tmdb
     settings: &MOVIES_SETTINGS
-      save_report: true
+      save_report: false
       minimum_items: 2
       asset_directory:
       - assets/movies
@@ -226,7 +226,7 @@ libraries:
     reapply_overlays: <<REAPPLYOVERLAYSSHOWS>>
     # reset_overlays: tmdb
     settings: &SHOWSSETTINGS
-      save_report: true
+      save_report: false
       minimum_items: 1
       asset_directory:
       - assets/shows
