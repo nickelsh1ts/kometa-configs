@@ -375,7 +375,7 @@ collections:
         name: tmdb,
         collections: "94032",
         tmdb_summary: 94032,
-        poster: config/assets/posters/movies/the_lion_king.png,
+        poster: config/assets/posters/movies/the_lion_king.jpeg,
       }
     radarr_add_missing: true
     radarr_search: false
