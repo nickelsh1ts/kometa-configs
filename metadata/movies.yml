@@ -195,7 +195,7 @@ collections:
         name: tmdb,
         collections: "1570",
         tmdb_summary: 1570,
-        poster: config/assets/posters/movies/die_hard.jpeg,
+        poster: config/assets/posters/movies/die_hard.jpg,
       }
     radarr_add_missing: true
     radarr_search: false
