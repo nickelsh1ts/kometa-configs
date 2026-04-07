@@ -41,7 +41,7 @@ libraries:
         schedule_thanksgiving: range(10/01-10/15)
         file_poster_thanksgiving: config/assets/posters/defaults/thanksgiving.png
         emoji_easter: 🐣
-        schedule_easter: range(03/22-04/25)
+        schedule_easter: range(03/22-04/06)
         file_poster_easter: config/assets/posters/defaults/easter.png
         emoji_black_history: 🖤
         file_poster_black_history: config/assets/posters/defaults/black_history.png
