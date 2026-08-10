@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/collection-schema.json
 templates:
   tmdb:
     optional:
@@ -33,7 +34,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Pirates of the Caribbean:
     template:
       {
@@ -44,7 +45,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Transformers:
     template:
       {
@@ -56,7 +57,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   John Wick:
     template:
       {
@@ -67,7 +68,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Kingsman:
     template:
       {
@@ -78,7 +79,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Lord of the Rings:
     template:
       {
@@ -89,7 +90,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Hobbit:
     template:
       {
@@ -100,7 +101,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Ant-Man:
     template:
       {
@@ -111,7 +112,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Aquaman:
     template:
       {
@@ -122,7 +123,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Avatar:
     template:
       {
@@ -133,7 +134,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Bad Boys:
     template:
       {
@@ -144,7 +145,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Black Panther:
     template:
       {
@@ -155,7 +156,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Captain America:
     template:
       {
@@ -166,7 +167,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Deadpool:
     template:
       {
@@ -177,7 +178,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Despicable Me:
     template:
       {
@@ -188,7 +189,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Die Hard:
     template:
       {
@@ -199,7 +200,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Divergent:
     template:
       {
@@ -210,7 +211,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Doctor Strange:
     template:
       {
@@ -221,7 +222,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Fantastic Beasts:
     template:
       {
@@ -240,7 +241,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Freaky Friday:
     template:
       {
@@ -251,7 +252,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Ghostbusters:
     template:
       {
@@ -262,7 +263,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Guardians of the Galaxy:
     template:
       {
@@ -273,7 +274,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Halloweentown:
     template:
       {
@@ -284,7 +285,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Hangover:
     template:
       {
@@ -295,7 +296,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Hunger Games:
     template:
       {
@@ -306,7 +307,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Indiana Jones:
     template:
       {
@@ -317,7 +318,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Insidious:
     template:
       {
@@ -336,7 +337,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   James Bond:
     template:
       {
@@ -347,7 +348,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Jurassic Park:
     template:
       {
@@ -358,7 +359,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Lilo & Stitch:
     template:
       {
@@ -369,7 +370,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Lion King:
     template:
       {
@@ -380,7 +381,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Lion King (Reboot):
     template:
       {
@@ -391,7 +392,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Madagascar:
     template:
       {
@@ -402,7 +403,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Maze Runner:
     template:
       {
@@ -413,7 +414,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Men in Black:
     template:
       {
@@ -424,7 +425,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Minions:
     template:
       {
@@ -435,7 +436,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Neighbors:
     template:
       {
@@ -454,7 +455,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Ocean's:
     template:
       {
@@ -465,7 +466,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Old Guard:
     template:
       {
@@ -476,7 +477,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Peter Rabbit:
     template:
       {
@@ -495,7 +496,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Rebel Moon:
     template:
       {
@@ -514,7 +515,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Santa Clause:
     template:
       {
@@ -525,7 +526,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Scary Movie:
     template:
       {
@@ -536,7 +537,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Scooby-Doo:
     template:
       {
@@ -547,7 +548,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Scream:
     template:
       {
@@ -558,7 +559,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Shrek:
     template:
       {
@@ -569,7 +570,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Spider-Man (MCU):
     template:
       {
@@ -580,7 +581,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Spider-Man:
     template:
       {
@@ -591,7 +592,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Spider-Verse:
     template:
       {
@@ -602,7 +603,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   The Amazing Spider-Man:
     template:
       {
@@ -613,7 +614,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Thor:
     template:
       {
@@ -624,7 +625,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Austin Powers:
     template:
       {
@@ -635,7 +636,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Child's Play:
     template:
       {
@@ -646,7 +647,7 @@ collections:
       }
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie
   Home Alone:
     template:
       {
@@ -670,4 +671,4 @@ collections:
     sort_title: "!05_00_The Godfather"
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: true
+    radarr_monitor: movie

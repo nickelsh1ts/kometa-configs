@@ -1,7 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/collection-schema.json
 templates:
   Genre:
     plex_search:
-      genre: <<genre>>
+      all:
+        genre: <<genre>>
     file_poster: <<poster>>
     sort_title: "!03_01_<<collection_name>>"
     collection_order: alpha
@@ -280,7 +282,7 @@ collections:
     template:
       { name: Special Genre, poster: config/assets/posters/genres/lgbtq.png }
     sort_title: "!03_01_LGBTQ+"
-    trakt_list: https://trakt.tv/users/basinator/lists/lgbtq-movies
+    imdb_list: https://www.imdb.com/list/ls080580859/
     summary: A genre of film that focuses on LGBTQ+ themes, characters, and stories, often exploring the experiences, challenges, and triumphs of individuals within the LGBTQ+ community. LGBTQ+ films can encompass a wide range of sub-genres, including romantic dramas, comedies, documentaries, and more, each offering a different perspective on the diverse experiences of LGBTQ+ individuals. They often explore themes of identity, love, acceptance, and social issues, providing representation and visibility for the LGBTQ+ community in cinema.
   Superhero:
     template:

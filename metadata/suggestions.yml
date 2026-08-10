@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/collection-schema.json
 collections:
   #####################################
   #         Trakt Collections         #
@@ -15,7 +16,7 @@ collections:
     summary: "Collection of Movies trending on Trakt in the last 7 days"
     radarr_add_missing: false
     radarr_search: false
-    radarr_monitor: false
+    radarr_monitor: none
     file_poster: config/assets/posters/suggestions/trakttrending.png
   Most Watched This Week:
     trakt_chart:

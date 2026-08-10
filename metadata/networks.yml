@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/collection-schema.json
 templates:
   network:
     optional:
@@ -282,7 +283,7 @@ collections:
     template: { name: programming, poster: config/assets/posters/programming/fox_kids.png }
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/fox-kids
-    summary:
+    summary: "Fox Kids was an American children's programming block and branding for a slate of animated television series that aired on the Fox Broadcasting Company in the United States. The block aired on Saturday mornings from September 8, 1990 to September 7, 2002, and was aimed at children between the ages of 6 and 11. The block was discontinued in 2002 when Fox sold its children's programming assets to Disney, which rebranded the block as ABC Kids."
   SNICK:
     template: { name: programming, poster: config/assets/posters/programming/snick.png }
     trakt_list:
@@ -297,4 +298,4 @@ collections:
     template: { name: programming, poster: config/assets/posters/programming/kids_wb.png }
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/kids-wb
-    summary:
+    summary: "Kids' WB was an American children's programming block that aired on The WB from September 9, 1995 to September 17, 2006. The block primarily featured animated series produced by Warner Bros. Animation and Warner Bros. Television, as well as live-action series produced by Warner Bros. Television. The block was discontinued in 2006 when The WB merged with UPN to form The CW, which launched its own children's programming block called The CW4Kids."

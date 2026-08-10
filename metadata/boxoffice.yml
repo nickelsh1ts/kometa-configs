@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/collection-schema.json
 collections:
   Box Office Top 10:
     sync_mode: sync
@@ -9,7 +10,7 @@ collections:
     collection_mode: show_items
     radarr_add_missing: true
     radarr_search: true
-    radarr_monitor: true
+    radarr_monitor: movie
     radarr_tag: ko-boxoffice
     run_again: true
     visible_home: true

@@ -51,7 +51,6 @@ libraries:
         visible_home: true
         visible_library: true
         sync_mode: sync
-        run_again: true
         delete_not_scheduled: true
         exclude:
         - aapi
@@ -118,7 +117,7 @@ libraries:
         summary_watched: Collection of Movies trending on NickflixTV in the last 30 days
         list_days: 30
         list_size: 10
-        list_minimum: 1
+        minimum_items: 1
         use_popular: false
         collection_section: '01_10'
         sync_mode_watched: sync
@@ -257,7 +256,7 @@ libraries:
         summary_watched: Collection of TV Shows trending on NickflixTV in the last 30 days
         list_days: 30
         list_size: 10
-        list_minimum: 1
+        minimum_items: 1
         use_popular: false
         collection_section: '01_05'
         sync_mode_watched: sync
