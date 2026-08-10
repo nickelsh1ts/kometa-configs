@@ -10,7 +10,7 @@ collections:
     collection_mode: show_items
     radarr_add_missing: true
     radarr_search: true
-    radarr_monitor: movie
+    radarr_monitor: true
     radarr_tag: ko-boxoffice
     run_again: true
     visible_home: true

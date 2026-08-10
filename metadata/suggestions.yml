@@ -17,7 +17,7 @@ collections:
     summary: "Collection of Movies trending on Trakt in the last 7 days"
     radarr_add_missing: false
     radarr_search: false
-    radarr_monitor: none
+    radarr_monitor: false
     file_poster: config/assets/posters/suggestions/trakttrending.png
   Most Watched This Week:
     # trakt_chart:

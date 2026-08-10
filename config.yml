@@ -485,6 +485,7 @@ settings:
   custom_repo:
   overlay_artwork_filetype: webp_lossy
   overlay_artwork_quality: 90
+  auto_sort_hubs:
 webhooks:
   error: gotify
   version: gotify

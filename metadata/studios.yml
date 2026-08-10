@@ -185,7 +185,7 @@ collections:
     summary: All movies from the Marvel Cinematic Universe Phase 1.
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: movie
+    radarr_monitor: true
   Marvel Cinematic Universe Phase 2:
     template: { name: mcu }
     letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-2/
@@ -196,7 +196,7 @@ collections:
     summary: All movies from the Marvel Cinematic Universe Phase 2.
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: movie
+    radarr_monitor: true
   Marvel Cinematic Universe Phase 3:
     template: { name: mcu }
     letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-3/
@@ -207,7 +207,7 @@ collections:
     summary: All movies from the Marvel Cinematic Universe Phase 3.
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: movie
+    radarr_monitor: true
   Marvel Cinematic Universe Phase 4:
     template: { name: mcu }
     letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-4/
@@ -218,7 +218,7 @@ collections:
     summary: All movies from the Marvel Cinematic Universe Phase 4.
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: movie
+    radarr_monitor: true
   Marvel Cinematic Universe Phase 5:
     template: { name: mcu }
     letterboxd_list: https://letterboxd.com/catherine_gal/list/marvel-cinematic-universe-phase-5/
@@ -229,4 +229,4 @@ collections:
     summary: All movies from the Marvel Cinematic Universe Phase 5.
     radarr_add_missing: true
     radarr_search: false
-    radarr_monitor: movie
+    radarr_monitor: true
