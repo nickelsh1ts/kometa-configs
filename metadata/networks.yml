@@ -256,46 +256,55 @@ collections:
       }
   ABC Kids:
     template: { name: programming, poster: config/assets/posters/programming/abc_kids.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/abc-kids
+    tmdb_show: 1546, 4568, 3288, 543, 2345, 2355, 346, 1960, 1877
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/abc-kids
     summary: "ABC Kids (originally titled Disney's One Saturday Morning until 2002) was a Saturday morning children's programming block that aired on ABC from September 13, 1997 to August 27, 2011. It featured a mixture of animated and live-action series from Walt Disney Television Animation and Disney Channel, aimed at children between the ages of 6 and 12. This was the only time Disney Channel content aired on over-the-air TV."
   Cartoon Cartoons:
     template: { name: programming, poster: config/assets/posters/programming/cartoon_cartoons.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/cartoon-cartoons
+    tmdb_show: 4229, 2405, 3611, 177, 607, 606, 2085, 897, 2660, 1477, 2723
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/cartoon-cartoons
     summary: "Cartoon Cartoons is a collective name used by Cartoon Network for their original animated television series originally aired between 1995 and 2003 and produced in majority by Hanna-Barbera and/or Cartoon Network Studios. Beginning with its inception into cable broadcasting on October 1, 1992, Cartoon Network had focused its programming on reruns of older animated series which it had acquired through its parent company's film library."
   Disney Afternoon:
     template: { name: programming, poster: config/assets/posters/programming/disney_afternoon.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/disney-afternoon
+    tmdb_show: 720, 1615, 1931, 2720, 3319, 2235, 1719, 1863, 2198, 4429, 6616, 2745, 1334
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/disney-afternoon
     summary: "The Disney Afternoon's block had four half-hour segments, each of which contained an animated series. As each season ended, the lineup would shift - the remaining three would move up a time slot and a new show would be added to the end. The Disney Afternoon itself featured unique animated segments consisting of its opening and wrappers around the cartoon shows."
   Disney's One Saturday Morning:
     template: { name: programming, poster: config/assets/posters/programming/disneys_one_saturday_morning.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/disney-s-one-saturday-morning
+    tmdb_show: 1546, 4568, 3288, 543, 2345, 2235
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/disney-s-one-saturday-morning
     summary: "Commercial Free Weekend Mornings (formerly called Toonin' Saturdays from 2011 to 2012, Disney Channel Saturday Mornings from 2012 to 2014, Get Animated from 2017 to 2018, and Animation Cram Session from 2018 to 2019) is a weekend program block on the Disney Channel in the United States, consisting of Saturday morning cartoons."
   Disney's One Too:
     template: { name: programming, poster: config/assets/posters/programming/disneys_one_too.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/disney-s-one-too
+    tmdb_show: 3288, 4568, 1546, 2345, 543, 2355, 346
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/disney-s-one-too
     summary: "Disney's One Too (later known as Disney's Animation Weekdays) was a two-hour Sunday-to-Friday children's programming block that aired on UPN from September 6, 1999 to August 31, 2003. A spin-off of the Disney's One Saturday Morning block on ABC (which is owned by The Walt Disney Company), it featured animated series from Disney Television Animation aimed at children between the ages of 6 and 11."
   Fox Kids:
     template: { name: programming, poster: config/assets/posters/programming/fox_kids.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/fox-kids
+    tmdb_show: 2098, 1830, 888, 4574, 82, 2328, 958, 932, 60572, 5835, 31654, 14540
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/fox-kids
     summary: "Fox Kids was an American children's programming block and branding for a slate of animated television series that aired on the Fox Broadcasting Company in the United States. The block aired on Saturday mornings from September 8, 1990 to September 7, 2002, and was aimed at children between the ages of 6 and 11. The block was discontinued in 2002 when Fox sold its children's programming assets to Disney, which rebranded the block as ABC Kids."
   SNICK:
     template: { name: programming, poster: config/assets/posters/programming/snick.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/snick
+    tmdb_show: 249, 504, 2913, 2824, 4289, 376, 3814, 1835, 544
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/snick
     summary: "SNICK (short for Saturday Night Nickelodeon) was a two-hour programming block on the American cable television network Nickelodeon, geared toward older (preteen to teen) audiences, that ran from August 15, 1992 until January 29, 2005. It was aired on Saturdays starting at 8 p.m and ending at 10 p.m. ET. In 2005, SNICK was revamped as the Saturday night edition of TEENick. Nickelodeon continues to run a Saturday night programming block today, though since the TEENick name was removed from the lineup in February 2009, the block no longer goes by any name."
   UPN Kids:
     template: { name: programming, poster: config/assets/posters/programming/upn_kids.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/upn-kids
+    tmdb_show: 2328, 518, 2136, 31654
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/upn-kids
     summary: "UPN Kids launched on September 10, 1995 with a one-hour block of cartoons consisting of Space Strikers and Teknoman. It was a joint partnership between UPN and Saban Entertainment.[1] Unlike NBC, ABC, CBS, Fox and The WB (the latter of which debuted its own children's program block, Kids' WB, the day before UPN Kids made its debut), UPN ran its weekend morning children's programs on Sundays instead of Saturdays."
   Kids' WB:
     template: { name: programming, poster: config/assets/posters/programming/kids_wb.png }
-    trakt_list:
-      - https://trakt.tv/users/jjjonesjr33/lists/kids-wb
+    tmdb_show: 82, 2098, 1830, 2228, 4334, 4303, 513, 9867, 1487, 604, 60572, 902, 240, 6592, 3530, 1856
+    #trakt_list:
+    #  - https://trakt.tv/users/jjjonesjr33/lists/kids-wb
     summary: "Kids' WB was an American children's programming block that aired on The WB from September 9, 1995 to September 17, 2006. The block primarily featured animated series produced by Warner Bros. Animation and Warner Bros. Television, as well as live-action series produced by Warner Bros. Television. The block was discontinued in 2006 when The WB merged with UPN to form The CW, which launched its own children's programming block called The CW4Kids."

@@ -31,3 +31,12 @@ collections:
         added: 7
       sort_by: added.desc
     summary: Shows that have been added within the last week.
+  #################
+  ##    Trakt   ##
+  #################
+  Trending on Trakt:
+    mdblist_list: https://mdblist.com/lists/snoak/trakt-s-trending-shows
+    file_poster: config/assets/posters/suggestions/trakttrending.png
+    summary: "Collection of TV Shows trending on Trakt in the last 30 days"
+    sort_title: "!01_10_Trending on Trakt"
+    sync_mode: sync

@@ -4,9 +4,10 @@ collections:
   #         Trakt Collections         #
   #####################################
   Trending on Trakt:
-    trakt_chart:
-      chart: trending
-      limit: 100
+    # trakt_chart:
+    #   chart: trending
+    #   limit: 100
+    mdblist_list: https://mdblist.com/lists/snoak/trending-movies
     tmdb_trending_daily: 50
     tmdb_trending_weekly: 50
     sort_title: "!02_00_Trending"
@@ -19,10 +20,11 @@ collections:
     radarr_monitor: none
     file_poster: config/assets/posters/suggestions/trakttrending.png
   Most Watched This Week:
-    trakt_chart:
-      chart: watched
-      limit: 10
-      time_period: weekly
+    # trakt_chart:
+    #   chart: watched
+    #   limit: 10
+    #   time_period: weekly
+    mdblist_list: https://mdblist.com/lists/linaspurinis/top-watched-movies-of-the-week
     sort_title: "!02_05_Watched This Week"
     sync_mode: sync
     summary: "Collection of Movies most watched this week on Trakt"
@@ -31,10 +33,11 @@ collections:
     collection_order: custom
     collection_mode: show_items
   Most Watched This Year:
-    trakt_chart:
-      chart: watched
-      limit: 250
-      time_period: yearly
+    # trakt_chart:
+    #   chart: watched
+    #   limit: 250
+    #   time_period: yearly
+    imdb_chart: popular_movies
     sort_title: "!02_10_Watched This Year"
     sync_mode: sync
     summary: "Collection of Movies most watched this year on Trakt"

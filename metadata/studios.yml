@@ -156,19 +156,21 @@ collections:
       }
     summary: Warner Bros. Pictures is an American film production company of the Warner Bros. Pictures Group division of Warner Bros. (both ultimately owned by Warner Bros. Discovery). The studio is the flagship producer of live-action feature films within the Warner Bros. Pictures Group unit, and is based at the Warner Bros. Studios complex in Burbank, California. Animated films produced the Warner Animation Group are also released under the studio banner.
   A24:
-    trakt_list: https://trakt.tv/users/laryan/lists/a24-films?sort=released,asc
+    template:
+      {
+        name: StudioMD,
+        company: 41077,
+        poster: config/assets/posters/studios/a24.png,
+      }
     summary: Movies produced by A24. Usually indicative of quality content.
-    sort_title: "!04_10_A24"
-    file_poster: config/assets/posters/studios/a24.png
-    collection_order: release
-    collection_mode: default
   Studio Ghibli:
-    trakt_list: https://trakt.tv/users/asterlea/lists/studio-ghibli?sort=released,asc
+    template:
+      {
+        name: StudioMD,
+        company: 10342,
+        poster: config/assets/posters/studios/studio_ghibli.png,
+      }
     summary: Studio Ghibli, Inc. is a Japanese animation studio based in Koganei, Tokyo. It has a strong presence in the animation industry and has expanded its portfolio to include various media formats, such as short subjects, television commercials, and two television films.
-    sort_title: "!04_10_Studio Ghibli"
-    file_poster: config/assets/posters/studios/studio_ghibli.png
-    collection_order: release
-    collection_mode: default
 
   #####################################
   #         Marvel Collections        #

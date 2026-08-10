@@ -26,8 +26,8 @@ libraries:
         emoji_christmas: 🎄
         schedule_christmas: range(11/01-12/31)
         file_poster_christmas: config/assets/posters/defaults/christmas.png
-        trakt_list_christmas:
-        - https://trakt.tv/users/nickelshits/lists/christmas-favourites?sort=released,asc
+        mdblist_list_christmas:
+        - https://mdblist.com/lists/nickelshits/external/160463
         emoji_halloween: 🎃
         schedule_halloween: range(09/01-10/31)
         file_poster_halloween: config/assets/posters/defaults/halloween.png
@@ -260,18 +260,18 @@ libraries:
         use_popular: false
         collection_section: '01_05'
         sync_mode_watched: sync
-    - default: trakt
-      template_variables: &TRAKTSHOWS
-        file_poster_trending: config/assets/posters/suggestions/trakttrending.png
-        name_trending: Trending on Trakt
-        summary_trending: Collection of TV Shows trending on Trakt in the last 30 days
-        limit: 50
-        sync_mode: sync
-        use_collected: false
-        use_popular: false
-        use_recommended: false
-        use_watched: false
-        collection_section: '01_10'
+    # - default: trakt
+    #   template_variables: &TRAKTSHOWS
+    #     file_poster_trending: config/assets/posters/suggestions/trakttrending.png
+    #     name_trending: Trending on Trakt
+    #     summary_trending: Collection of TV Shows trending on Trakt in the last 30 days
+    #     limit: 50
+    #     sync_mode: sync
+    #     use_collected: false
+    #     use_popular: false
+    #     use_recommended: false
+    #     use_watched: false
+    #     collection_section: '01_10'
     - file: config/metadata/networks.yml
     - file: config/metadata/suggestions_shows.yml
     - file: config/metadata/lastchance.yml
@@ -402,8 +402,8 @@ libraries:
       template_variables: *STREAMINGSHOWS
     - default: tautulli
       template_variables: *TAUTULLISHOWS
-    - default: trakt
-      template_variables: *TRAKTSHOWS
+    # - default: trakt
+    #   template_variables: *TRAKTSHOWS
     - file: config/metadata/networks.yml
     - file: config/metadata/lastchance.yml
     overlay_files:
