@@ -152,6 +152,7 @@ libraries:
         back_radius: 0
         back_color: '#B91C1CB0'
         text_telesync: Poor Quality (telesync)
+        regex_telesync: (?i)telecine|telesync|ts
         text_cam: Poor Quality (cam)
         use_remux: false
         use_bluray: false
