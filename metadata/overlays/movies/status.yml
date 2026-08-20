@@ -22,4 +22,4 @@ overlays:
       weight: 1000
     plex_all: true
     filters:
-      filepath.regex: (?i)\b((?:HD|HQ)?CAM|(?:HD)?TS|TELESYNC)\b
+      filepath.regex: (?i)\b((?:HD|HQ)?CAM|(?:HD)?TS|TELESYNC|TELECINE)\b
