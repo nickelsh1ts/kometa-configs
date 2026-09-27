@@ -337,7 +337,7 @@ libraries:
       - tvdb
       - omdb
       mass_episode_critic_rating_update: imdb
-      mass_episode_audience_rating_update: tmdb
+      # mass_episode_audience_rating_update: tmdb
       mass_imdb_parental_labels: none
       # mass_poster_update: tmdb
 
