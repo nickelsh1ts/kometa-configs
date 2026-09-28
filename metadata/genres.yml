@@ -2,8 +2,10 @@
 templates:
   Genre:
     plex_search:
+      validate: false
       all:
         genre: <<genre>>
+    ignore_blank_results: true
     file_poster: <<poster>>
     sort_title: "!03_01_<<collection_name>>"
     collection_order: alpha
@@ -147,11 +149,8 @@ collections:
       }
     sort_title: "!03_01_Martial_Arts"
     imdb_list:
-      - https://www.imdb.com/list/ls000099643/
-      - https://www.imdb.com/list/ls068611186/
       - https://www.imdb.com/list/ls068378513/
       - https://www.imdb.com/list/ls090404120/
-      - https://www.imdb.com/list/ls062949711/
     imdb_search:
       type: movie
       keyword: martial-arts

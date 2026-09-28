@@ -177,7 +177,13 @@ collections:
   #####################################
   Marvel Cinematic Universe Phase 1:
     template: { name: mcu }
-    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-1/
+    tmdb_movie:
+      - 1726
+      - 1724
+      - 10138
+      - 10195
+      - 1771
+      - 24428
     file_poster: config/assets/posters/studios/marvel_cinematic_universe_phase_1.png
     collection_order: release
     sync_mode: sync
@@ -188,7 +194,13 @@ collections:
     radarr_monitor: true
   Marvel Cinematic Universe Phase 2:
     template: { name: mcu }
-    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-2/
+    tmdb_movie:
+      - 68721
+      - 76338
+      - 100402
+      - 118340
+      - 99861
+      - 102899
     file_poster: config/assets/posters/studios/marvel_cinematic_universe_phase_2.png
     collection_order: release
     sync_mode: sync
@@ -199,7 +211,18 @@ collections:
     radarr_monitor: true
   Marvel Cinematic Universe Phase 3:
     template: { name: mcu }
-    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-3/
+    tmdb_movie:
+      - 271110
+      - 284052
+      - 283995
+      - 315635
+      - 284053
+      - 284054
+      - 299536
+      - 363088
+      - 299537
+      - 299534
+      - 429617
     file_poster: config/assets/posters/studios/marvel_cinematic_universe_phase_3.png
     collection_order: release
     sync_mode: sync
@@ -210,7 +233,16 @@ collections:
     radarr_monitor: true
   Marvel Cinematic Universe Phase 4:
     template: { name: mcu }
-    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-4/
+    tmdb_movie:
+      - 497698
+      - 566525
+      - 524434
+      - 634649
+      - 453395
+      - 616037
+      - 894205
+      - 505642
+      - 774752
     file_poster: config/assets/posters/studios/marvel_cinematic_universe_phase_4.png
     collection_order: release
     sync_mode: sync
@@ -221,7 +253,12 @@ collections:
     radarr_monitor: true
   Marvel Cinematic Universe Phase 5:
     template: { name: mcu }
-    letterboxd_list: https://letterboxd.com/catherine_gal/list/marvel-cinematic-universe-phase-5/
+    tmdb_movie:
+      - 640146
+      - 447365
+      - 609681
+      - 822119
+      - 986056
     file_poster: config/assets/posters/studios/marvel_cinematic_universe_phase_5.png
     collection_order: release
     sync_mode: sync

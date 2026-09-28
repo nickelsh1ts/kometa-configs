@@ -12,7 +12,7 @@ libraries:
       save_report: false
       minimum_items: 2
       asset_directory:
-      - assets/movies
+      - config/assets/movies
       prioritize_assets: true
     template_variables:
       use_separator: false
@@ -46,6 +46,8 @@ libraries:
         emoji_black_history: 🖤
         file_poster_black_history: config/assets/posters/defaults/black_history.png
         name_black_history: Black History Month
+        emoji_latinx: 🏽
+        file_poster_latinx: config/assets/posters/defaults/latinx.png
         collection_section: '01_00'
         visible_shared: true
         visible_home: true
@@ -228,7 +230,7 @@ libraries:
       save_report: false
       minimum_items: 1
       asset_directory:
-      - assets/shows
+      - config/assets/shows
       prioritize_assets: true
     template_variables:
       use_separator: false
