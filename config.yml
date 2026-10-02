@@ -33,12 +33,15 @@ libraries:
         file_poster_halloween: config/assets/posters/defaults/halloween.png
         emoji_years: 🎆
         schedule_years: range(12/26-01/05)
+        file_poster_years: config/assets/posters/defaults/new_years.png
         emoji_valentine: 💘
         schedule_valentine: range(02/01-02/14)
+        file_poster_valentine: config/assets/posters/defaults/valentine.png
         emoji_patrick: 🍀
         schedule_patrick: range(03/01-03/17)
+        file_poster_patrick: config/assets/posters/defaults/st_patrick.png
         emoji_thanksgiving: 🦃
-        schedule_thanksgiving: range(10/01-10/15)
+        schedule_thanksgiving: range(10/08-10/12)
         file_poster_thanksgiving: config/assets/posters/defaults/thanksgiving.png
         emoji_easter: 🐣
         schedule_easter: range(03/22-04/06)
