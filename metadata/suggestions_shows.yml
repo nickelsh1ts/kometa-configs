@@ -32,7 +32,7 @@ collections:
       sort_by: added.desc
     summary: Shows that have been added within the last week.
   #################
-  ##    Trakt   ##
+  ##   Trending  ##
   #################
   Trending on Trakt:
     mdblist_list: https://mdblist.com/lists/snoak/trakt-s-trending-shows

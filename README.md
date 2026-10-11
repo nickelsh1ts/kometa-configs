@@ -1,6 +1,6 @@
 # Kometa Configs
 
-Custom [Kometa](https://github.com/Kometa-Team/Kometa) configuration for Plex — curated collections, overlays, metadata operations, seasonal pre-rolls, and an automated **Last Chance** media cleanup workflow.
+Custom [Kometa](https://github.com/Kometa-Team/Kometa) configuration for Plex — curated collections, seasonal collections, overlays, metadata operations, and an automated **Last Chance** media cleanup workflow.
 
 ---
 
@@ -33,8 +33,8 @@ A mix of [Kometa Defaults](https://kometa.wiki/en/latest/defaults/guide/) and cu
 | `oscars` | Movies | Best Picture winners |
 | `streaming` | Movies, TV Shows, Retro: TV Shows, Retro: Kids Shows | Per-service collections (Netflix, Apple TV+, etc.) |
 | `universe` | Movies | Franchise collections (MCU, Star Wars, LOTR, etc.) |
+| `other_chart` | Movies | Top pirated weekly |
 | `tautulli` | Movies, TV Shows, Retro: TV Shows | "Trending on NickflixTV" — most watched in last 30 days |
-| `trakt` | TV Shows | Trending on Trakt |
 
 **Custom Collection Files (in `metadata/`):**
 
@@ -44,8 +44,9 @@ A mix of [Kometa Defaults](https://kometa.wiki/en/latest/defaults/guide/) and cu
 | `genres.yml` | Movies | ~30 genre-based collections (Action, Comedy, Horror, Sci-Fi, etc.) with custom posters |
 | `studios.yml` | Movies | ~18 studio/brand collections (Disney Animation, Pixar, Marvel, etc.) |
 | `networks.yml` | TV Shows, Retro: TV Shows, Retro: Kids Shows | ~43 network collections (HBO, Netflix, ABC, etc.) |
-| `suggestions.yml` | Movies* | Trakt charts — Box Office Top 10, Trending, Most Watched Weekly/Yearly, Top Pirated |
-| `preroll.yml` | Movies | Seasonal server pre-rolls (Christmas, Halloween, Spring, etc.) |
+| `suggestions.yml` | Movies* | Trending and most-watched collections using MDBList, TMDB, and IMDb sources; some collection labels retain Trakt wording |
+| `boxoffice.yml` | Movies | IMDb Box Office Top 10 |
+| `suggestions_shows.yml` | TV Shows | Recently aired, new, and recently added shows, plus an MDBList trending list |
 | `refresh.yml` | Movies, TV Shows, Retro: TV Shows, Retro: Kids Shows | Auto-refreshes metadata for recently released items |
 | `lastchance.yml` | All 7 libraries | "Last Chance" — items tagged `leaving` collected monthly before deletion |
 
@@ -69,7 +70,7 @@ A mix of [Kometa Defaults](https://kometa.wiki/en/latest/defaults/guide/) and cu
 
 | File | Description |
 |------|-------------|
-| `movies/status.yml` | "In Theaters" badge from IMDB box office + Trakt |
+| `movies/status.yml` | "In Theaters" badge from IMDb box office and TMDB now playing; also flags cam/telesync sources |
 | `shows/status.yml` | Show status badges — New Season, Airing, Returning, Ended, Cancelled |
 
 Custom overlay images are stored in `assets/overlays/status/`.
@@ -97,8 +98,9 @@ All service connections are configured via `<<PLACEHOLDER>>` syntax in `config.y
 | **OMDB** | Ratings, metadata |
 | **MDBList** | Content ratings, Rotten Tomatoes scores |
 | **Tautulli** | Watch history for "Trending" collections |
-| **Trakt** | Charts, lists, trending data |
 | **Gotify** | Push notifications (errors, run start/end, changes) |
+
+There is no Kometa Trakt integration configured. A few custom collections still use Trakt wording in their names or summaries and use MDBList/TMDB/IMDb sources; they do not require Trakt credentials.
 
 ---
 
@@ -108,7 +110,7 @@ All service connections are configured via `<<PLACEHOLDER>>` syntax in `config.y
 
 - A running Plex server
 - Radarr and Sonarr accessible from the Kometa host
-- API keys for TMDB, OMDB, MDBList, and Trakt (see [Kometa docs](https://kometa.wiki/en/latest/config/overview/))
+- API keys for TMDB, OMDB, and MDBList (see [Kometa docs](https://kometa.wiki/en/latest/config/overview/))
 - A Kometa installation (see step 1)
 
 ### 1. Install Kometa
@@ -355,11 +357,11 @@ metadata/
   lastchance.yml                    # Last Chance collection definition
   movies.yml                        # 8 franchise collections (LOTR, John Wick, etc.)
   networks.yml                      # ~43 network collections for TV Shows
-  preroll.yml                       # Seasonal server pre-rolls
+  boxoffice.yml                     # IMDb Box Office Top 10
   refresh.yml                       # Auto metadata refresh for recent items
   studios.yml                       # ~18 studio/brand collections
-  suggestions.yml                   # Trakt charts (Box Office, Trending, etc.)
-  suggestions_shows.yml             # Smart filters — not currently referenced in config.yml
+  suggestions.yml                   # Movie trending and most-watched collections
+  suggestions_shows.yml             # Recently aired/added and trending TV collections
   overlays/
     movies/status.yml               # "In Theaters" overlay
     shows/status.yml                # Show status overlays (Airing, Ended, etc.)
