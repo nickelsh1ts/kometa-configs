@@ -3,33 +3,33 @@ collections:
   #####################################
   #         Trakt Collections         #
   #####################################
-  Trending on Trakt:
-    mdblist_list: https://mdblist.com/lists/snoak/trending-movies
+  Trending:
+    mdblist_list: https://mdblist.com/lists/official/movies/trending
     tmdb_trending_daily: 50
     tmdb_trending_weekly: 50
     sort_title: "!02_00_Trending"
     sync_mode: sync
     item_label: "Trending"
     collection_order: release
-    summary: "Collection of Movies trending on Trakt in the last 7 days"
+    summary: "Collection of Movies trending in the last 7 days"
     radarr_add_missing: false
     radarr_search: false
     radarr_monitor: false
-    file_poster: config/assets/posters/suggestions/trakttrending.png
+    file_poster: config/assets/posters/suggestions/trending.png
   Most Watched This Week:
-    mdblist_list: https://mdblist.com/lists/linaspurinis/top-watched-movies-of-the-week
+    mdblist_list: https://mdblist.com/lists/official/movies/most-watched-week
     sort_title: "!02_05_Watched This Week"
     sync_mode: sync
-    summary: "Collection of Movies most watched this week on Trakt"
+    summary: "Collection of Movies most watched this week"
     radarr_add_missing: false
     file_poster: config/assets/posters/suggestions/mostwatchedweek.png
     collection_order: custom
     collection_mode: show_items
   Most Watched This Year:
-    imdb_chart: popular_movies
+    mdblist_list: https://mdblist.com/lists/official/movies/most-watched
     sort_title: "!02_10_Watched This Year"
     sync_mode: sync
-    summary: "Collection of Movies most watched this year on Trakt"
+    summary: "Collection of Movies most watched this year"
     radarr_add_missing: false
     file_poster: config/assets/posters/suggestions/mostwatchedyear.png
     collection_order: custom

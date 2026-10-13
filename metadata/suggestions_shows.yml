@@ -34,9 +34,21 @@ collections:
   #################
   ##   Trending  ##
   #################
-  Trending on Trakt:
-    mdblist_list: https://mdblist.com/lists/snoak/trakt-s-trending-shows
-    file_poster: config/assets/posters/suggestions/trakttrending.png
-    summary: "Collection of TV Shows trending on Trakt in the last 30 days"
-    sort_title: "!01_10_Trending on Trakt"
+  Trending:
+    mdblist_list: https://mdblist.com/lists/official/shows/trending
+    file_poster: config/assets/posters/suggestions/trending.png
+    summary: "Collection of TV Shows trending in the last 30 days"
+    sort_title: "!01_10_Trending"
+    sync_mode: sync
+  Most Watched This Week:
+    mdblist_list: https://mdblist.com/lists/official/shows/most-watched-week
+    file_poster: config/assets/posters/suggestions/mostwatchedweek.png
+    summary: "Collection of TV Shows most watched this week"
+    sort_title: "!01_20_Watched This Week"
+    sync_mode: sync
+  Most Watched This Year:
+    mdblist_list: https://mdblist.com/lists/official/shows/most-watched
+    file_poster: config/assets/posters/suggestions/mostwatchedyear.png
+    summary: "Collection of TV Shows most watched this year"
+    sort_title: "!01_25_Watched This Year"
     sync_mode: sync
