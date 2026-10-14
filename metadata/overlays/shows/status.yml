@@ -3,7 +3,7 @@ overlays:
   # RecentlyAdded:
   #   overlay:
   #     name: Recently Added
-  #     file: config/overlays/status/recently_added.png
+  #     file: config/assets/overlays/status/recently_added.png
   #     group: STATUS
   #     weight: 950
   #   plex_all: true
@@ -28,6 +28,24 @@ overlays:
         - planned
         - production
 
+  NewSeasonTVDB:
+    overlay:
+      name: NewSeason
+      file: config/assets/overlays/status/new_season.png
+      group: STATUS
+      weight: 900
+    plex_search:
+      all:
+        added.not: 30
+        episode_added: 21
+    filters:
+      seasons:
+        percentage: 1
+        added: 21
+        title.not: Specials
+      tmdb_status: canceled
+      tvdb_status: Continuing
+
   Airing:
     overlay:
       name: airing
@@ -35,6 +53,19 @@ overlays:
       group: STATUS
       weight: 850
     tmdb_on_the_air: 2000
+
+  AiringTVDB:
+    overlay:
+      name: airing
+      file: config/assets/overlays/status/airing_small.png
+      group: STATUS
+      weight: 850
+    plex_search:
+      all:
+        episode_air_date: 14
+    filters:
+      tmdb_status: canceled
+      tvdb_status: Continuing
 
   Returning:
     overlay:
@@ -48,6 +79,17 @@ overlays:
         - returning
         - planned
         - production
+
+  ReturningTVDB:
+    overlay:
+      name: returning
+      file: config/assets/overlays/status/returning_small.png
+      group: STATUS
+      weight: 800
+    plex_all: true
+    filters:
+      tmdb_status: canceled
+      tvdb_status: Continuing
 
   Ended:
     overlay:
