@@ -20,9 +20,8 @@ overlays:
     filters:
       added.not: 30
       seasons:
-        percentage: 1
+        latest: true
         added: 21
-        title.not: Specials
       tmdb_status:
         - returning
         - planned
@@ -40,9 +39,8 @@ overlays:
         episode_added: 21
     filters:
       seasons:
-        percentage: 1
+        latest: true
         added: 21
-        title.not: Specials
       tmdb_status: canceled
       tvdb_status: Continuing
 
