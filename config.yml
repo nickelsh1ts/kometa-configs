@@ -27,7 +27,8 @@ libraries:
         schedule_christmas: range(11/01-12/31)
         file_poster_christmas: config/assets/posters/defaults/christmas.png
         mdblist_list_christmas:
-        - https://mdblist.com/lists/nickelshits/external/160463
+        - https://mdblist.com/lists/nickelsh1ts/xmas-favourites
+        - https://mdblist.com/lists/nickelsh1ts/xmas-classics
         emoji_halloween: 🎃
         schedule_halloween: range(09/01-10/31)
         file_poster_halloween: config/assets/posters/defaults/halloween.png
