@@ -1,4 +1,13 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/collection-schema.json
+templates:
+  Seasonal Last Chance:
+    conditionals:
+      seasonal_list:
+        conditions:
+        - christmas_list.exists: true
+          current_month: 12
+          value: <<christmas_list>>
+    mdblist_list: <<seasonal_list>>
 collections:
   #####################################
   #       Last Chance Collection      #
@@ -7,6 +16,8 @@ collections:
   # At the start of the next month, the cleanup script deletes the current batch,
   # then Kometa rebuilds the collection from any newly tagged items.
   Last Chance:
+    template:
+      name: Seasonal Last Chance
     schedule: monthly(1)
     minimum_items: 1
     delete_below_minimum: true

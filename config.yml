@@ -27,8 +27,8 @@ libraries:
         schedule_christmas: range(11/01-12/31)
         file_poster_christmas: config/assets/posters/defaults/christmas.png
         mdblist_list_christmas:
-        - https://mdblist.com/lists/nickelsh1ts/xmas-favourites
-        - https://mdblist.com/lists/nickelsh1ts/xmas-classics
+        - &CHRISTMAS_DEFAULT https://mdblist.com/lists/k0meta/christmas-extravaganza
+        - &CHRISTMAS_FAVOURITES https://mdblist.com/lists/nickelsh1ts/xmas-favourites
         emoji_halloween: 🎃
         schedule_halloween: range(09/01-10/31)
         file_poster_halloween: config/assets/posters/defaults/halloween.png
@@ -132,7 +132,13 @@ libraries:
     - file: config/metadata/studios.yml
     - file: config/metadata/suggestions.yml
     - file: config/metadata/boxoffice.yml
+    - file: config/metadata/seasons.yml
+      template_variables:
+        christmas_list: *CHRISTMAS_FAVOURITES
+        christmas_folder: /mnt/hdd1/movies
     - file: config/metadata/lastchance.yml
+      template_variables:
+        christmas_list: *CHRISTMAS_FAVOURITES
     overlay_files:
     - default: streaming
       template_variables: &STREAMINGOVERLAYMOVIES
@@ -346,7 +352,11 @@ libraries:
     - file: config/metadata/refresh.yml
       template_variables: *REFRESHMOVIES
     - default: seasonal
-      template_variables: *SEASONAL
+      template_variables:
+        <<: *SEASONAL
+        mdblist_list_christmas:
+        - *CHRISTMAS_DEFAULT
+        - &CHRISTMAS_CLASSICS https://mdblist.com/lists/nickelsh1ts/xmas-classics
     - default: imdb
       template_variables: *TOP250
     - default: oscars
@@ -363,7 +373,13 @@ libraries:
     - file: config/metadata/genres.yml
     - file: config/metadata/studios.yml
     - file: config/metadata/suggestions.yml
+    - file: config/metadata/seasons.yml
+      template_variables:
+        christmas_list: *CHRISTMAS_CLASSICS
+        christmas_folder: /mnt/hdd1/retro/movies
     - file: config/metadata/lastchance.yml
+      template_variables:
+        christmas_list: *CHRISTMAS_CLASSICS
     overlay_files:
     - default: streaming
       template_variables: *STREAMINGOVERLAYMOVIES
@@ -421,9 +437,35 @@ libraries:
       template_variables: *RIBBONOVERLAY
     operations: *SHOWSOPERATIONS
 
-  Kids Movies: *BASICMOVIES
+  Kids Movies: &KIDSMOVIES
+    <<: *BASICMOVIES
+    collection_files:
+    - file: config/metadata/refresh.yml
+      template_variables: *REFRESHMOVIES
+    - default: seasonal
+      template_variables:
+        <<: *SEASONAL
+        mdblist_list_christmas:
+        - *CHRISTMAS_DEFAULT
+    - default: imdb
+      template_variables: *TOP250
+    - default: oscars
+      template_variables: *OSCARS
+    - default: streaming
+      template_variables: *STREAMINGMOVIES
+    - default: universe
+      template_variables: *UNIVERSE
+    - default: other_chart
+      template_variables: *OTHERCHART
+    - default: tautulli
+      template_variables: *TAUTULLI
+    - file: config/metadata/movies.yml
+    - file: config/metadata/genres.yml
+    - file: config/metadata/studios.yml
+    - file: config/metadata/suggestions.yml
+    - file: config/metadata/lastchance.yml
   Kids Shows: *BASICSHOWS
-  'Retro: Kids Movies': *BASICMOVIES
+  'Retro: Kids Movies': *KIDSMOVIES
   'Retro: Kids Shows': *BASICSHOWS
 
 playlist_files:

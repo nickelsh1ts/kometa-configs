@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/collection-schema.json
+templates:
+  Christmas Downloads:
+    mdblist_list: <<christmas_list>>
+    radarr_folder: <<christmas_folder>>
+collections:
+  Christmas Downloads:
+    template:
+      name: Christmas Downloads
+    build_collection: false
+    schedule: range(11/01-12/31)
+    sync_mode: append
+    minimum_items: 1
+    radarr_add_missing: true
+    radarr_add_existing: false
+    radarr_monitor_existing: false
+    radarr_upgrade_existing: false
+    radarr_search: true
+    radarr_ignore_cache: true
+    radarr_tag:
+    - kometa
+    - ko-christmas
